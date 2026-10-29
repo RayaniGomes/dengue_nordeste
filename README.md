@@ -1,4 +1,40 @@
-# Dengue no Nordeste — Etapa 1: coleta e integração
+# Dengue no Nordeste — coleta, limpeza e análise exploratória
+
+## Etapa 2 pronta: limpeza e EDA
+
+Abra [o notebook de limpeza e EDA](notebooks/02_limpeza_eda.ipynb), [os resultados](docs/resultados_etapa2.md) e [a metodologia](docs/metodologia_etapa2.md). O relatório visual completo está em `outputs/etapa2/relatorio_eda.html`; baixe e abra no navegador. Ele contém as imagens incorporadas e funciona offline.
+
+A Etapa 2 entrega tabelas anuais por estado/município, série mensal por início dos sintomas, incidência operacional por 100 mil habitantes, estatísticas descritivas, sazonalidade, correlação descritiva, sinalização de outliers, nove figuras e auditoria dos filtros. Os outliers foram mantidos. Não há modelagem preditiva ou conclusão causal.
+
+**Atenção ao numerador:** casos prováveis operacionais não são casos confirmados. A definição ampla exclui descartados e outros problemas documentados, mas inclui inconclusivos/ignorados; o cenário estrito requer classificação de dengue e critério 1/2. A composição dos arquivos publicados varia entre anos, inclusive quanto à presença de descartados. **2023 continua sem taxa**, porque não foi imputada população.
+
+Para reconstruir a Etapa 2 nesta pasta, após instalar as dependências:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/executar_etapa2.py --reprocessar
+.\.venv\Scripts\python.exe scripts/testar_regras_etapa2.py
+.\.venv\Scripts\python.exe scripts/validar_etapa2.py
+.\.venv\Scripts\python.exe scripts/executar_notebook_etapa2.py
+```
+
+Sem `--reprocessar`, o ponto de entrada reutiliza as tabelas existentes e gera a documentação. A geração da documentação recria o notebook; execute novamente o último comando para salvar suas saídas em kernel real. Sem os recortes individuais da Etapa 1, a reconstrução também faz a coleta e a integração necessárias. A consulta complementar de 2026 serve exclusivamente para buscar sintomas até 2025 e não amplia o período de estudo. Seu resultado, inclusive se vazio, é auditado.
+
+| Entrega da Etapa 2 | Local |
+|---|---|
+| Notebook executado | `notebooks/02_limpeza_eda.ipynb` |
+| Relatório visual independente | `outputs/etapa2/relatorio_eda.html` |
+| Texto com resultados e limitações | `docs/resultados_etapa2.md` |
+| Métodos e fontes primárias | `docs/metodologia_etapa2.md` |
+| Dicionário adicional | `docs/dicionario_etapa2.csv` |
+| Tabelas para análise | `data/processed/etapa2/` |
+| Auditoria e hashes | `data/metadata/validacao_etapa2.json` e manifestos de referências/complemento |
+| Recortes com flags e motivos | `data/interim/etapa2/` (não versionados) |
+
+Os testes das regras cobrem descarte, códigos históricos, inconclusivos, duplicidade marcada, outra doença, cronologia, ausência de sintomas, ano, notificações tardias e atribuição municipal. O validador independente confere chaves, reconciliação de contagens, taxas, sazonalidade, ausência de 2023 e hashes dos insumos. Essas verificações não substituem a revisão epidemiológica do grupo.
+
+---
+
+## Etapa 1: coleta e integração
 
 Projeto IMD1151, 2026.2. Recorte: 2000–2025; residentes em MA, PI, CE, RN, PB, PE, AL, SE e BA.
 

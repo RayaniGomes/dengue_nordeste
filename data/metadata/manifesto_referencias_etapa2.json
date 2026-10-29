@@ -1,0 +1,157 @@
+{
+  "consultado_em": "2026-10-29T00:08:19-03:00",
+  "recursos": [
+    {
+      "origem": "SINAN/MS — dicionário Online, revisão 21/10/2015",
+      "url": "https://portalsinan.saude.gov.br/images/documentos/Agravos/Dengue/DIC_DADOS_ONLINE.pdf",
+      "extraido_em": "2026-10-29T00:08:07-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/dicionario_online_2015.pdf",
+      "bytes": 339721,
+      "sha256": "da262c3b9f20f242d01ee235e64c221dd97e6ad9a53d38cc94da9316bf98c4eb",
+      "http_last_modified": "Fri, 03 Jun 2016 19:44:10 GMT",
+      "http_etag": "\"5751de0a-52f09\""
+    },
+    {
+      "origem": "Ministério da Saúde — ficha SINAN NET, 25/09/2006, hospedada na SESA/ES",
+      "url": "https://saude.es.gov.br/Media/sesa/LACEN/Fichas_SINAN/ficha_16_sinan_Dengue.pdf",
+      "extraido_em": "2026-10-29T00:08:08-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/ficha_dengue_2006.pdf",
+      "bytes": 30578,
+      "sha256": "926cc0dfe5a6fa524424e2894945714f34a558736e40a6d96b630015c112808d",
+      "http_last_modified": null,
+      "http_etag": null
+    },
+    {
+      "origem": "Ministério da Saúde — guia histórico, ficha CENEPI de 30/05/2001",
+      "url": "https://bvsms.saude.gov.br/bvs/publicacoes/Guia_Vig_Epid_novo2.pdf",
+      "extraido_em": "2026-10-29T00:08:14-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/guia_vigilancia_historico.pdf",
+      "bytes": 5249497,
+      "sha256": "df157aaf5e88e81c622afb4e43e7a61c6c9135b9be490528f4582d37c65e422e",
+      "http_last_modified": null,
+      "http_etag": null
+    },
+    {
+      "origem": "IBGE — API de malhas simplificadas",
+      "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/27?formato=application/vnd.geo%2Bjson&qualidade=minima",
+      "extraido_em": "2026-10-29T00:08:18-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/malha_AL.json",
+      "bytes": 727,
+      "sha256": "4c69734254383e2e449cd1a50ad26bc8717b98deab8abd6b17749675f4293fed",
+      "http_last_modified": null,
+      "http_etag": null,
+      "codigo_uf": "27"
+    },
+    {
+      "origem": "IBGE — API de malhas simplificadas",
+      "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/29?formato=application/vnd.geo%2Bjson&qualidade=minima",
+      "extraido_em": "2026-10-29T00:08:18-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/malha_BA.json",
+      "bytes": 2246,
+      "sha256": "bb9951380f9924e8e8b43c0cc94170a553c294062ceb058be31b2ac943903fa5",
+      "http_last_modified": null,
+      "http_etag": null,
+      "codigo_uf": "29"
+    },
+    {
+      "origem": "IBGE — API de malhas simplificadas",
+      "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/23?formato=application/vnd.geo%2Bjson&qualidade=minima",
+      "extraido_em": "2026-10-29T00:08:16-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/malha_CE.json",
+      "bytes": 1068,
+      "sha256": "5ace3747063c1430471c022d6b94ddb1788a2b51b46dcfd8addfc5ffb3698415",
+      "http_last_modified": null,
+      "http_etag": null,
+      "codigo_uf": "23"
+    },
+    {
+      "origem": "IBGE — API de malhas simplificadas",
+      "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/21?formato=application/vnd.geo%2Bjson&qualidade=minima",
+      "extraido_em": "2026-10-29T00:08:16-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/malha_MA.json",
+      "bytes": 2020,
+      "sha256": "771c15e04178539c83235d4dda2fffc51ebefa7882c958b0107034f61dae8220",
+      "http_last_modified": null,
+      "http_etag": null,
+      "codigo_uf": "21"
+    },
+    {
+      "origem": "IBGE — API de malhas simplificadas",
+      "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/25?formato=application/vnd.geo%2Bjson&qualidade=minima",
+      "extraido_em": "2026-10-29T00:08:17-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/malha_PB.json",
+      "bytes": 1231,
+      "sha256": "aaedba74541f2cd74ee4af5102509d07b7301c248ff67aeb5186c5d3febb4978",
+      "http_last_modified": null,
+      "http_etag": null,
+      "codigo_uf": "25"
+    },
+    {
+      "origem": "IBGE — API de malhas simplificadas",
+      "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/26?formato=application/vnd.geo%2Bjson&qualidade=minima",
+      "extraido_em": "2026-10-29T00:08:18-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/malha_PE.json",
+      "bytes": 1520,
+      "sha256": "3ceaaea834ed84e5a8777a81cd5f1b37e00de3c05a65fdcbcf2d42d45181f97e",
+      "http_last_modified": null,
+      "http_etag": null,
+      "codigo_uf": "26"
+    },
+    {
+      "origem": "IBGE — API de malhas simplificadas",
+      "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/22?formato=application/vnd.geo%2Bjson&qualidade=minima",
+      "extraido_em": "2026-10-29T00:08:16-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/malha_PI.json",
+      "bytes": 1531,
+      "sha256": "248e6d62d6da2ce8bf4a27db6eae2214cb2c838070269c0dd72f890d6207b29d",
+      "http_last_modified": null,
+      "http_etag": null,
+      "codigo_uf": "22"
+    },
+    {
+      "origem": "IBGE — API de malhas simplificadas",
+      "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/24?formato=application/vnd.geo%2Bjson&qualidade=minima",
+      "extraido_em": "2026-10-29T00:08:17-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/malha_RN.json",
+      "bytes": 899,
+      "sha256": "6446fd39fa1008195f17d813003d6bf34b65c5e2fb76b1b56eb99e44fc14b688",
+      "http_last_modified": null,
+      "http_etag": null,
+      "codigo_uf": "24"
+    },
+    {
+      "origem": "IBGE — API de malhas simplificadas",
+      "url": "https://servicodados.ibge.gov.br/api/v3/malhas/estados/28?formato=application/vnd.geo%2Bjson&qualidade=minima",
+      "extraido_em": "2026-10-29T00:08:18-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/malha_SE.json",
+      "bytes": 560,
+      "sha256": "5468e06c9b641e36079fd515a321ade68866a9d0d20c48e8e957434cf478bdb5",
+      "http_last_modified": null,
+      "http_etag": null,
+      "codigo_uf": "28"
+    },
+    {
+      "origem": "Ministério da Saúde — definição de casos prováveis e residência",
+      "url": "https://dadosabertos.saude.gov.br/dataset/arboviroses-dengue",
+      "extraido_em": "2026-10-29T00:08:15-03:00",
+      "fuso": "America/Fortaleza (UTC-03:00)",
+      "arquivo": "data/raw/referencias_etapa2/notas_sinan.html",
+      "bytes": 159002,
+      "sha256": "cf87c3b4a515fb5f2eb76d8d45a5c59c401b9b148a4223b0a60e3692b8f7963c",
+      "http_last_modified": null,
+      "http_etag": "\"x1tjglp35y3e7f\""
+    }
+  ]
+}

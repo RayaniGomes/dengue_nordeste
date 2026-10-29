@@ -1,0 +1,27 @@
+﻿campo,tipo,definicao
+ano,Inteiro,Ano de início dos sintomas; ano_arquivo é ano do recurso de notificação.
+casos_probaveis_operacionais,Contagem,"Seleção ampla: exclui descartado, chikungunya, duplicidade marcada, agravo incompatível e datas/classificações inválidas. Inclui branco/0/8/9."
+casos_criterio_estrito,Contagem,Subconjunto da seleção ampla com classificação de dengue e critério 1 ou 2.
+incidencia_100mil,Taxa,Seleção ampla / população do território e ano de sintomas × 100 mil. NA sem população ou sem cobertura municipal.
+incidencia_criterio_estrito_100mil,Taxa,Cenário estrito / população × 100 mil.
+registros_com_datas_utilizaveis,Contagem ou NA,"Registros com residência e datas utilizáveis, antes de filtrar classificação/agravo. NA não é zero."
+status_cobertura,Categoria,integrado; sem_populacao; sem_registro_utilizavel. Não mede subnotificação.
+nome_referencia,Texto,"Nome do mesmo ano se disponível; na ausência, nome mais recente apenas para identificação, sem copiar população."
+variacao_anual_pct,Percentual,Variação do volume selecionado em relação ao ano anterior; não é variação da taxa.
+outlier_temporal_iqr,Booleano ou NA,"Taxa acima de Q3 + 1,5 IQR no histórico da própria UF; sem remoção."
+outlier_espacial_iqr,Booleano ou NA,"Taxa acima de Q3 + 1,5 IQR entre municípios observados da mesma UF e ano; sem remoção."
+q1_uf / q3_uf / limite_superior_iqr_uf,Taxas,Quartis e limite usados na sinalização temporal estadual.
+q1_uf_ano / q3_uf_ano / limite_superior_iqr_uf_ano,Taxas,Quartis e limite usados na sinalização espacial municipal.
+participacao_no_ano_pct,Percentual,Casos do mês / casos do estado-ano × 100.
+participacao_media_pct,Percentual,"Média das participações anuais em 2001–2024, com igual peso por ano."
+participacao_mediana_pct,Percentual,Mediana das participações anuais em 2001–2024.
+mes / mes_sintomas,Inteiro,"Mês dos primeiros sintomas, de 1 a 12."
+caso_provavel_operacional / caso_criterio_estrito,Booleanos,Flags individuais que determinam cada cenário de agregação.
+motivo_exclusao,Categoria,incluido ou primeiro motivo aplicável na ordem de MOTIVOS no script; exclusivo por registro.
+flag_*,Booleanos,"Problemas detectados, podem coexistir; somar flags não fornece o total de excluídos."
+atraso_notificacao_dias,Dias,"Data de notificação menos sintomas. Mais de 60 dias é sinalizado, não removido automaticamente."
+linha_recorte,Inteiro,"Número da linha no CSV de recorte da Etapa 1, incluindo cabeçalho. Não identifica pessoa."
+nu_ano_divergente_data / ano_notificacao_divergente_arquivo,Booleanos,"Divergência de NU_ANO ou ano do ZIP em relação à data real, preservada na auditoria."
+classificacao_harmonizada,Categoria,Rótulo compatível com o vocabulário histórico; desconhecido é excluído.
+classificacao_nao_encerrada,Contagem na auditoria,"Nome operacional para brancos/0/8/9; inclui inconclusivo (8), que pode estar encerrado. Não significa que todos estejam em aberto."
+municipio_valido,Booleano,Código de 6 dígitos com UF consistente; existência no IBGE é avaliada na junção.

@@ -1,0 +1,26 @@
+{
+  "gerado_em": "2026-10-29T00:21:24-03:00",
+  "data_corte": "2026-10-29",
+  "recurso_original": {
+    "origem": "Ministério da Saúde/SINAN",
+    "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR26.csv.zip",
+    "extraido_em": "2026-10-29T00:19:13-03:00",
+    "fuso": "America/Fortaleza (UTC-03:00)",
+    "arquivo": "data/raw/sinan/DENGBR26.csv.zip",
+    "bytes": 15045451,
+    "sha256": "8b0ecf70fd5ce091badd4c52b4330c1ca7a0ba661845ed96b5dfaa75ba790adb",
+    "http_last_modified": "Sat, 24 Oct 2026 08:47:29 GMT",
+    "http_etag": "\"e110c9e91faef3a0873a54a95141562d-2\"",
+    "ano_arquivo": 2026,
+    "recurso_id": "f71ec0f9-82eb-4177-bd6a-ff76f2dfa84d",
+    "atualizado_na_fonte": "2026-10-24T05:48:15.960358",
+    "finalidade": "Complementar sintomas até 2025 notificados em 2026; não incluir sintomas de 2026"
+  },
+  "registros_brasil_2026_lidos": 470451,
+  "registros_ne_2026_lidos": 122911,
+  "menor_data_sintomas_ne": "2026-01-04 00:00:00",
+  "registros_recorte": 0,
+  "registros_por_ano_sintomas": {},
+  "arquivo_recorte": "data/interim/complemento_2026_sintomas_ate2025.csv.gz",
+  "sha256_recorte": "b0b1edc0031152349e1efc632a5488089fd1bf278d12f2d8044a299f27baeeac"
+}

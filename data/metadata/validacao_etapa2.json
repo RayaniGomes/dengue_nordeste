@@ -1,0 +1,156 @@
+{
+  "gerado_em": "2026-10-29T00:26:52-03:00",
+  "versao_regras": "2.0",
+  "inicio": 2000,
+  "fim": 2025,
+  "eixo_temporal_principal": "ano/mês de início dos sintomas, sem substituição por notificação",
+  "data_corte_notificacoes": "2026-10-29",
+  "complemento_2026": true,
+  "registros_entrada": 5475862,
+  "casos_probaveis_operacionais": 4174601,
+  "casos_criterio_estrito": 2807094,
+  "casos_atraso_superior60_dias": 45621,
+  "exclusoes": {
+    "uf_invalida": 0,
+    "notificacao_invalida_ou_fora_recorte": 1,
+    "agravo_incompativel_ou_ausente": 13,
+    "duplicidade_marcada": 6,
+    "classificacao_desconhecida": 0,
+    "descartado": 1296090,
+    "chikungunya": 0,
+    "sintomas_invalidos_ou_fora_recorte": 5137,
+    "sintomas_apos_notificacao": 14
+  },
+  "soma_estado_ano": 4174601,
+  "soma_municipio_ano": 4174309,
+  "casos_sem_municipio_valido": 292,
+  "soma_mensal": 4174601,
+  "incidencia_ausente_estado_ano": 9,
+  "pico_casos_ano": 2024,
+  "pico_casos": 345731,
+  "participacao_media_primeiro_semestre_2001_2024_pct": 75.8326438660551,
+  "mes_pico_sazonal": 4,
+  "uf_maior_incidencia_2025": "PI",
+  "maior_incidencia_2025": 275.90102900033594,
+  "outliers_estaduais": 10,
+  "spearman_populacao_casos_municipais_2024": 0.4447398891654257,
+  "metodo_correlacao": "Pearson dos postos médios (Spearman), sem teste inferencial",
+  "fontes_classificacao": [
+    "DIC_DADOS_ONLINE.pdf (SINAN, 2015)",
+    "ficha SINAN NET (2006)",
+    "guia MS/ficha CENEPI (2001)"
+  ],
+  "software": {
+    "python": "3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 64 bit (AMD64)]",
+    "pandas": "2.3.3",
+    "numpy": "2.5.4",
+    "plataforma": "Windows-11-10.0.26300-SP0"
+  },
+  "entradas": [
+    {
+      "arquivo": "data/interim/sinan_ne_2000.csv.gz",
+      "sha256": "b204b24e1ad01dd4f11d3f3d32403aca11c799a1baa5970892e2f82fa73aafc3"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2001.csv.gz",
+      "sha256": "46ad3ec09b0dd7db4249989f9239c8f1f1dce20856a4bf45d09cc8e6b9800b70"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2002.csv.gz",
+      "sha256": "46c65f5bab7313c5c9f2887f9ae2620adf23a5931821487694874d5550f26799"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2003.csv.gz",
+      "sha256": "51985c5cce510f5acdc3c7961ada52553420ac13ed2ce86da5d40f0d71aaa279"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2004.csv.gz",
+      "sha256": "29b591c9b5f5105bb1c82d19c9df1a94ba09a8470a80a6136e46121033431099"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2005.csv.gz",
+      "sha256": "6339dfc4f4e1b187135a90964f08b3e4303891a31ae677172a643ee9874ea9a7"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2006.csv.gz",
+      "sha256": "6a256f009fce606d20e791e17d6f0841bb07195eb926e1131643330c638fb956"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2007.csv.gz",
+      "sha256": "4e4611aa8a6609bd01f675d22ff886c1c5d3255135356ddd51a608c3cb90fc3b"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2008.csv.gz",
+      "sha256": "481ae56e9e1951d9be78df577b9ba9458fb843848952359bcbc5d990c8389715"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2009.csv.gz",
+      "sha256": "46f22aca8c2df7726f7ab27d5caaa51e9adefb066ea5aac680ddd2c88dbcb427"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2010.csv.gz",
+      "sha256": "8450911969f31b2b488f773ffff16e11e809e4df6c018c1948721cb73032507a"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2011.csv.gz",
+      "sha256": "a706f22ea25f5df68fb544fa5479ef8dd88e594ee3dd3714b9eb3f7ea0f78ca4"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2012.csv.gz",
+      "sha256": "e9e6104728494535c3da05f053ee428a131c0f7e4d85cb6165b116b205e54d69"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2013.csv.gz",
+      "sha256": "2a9b83b835173d85382fa76a427cd4eb27d8976d6193d7602e8ed235beae8505"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2014.csv.gz",
+      "sha256": "e05b44ca769b45ae86cfc77a185b7905689dfa79c45c32a8c8274892ff65bbf9"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2015.csv.gz",
+      "sha256": "0e8a343d6162692bece2cb7bf0386ad409f974c7bf81b466def21ef82c68a7fb"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2016.csv.gz",
+      "sha256": "3c6b6bf2aea2745bcfd3ca55b6d4bdf330d7a676b21438b7dca274349251db00"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2017.csv.gz",
+      "sha256": "8eaafe0bfcc6bbd49c34f789c0ebf96440dde17d2fe9209ac575534bb1e7bd47"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2018.csv.gz",
+      "sha256": "daeeb245fb76bf7d55fe683fe9eced167e8fa4c48bdd86e6d70b849290d11e94"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2019.csv.gz",
+      "sha256": "969bf366db03193314edd22a3a2284e6b91c8b0b07d573a9498ba8496677c076"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2020.csv.gz",
+      "sha256": "97d8b355f5a60ff6194610fa89dc05ce84eaeabb42ec6b4c4c3fa77e17c79e36"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2021.csv.gz",
+      "sha256": "cd6c322c31383eaf91e58816b1da06d7331c746429e0526f8855e43812a1430a"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2022.csv.gz",
+      "sha256": "b34daca9f77a3d8c13921add06a156e242c32457b7af8a63ab67c28b466fb957"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2023.csv.gz",
+      "sha256": "83ba32b6bdf476c4f628835848a2fd2303da4e8a8e45af4b6af6be95e9549ebf"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2024.csv.gz",
+      "sha256": "993c732927b38f5a0de2ba68348322340d1b55c307af9c1fa81cbfe2750c2ef0"
+    },
+    {
+      "arquivo": "data/interim/sinan_ne_2025.csv.gz",
+      "sha256": "4560e1d6601cbbf373f62844fe099aaabd5a1ec2cfcc9fc27a00e93264721679"
+    }
+  ],
+  "script_sha256": "26f032d3fab6155f7702a697a3529cff76c64153d54c9e4455855d2adc42578f"
+}
