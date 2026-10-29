@@ -1,0 +1,20 @@
+{
+  "executado_em": "2026-10-28T22:36:26-03:00",
+  "inicio": 2000,
+  "fim": 2025,
+  "estados": {
+    "21": "MA",
+    "22": "PI",
+    "23": "CE",
+    "24": "RN",
+    "25": "PB",
+    "26": "PE",
+    "27": "AL",
+    "28": "SE",
+    "29": "BA"
+  },
+  "erros": [],
+  "populacao_sem_publicacao_anual": [
+    2023
+  ]
+}

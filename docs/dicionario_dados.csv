@@ -1,0 +1,36 @@
+﻿variavel,tipo,origem,descricao_e_regras
+ano,inteiro,SINAN/NU_ANO ou IBGE/período,Ano de notificação nas bases de dengue; ano da população nas bases populacionais.
+nivel,texto,IBGE,N6 = município; N3 = unidade da federação. Apenas populacao_nordeste.csv.
+codigo_ibge,texto,IBGE/localidade.id,Código completo de 7 dígitos para município ou 2 para UF; ausente se não houve correspondência populacional.
+codigo_municipio_6,texto,ID_MN_RESI e IBGE/localidade.id,Chave municipal de 6 dígitos; reduz código de 7 aos seis primeiros. Não é chave individual.
+codigo_uf,texto,SINAN/SG_UF e IBGE/localidade.id,21 MA; 22 PI; 23 CE; 24 RN; 25 PB; 26 PE; 27 AL; 28 SE; 29 BA.
+uf,texto,Derivado de codigo_uf,Sigla da UF de residência ou da localidade populacional.
+nome_localidade,texto,IBGE/localidade.nome,Nome retornado na tabela e ano consultados; não usar nome como chave.
+notificacoes,inteiro ou ausente,Contagem de linhas do SINAN,Registros com ano válido antes de filtrar classificação/agravo/duplicidade. Não equivale a casos confirmados ou prováveis. NA = sem grupo correspondente.
+populacao,inteiro ou ausente,IBGE/SIDRA,Pessoas residentes no território e ano. Sem imputação. Ausente em 2023 ou valores especiais sem população numérica.
+tipo_populacao,texto,Metadados da coleta,estimativa_anual; censo_2000; contagem_e_estimativas_2007; censo_2010; censo_2022.
+tabela_ibge,inteiro ou ausente,IBGE/SIDRA,6579; 202; 793; 4714.
+fonte_populacao,URL,Coleta IBGE,"URL completa da consulta incluindo filtros territoriais, variável, ano e classificação."
+extracao_populacao,data-hora ISO 8601,Coleta,Instante do download original com deslocamento -03:00; cache preserva a data.
+status_integracao,texto,Junção,"integrado = chaves nas duas fontes e população numérica; sem_populacao_no_ano = contagem sem chave populacional correspondente; sem_populacao_valida = chave encontrada, mas valor populacional não numérico; sem_registro_sinan = população sem grupo de notificações. Não representa qualidade epidemiológica."
+mes_notificacao,inteiro 1–12 ou ausente,SINAN/DT_NOTIFIC,Mês da notificação; na base mensal somente datas válidas com ano igual ao NU_ANO. Não é mês dos sintomas.
+classificacao_original,texto,CLASSI_FIN ou CON_CLASSI,Código original sem harmonização histórica. AUSENTE identifica branco somente no agregado por classificação; no recorte individual o branco é preservado.
+campo_classificacao,texto,Layout SINAN,Nome do campo original: CON_CLASSI nos layouts antigos ou CLASSI_FIN nos recentes. Consultar códigos no dicionário compatível com o período.
+ano_arquivo,inteiro,Nome do recurso SINAN,Ano do ZIP de origem. Preservado mesmo se NU_ANO divergente.
+ano_valido,booleano,Comparação NU_ANO/ano_arquivo,True quando NU_ANO é numérico e igual ao ano do arquivo. False permanece no recorte e fica fora dos totais.
+codigo_municipio_residencia_original,texto,SINAN/ID_MN_RESI,"Código original de residência com 6 ou 7 dígitos, sem alteração."
+municipio_consistente,booleano,Validação geográfica,Código de 6/7 dígitos cujo prefixo coincide com a UF de residência; existência na população é validada depois na junção.
+data_notificacao_original,texto data,SINAN/DT_NOTIFIC,Valor original; conversão inválida é auditada sem substituir o texto.
+data_sintomas_original,texto data,SINAN/DT_SIN_PRI,"Valor original dos primeiros sintomas, preservado para análise posterior."
+data_notificacao_consistente,booleano,Conversão DT_NOTIFIC,Data interpretável como AAAA-MM-DD e com ano igual ao ano do arquivo.
+criterio_original,texto,CRITERIO ou CON_CRITER,Código original de critério de confirmação/descarte; harmonização pendente na Etapa 2.
+evolucao_original,texto,EVOLUCAO ou CON_EVOLUC,Código original da evolução; harmonização pendente na Etapa 2.
+NDUPLIC,texto opcional,SINAN/layout antigo,Marcação original de duplicidade; mantida somente quando existe na fonte. Não aplicada ao numerador nesta etapa.
+NDUPLIC_N,texto opcional,SINAN/layout recente,"Marcação original; no dicionário atual, 2 = duplicidade/não contar. Preservada para a limpeza."
+ID_AGRAVO,texto opcional,SINAN,Código do agravo conforme fonte; preservado para verificar seleção epidemiológica.
+ID_DG_NOT,texto opcional,SINAN/layout antigo,Código diagnóstico original; não harmonizado nesta etapa.
+CS_SEXO,texto opcional,SINAN,Código original de sexo; não utilizado na integração.
+NU_IDADE,texto opcional,SINAN/layout antigo,Idade codificada original; não interpretar diretamente como anos.
+NU_IDADE_N,texto opcional,SINAN/layout recente,Idade codificada com unidade; não interpretar diretamente como anos.
+estados,inteiro,Cobertura anual,Quantidade de UFs na grade de estado-ano.
+estados_com_populacao,inteiro,Cobertura anual,Quantidade de UFs com denominador numérico naquele ano.

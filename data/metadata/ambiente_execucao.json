@@ -1,0 +1,14 @@
+{
+  "registrado_em": "2026-10-28T22:48:42-03:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "pandas": "3.0.1",
+  "sistema": "Windows-11-10.0.26300-SP0",
+  "scripts_sha256": {
+    "coletar.py": "49b426c2d76f8364f9cc7ae23adee80e0f7eafe7e17f48543db8880b5bdbb61e",
+    "gerar_resumo.py": "5d60a5b83bd4ad39e1ba7672b229e9302126b4ba22540411ac76ce2293eb6100",
+    "integrar.py": "762121fc5e5534e0ffb8b5c3e8a343e8e27bb056394f4cfa7feccd7e0f14f081",
+    "preparar_documentacao.py": "0517051e72e0010889d5afda33e440d4298300d4abb5f5a323bdd82b81b76cbe",
+    "validar.py": "aaf6b45c5c09009a437fd72bdee832672c80eba4e435418674ae4eb63b968c3d",
+    "verificar_notebook.py": "b68b38890068724ed8d2a65a43002eded03024d7df106e79654171cadcd9feba"
+  }
+}
