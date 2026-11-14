@@ -32,7 +32,7 @@ Não foi executada a EDA nesta extração. Os arquivos anteriores e os dois esqu
 ## Repetir a extração nesta pasta
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install -r database/requirements-extracao.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe scripts/extrair_postgresql.py --env CAMINHO_DO_ENV
 ```
 
@@ -49,4 +49,4 @@ dados = pd.read_csv(arquivo, dtype={'cod_mun7': 'string', 'cod_mun7_notificacao'
 provaveis = dados.loc[dados['caso_provavel']]
 ```
 
-O pipeline anterior desta raiz tem outras escolhas metodológicas. As saídas desta extração estão em uma subpasta própria e não substituem seus resultados. Nenhum commit ou push foi realizado.
+O pipeline anterior, com escolhas metodológicas próprias, foi arquivado fora do repositório. A localização está em `docs/limpeza_repositorio.md`. Nenhum commit ou push foi realizado.

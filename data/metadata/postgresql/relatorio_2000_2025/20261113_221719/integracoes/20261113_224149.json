@@ -1,6 +1,6 @@
 {
   "status": "concluido",
-  "concluido_em": "2026-11-13T22:28:26.605371-03:00",
+  "concluido_em": "2026-11-13T22:41:49.454907-03:00",
   "manifesto_entrada": "data/metadata/postgresql/relatorio_2000_2025/20261113_221719/manifesto.json",
   "sha256_manifesto_entrada": "66035e00b401a29a672853a25ba9adc5b27c700a874825547026af659bfbeb99",
   "periodo": [
@@ -22,22 +22,22 @@
   "soma_populacao_municipio_ano": 1403368190,
   "arquivos": {
     "painel_municipio_ano": {
-      "arquivo": "data/processed/postgresql/relatorio_2000_2025/20261113_221719/integracao/20261113_222826/painel_municipio_ano.csv",
+      "arquivo": "data/processed/postgresql/relatorio_2000_2025/20261113_221719/integracao/20261113_224149/painel_municipio_ano.csv",
       "linhas": 46627,
       "sha256": "23101d31e040bff0df1a68eec6b542f74e648153e5ec536f8650790a0000858d"
     },
     "painel_uf_ano": {
-      "arquivo": "data/processed/postgresql/relatorio_2000_2025/20261113_221719/integracao/20261113_222826/painel_uf_ano.csv",
+      "arquivo": "data/processed/postgresql/relatorio_2000_2025/20261113_221719/integracao/20261113_224149/painel_uf_ano.csv",
       "linhas": 234,
       "sha256": "f5a99ef3fd55cbff9a8f0bda440a02621e8bfd38bb4ee6b4e63d82f5508bf555"
     },
     "painel_regiao_ano": {
-      "arquivo": "data/processed/postgresql/relatorio_2000_2025/20261113_221719/integracao/20261113_222826/painel_regiao_ano.csv",
+      "arquivo": "data/processed/postgresql/relatorio_2000_2025/20261113_221719/integracao/20261113_224149/painel_regiao_ano.csv",
       "linhas": 26,
       "sha256": "b2d8d741c6ba54c587747016d571f7d3e9900e507820d95182a217ac04c0aee1"
     },
     "cobertura_populacao_uf_ano": {
-      "arquivo": "data/processed/postgresql/relatorio_2000_2025/20261113_221719/integracao/20261113_222826/cobertura_populacao_uf_ano.csv",
+      "arquivo": "data/processed/postgresql/relatorio_2000_2025/20261113_221719/integracao/20261113_224149/cobertura_populacao_uf_ano.csv",
       "linhas": 234,
       "sha256": "c2ea5731e12bc95b90afcec4b9bf24ca83d336ed51ee54fabf4066e73887abf4"
     }

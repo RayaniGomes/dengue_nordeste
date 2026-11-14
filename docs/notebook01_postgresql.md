@@ -11,11 +11,11 @@ Para extrair novamente, configure `DENGUE_ENV` no ambiente apontando para um `.e
 ## Executar nesta pasta
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt -r database/requirements-extracao.txt
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe scripts/executar_notebook_coleta_postgresql.py
 ```
 
-O executor usa o Python que o iniciou e salva o notebook apenas após sucesso integral. `scripts/verificar_notebook.py` também encaminha a execução para esse mesmo executor em kernel real.
+O executor usa o Python que o iniciou e salva o notebook apenas após sucesso integral.
 
 ## Integração e saídas
 
@@ -28,7 +28,7 @@ As notificações são lidas em blocos de 200 mil registros. A integração mant
 | Região-ano | 26 |
 | Cobertura populacional por UF-ano | 234 |
 
-Os caminhos e hashes estão no [comprovante da integração](../data/metadata/postgresql/relatorio_2000_2025/20261113_221719/integracoes/20261113_222826.json). Cada execução cria uma subpasta própria em `data/processed/postgresql/relatorio_2000_2025/`, preservando as anteriores. Os registros individuais continuam em `data/raw/postgresql/`, ignorado pelo Git. O notebook e o HTML mostram somente tabelas agregadas e metadados.
+Os caminhos e hashes estão no [comprovante da integração](../data/metadata/postgresql/relatorio_2000_2025/20261113_221719/integracoes/20261113_224149.json). Cada execução cria uma subpasta própria em `data/processed/postgresql/relatorio_2000_2025/`, preservando as anteriores. Os registros individuais continuam em `data/raw/postgresql/`, ignorado pelo Git. O notebook e o HTML mostram somente tabelas agregadas e metadados.
 
 ## Verificações realizadas
 
@@ -43,10 +43,10 @@ Os caminhos e hashes estão no [comprovante da integração](../data/metadata/po
 
 O [registro da execução](../database/validacao/notebook01_execucao.json) reúne essas evidências. Isso não substitui revisão pessoal do grupo; decisões pendentes e limitações das fontes continuam abertas. Os métodos de P1–P4 não foram reestimados nesta etapa.
 
-## Preservação do pipeline anterior
+## Arquivo externo do pipeline anterior
 
-O notebook anterior está em `historico/notebooks/01_coleta_integracao_pipeline_anterior.ipynb`, com hash em `preservacao_01.json`. Os originais de `preparar_documentacao.py` e `verificar_notebook.py` foram preservados em `historico/scripts/`.
-
-O gerador antigo `scripts/preparar_documentacao.py` agora grava seu notebook em `historico/gerados/01_coleta_integracao.ipynb`, sem sobrescrever a versão PostgreSQL nem a cópia histórica. Esse gerador continua pertencendo ao pipeline anterior. O notebook `02_limpeza_eda.ipynb` também permanece nessa versão anterior; ele não foi executado nem adaptado nesta tarefa e não constitui a continuação automática do novo primeiro notebook.
+O notebook e os scripts anteriores, a antiga etapa 02, seus resultados e o backup completo foram retirados da pasta ativa e preservados externamente. Consulte [organização e recuperação](limpeza_repositorio.md). A etapa ativa contém somente o primeiro notebook PostgreSQL; as etapas seguintes serão desenvolvidas sobre esse fluxo.
 
 Nenhum commit ou push foi realizado.
+
+Após a limpeza, o notebook foi reexecutado em kernel real; os quatro CSVs integrados permaneceram idênticos por SHA-256 aos resultados previamente conferidos.

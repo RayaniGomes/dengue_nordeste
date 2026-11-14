@@ -7802,10 +7802,10 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="01-%E2%80%94-Coleta-e-integra%C3%A7%C3%A3o-pelo-PostgreSQL">01 — Coleta e integração pelo PostgreSQL<a class="anchor-link" href="#01-%E2%80%94-Coleta-e-integra%C3%A7%C3%A3o-pelo-PostgreSQL">¶</a></h1><p><strong>Dengue no Nordeste brasileiro — 2000–2025 · IMD1151, 2026.2</strong></p>
+<h1 id="01-%E2%80%94-Coleta-e-integra%C3%A7%C3%A3o">01 — Coleta e integração<a class="anchor-link" href="#01-%E2%80%94-Coleta-e-integra%C3%A7%C3%A3o">¶</a></h1><p><strong>Dengue no Nordeste brasileiro — 2000–2025 · IMD1151, 2026.2</strong></p>
 <p>Este notebook extrai ou reutiliza a base tratada do PostgreSQL e a integra à população e ao cadastro municipal do mesmo snapshot. A etapa termina com painéis agregados e verificações de integridade; não reestima testes nem altera as regras epidemiológicas.</p>
-<p>Fontes originais: SINAN/OpenDataSUS e IBGE/SIDRA/Localidades. Fonte imediata: esquema <code>public</code> do banco <code>dengue-eda</code>, versão usada no relatório revisado. <strong>2026 é excluído.</strong> A coleta bruta <code>coleta_20261113</code> é outra versão.</p>
-<p>O notebook anterior foi preservado em <code>historico/notebooks/01_coleta_integracao_pipeline_anterior.ipynb</code>. O notebook <code>02_limpeza_eda.ipynb</code> ainda pertence ao pipeline anterior e não é executado por esta etapa.</p>
+<p>Fontes originais: SINAN/OpenDataSUS e IBGE/SIDRA/Localidades.</p>
+<p>O notebook anterior e a antiga etapa 02 foram arquivados fora do repositório. Consulte <code>docs/limpeza_repositorio.md</code> para sua localização. A pasta ativa contém o primeiro notebook do fluxo PostgreSQL.</p>
 </div>
 </div>
 </div>
@@ -7816,7 +7816,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Ambiente-e-configura%C3%A7%C3%A3o">1. Ambiente e configuração<a class="anchor-link" href="#1.-Ambiente-e-configura%C3%A7%C3%A3o">¶</a></h2><p>Execute com o ambiente <code>.venv</code> do repositório. As dependências de extração estão em <code>database/requirements-extracao.txt</code>; pandas e Jupyter constam de <code>requirements.txt</code>.</p>
+<h2 id="1.-Ambiente-e-configura%C3%A7%C3%A3o">1. Ambiente e configuração<a class="anchor-link" href="#1.-Ambiente-e-configura%C3%A7%C3%A3o">¶</a></h2><p>Execute com o ambiente <code>.venv</code> do repositório. As dependências do fluxo ativo estão reunidas em <code>requirements.txt</code>.</p>
 <p>Por padrão, este notebook aproveita a extração concluída mais recente e verifica seus hashes. Para consultar novamente o banco, use <code>REEXTRAIR = True</code> e configure <code>DENGUE_ENV</code> no ambiente, apontando para um <code>.env</code> privado, ou use <code>.env</code> na raiz. O banco precisa estar em execução. A conexão de extração é somente de leitura, com isolamento REPEATABLE READ. Senhas não são exibidas nem salvas no notebook.</p>
 </div>
 </div>
@@ -8593,7 +8593,7 @@ Manifesto: data/metadata/postgresql/relatorio_2000_2025/20261113_221719/manifest
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Integração: concluido
-Comprovante: data/metadata/postgresql/relatorio_2000_2025/20261113_221719/integracoes/20261113_222826.json
+Comprovante: data/metadata/postgresql/relatorio_2000_2025/20261113_221719/integracoes/20261113_224149.json
 </pre>
 </div>
 </div>

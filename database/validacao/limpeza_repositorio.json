@@ -1,0 +1,1391 @@
+{
+  "status": "concluida_e_validada",
+  "origem": "D:\\Users\\Rayani\\Documents\\GitHub\\dengue_nordeste",
+  "arquivo_externo": "D:\\Users\\Rayani\\Downloads\\codex\\Ciências de Dados\\backups_integracao\\limpeza_repositorio_20261113_223923",
+  "selecionados": [
+    "data\\interim",
+    "data\\metadata\\ambiente_execucao.json",
+    "data\\metadata\\auditoria_sinan_2000.json",
+    "data\\metadata\\auditoria_sinan_2001.json",
+    "data\\metadata\\auditoria_sinan_2002.json",
+    "data\\metadata\\auditoria_sinan_2003.json",
+    "data\\metadata\\auditoria_sinan_2004.json",
+    "data\\metadata\\auditoria_sinan_2005.json",
+    "data\\metadata\\auditoria_sinan_2006.json",
+    "data\\metadata\\auditoria_sinan_2007.json",
+    "data\\metadata\\auditoria_sinan_2008.json",
+    "data\\metadata\\auditoria_sinan_2009.json",
+    "data\\metadata\\auditoria_sinan_2010.json",
+    "data\\metadata\\auditoria_sinan_2011.json",
+    "data\\metadata\\auditoria_sinan_2012.json",
+    "data\\metadata\\auditoria_sinan_2013.json",
+    "data\\metadata\\auditoria_sinan_2014.json",
+    "data\\metadata\\auditoria_sinan_2015.json",
+    "data\\metadata\\auditoria_sinan_2016.json",
+    "data\\metadata\\auditoria_sinan_2017.json",
+    "data\\metadata\\auditoria_sinan_2018.json",
+    "data\\metadata\\auditoria_sinan_2019.json",
+    "data\\metadata\\auditoria_sinan_2020.json",
+    "data\\metadata\\auditoria_sinan_2021.json",
+    "data\\metadata\\auditoria_sinan_2022.json",
+    "data\\metadata\\auditoria_sinan_2023.json",
+    "data\\metadata\\auditoria_sinan_2024.json",
+    "data\\metadata\\auditoria_sinan_2025.json",
+    "data\\metadata\\catalogo_sinan.json",
+    "data\\metadata\\complemento_2026.json",
+    "data\\metadata\\diagnostico_etapa2.json",
+    "data\\metadata\\manifesto_extracao.json",
+    "data\\metadata\\manifesto_referencias_etapa2.json",
+    "data\\metadata\\status_coleta.json",
+    "data\\metadata\\validacao_etapa2.json",
+    "data\\metadata\\validacao_integracao.json",
+    "data\\processed\\classificacao_estado_ano.csv",
+    "data\\processed\\cobertura_anual.csv",
+    "data\\processed\\dengue_estado_ano.csv",
+    "data\\processed\\dengue_estado_mes_notificacao.csv",
+    "data\\processed\\dengue_municipio_ano.csv",
+    "data\\processed\\etapa2",
+    "data\\processed\\pendencias_integracao.csv",
+    "data\\processed\\populacao_nordeste.csv",
+    "data\\raw\\ibge",
+    "data\\raw\\sinan",
+    "database\\backups",
+    "database\\requirements-extracao.txt",
+    "docs\\dicionario_dados.csv",
+    "docs\\dicionario_etapa2.csv",
+    "docs\\metodologia_etapa1.md",
+    "docs\\metodologia_etapa2.md",
+    "docs\\resultados_etapa2.md",
+    "historico",
+    "notebooks\\02_limpeza_eda.ipynb",
+    "outputs\\etapa2",
+    "scripts\\__pycache__",
+    "scripts\\coletar_complemento_2026.py",
+    "scripts\\coletar_referencias_etapa2.py",
+    "scripts\\coletar.py",
+    "scripts\\diagnosticar_etapa2.py",
+    "scripts\\documentar_etapa2.py",
+    "scripts\\empacotar_etapa2.py",
+    "scripts\\executar_etapa2.py",
+    "scripts\\executar_notebook_etapa2.py",
+    "scripts\\gerar_resumo.py",
+    "scripts\\graficos_etapa2.py",
+    "scripts\\integrar.py",
+    "scripts\\limpar_analisar.py",
+    "scripts\\preparar_documentacao.py",
+    "scripts\\testar_regras_etapa2.py",
+    "scripts\\validar_etapa2.py",
+    "scripts\\validar.py",
+    "scripts\\verificar_notebook.py",
+    "tmp",
+    "data\\processed\\postgresql\\relatorio_2000_2025\\20261113_221719\\integracao\\20261113_222826",
+    "data\\metadata\\postgresql\\relatorio_2000_2025\\20261113_221719\\integracoes\\20261113_222826.json"
+  ],
+  "movidos": [
+    "data\\interim",
+    "data\\metadata\\ambiente_execucao.json",
+    "data\\metadata\\auditoria_sinan_2000.json",
+    "data\\metadata\\auditoria_sinan_2001.json",
+    "data\\metadata\\auditoria_sinan_2002.json",
+    "data\\metadata\\auditoria_sinan_2003.json",
+    "data\\metadata\\auditoria_sinan_2004.json",
+    "data\\metadata\\auditoria_sinan_2005.json",
+    "data\\metadata\\auditoria_sinan_2006.json",
+    "data\\metadata\\auditoria_sinan_2007.json",
+    "data\\metadata\\auditoria_sinan_2008.json",
+    "data\\metadata\\auditoria_sinan_2009.json",
+    "data\\metadata\\auditoria_sinan_2010.json",
+    "data\\metadata\\auditoria_sinan_2011.json",
+    "data\\metadata\\auditoria_sinan_2012.json",
+    "data\\metadata\\auditoria_sinan_2013.json",
+    "data\\metadata\\auditoria_sinan_2014.json",
+    "data\\metadata\\auditoria_sinan_2015.json",
+    "data\\metadata\\auditoria_sinan_2016.json",
+    "data\\metadata\\auditoria_sinan_2017.json",
+    "data\\metadata\\auditoria_sinan_2018.json",
+    "data\\metadata\\auditoria_sinan_2019.json",
+    "data\\metadata\\auditoria_sinan_2020.json",
+    "data\\metadata\\auditoria_sinan_2021.json",
+    "data\\metadata\\auditoria_sinan_2022.json",
+    "data\\metadata\\auditoria_sinan_2023.json",
+    "data\\metadata\\auditoria_sinan_2024.json",
+    "data\\metadata\\auditoria_sinan_2025.json",
+    "data\\metadata\\catalogo_sinan.json",
+    "data\\metadata\\complemento_2026.json",
+    "data\\metadata\\diagnostico_etapa2.json",
+    "data\\metadata\\manifesto_extracao.json",
+    "data\\metadata\\manifesto_referencias_etapa2.json",
+    "data\\metadata\\status_coleta.json",
+    "data\\metadata\\validacao_etapa2.json",
+    "data\\metadata\\validacao_integracao.json",
+    "data\\processed\\classificacao_estado_ano.csv",
+    "data\\processed\\cobertura_anual.csv",
+    "data\\processed\\dengue_estado_ano.csv",
+    "data\\processed\\dengue_estado_mes_notificacao.csv",
+    "data\\processed\\dengue_municipio_ano.csv",
+    "data\\processed\\etapa2",
+    "data\\processed\\pendencias_integracao.csv",
+    "data\\processed\\populacao_nordeste.csv",
+    "data\\raw\\ibge",
+    "data\\raw\\sinan",
+    "database\\backups",
+    "database\\requirements-extracao.txt",
+    "docs\\dicionario_dados.csv",
+    "docs\\dicionario_etapa2.csv",
+    "docs\\metodologia_etapa1.md",
+    "docs\\metodologia_etapa2.md",
+    "docs\\resultados_etapa2.md",
+    "historico",
+    "notebooks\\02_limpeza_eda.ipynb",
+    "outputs\\etapa2",
+    "scripts\\__pycache__",
+    "scripts\\coletar_complemento_2026.py",
+    "scripts\\coletar_referencias_etapa2.py",
+    "scripts\\coletar.py",
+    "scripts\\diagnosticar_etapa2.py",
+    "scripts\\documentar_etapa2.py",
+    "scripts\\empacotar_etapa2.py",
+    "scripts\\executar_etapa2.py",
+    "scripts\\executar_notebook_etapa2.py",
+    "scripts\\gerar_resumo.py",
+    "scripts\\graficos_etapa2.py",
+    "scripts\\integrar.py",
+    "scripts\\limpar_analisar.py",
+    "scripts\\preparar_documentacao.py",
+    "scripts\\testar_regras_etapa2.py",
+    "scripts\\validar_etapa2.py",
+    "scripts\\validar.py",
+    "scripts\\verificar_notebook.py",
+    "tmp",
+    "data\\processed\\postgresql\\relatorio_2000_2025\\20261113_221719\\integracao\\20261113_222826",
+    "data\\metadata\\postgresql\\relatorio_2000_2025\\20261113_221719\\integracoes\\20261113_222826.json"
+  ],
+  "arquivos": [
+    {
+      "arquivo": "data\\interim\\sinan_ne_2000.csv.gz",
+      "bytes": 542345
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2001.csv.gz",
+      "bytes": 1173683
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2002.csv.gz",
+      "bytes": 2072591
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2003.csv.gz",
+      "bytes": 1434892
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2004.csv.gz",
+      "bytes": 335193
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2005.csv.gz",
+      "bytes": 899374
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2006.csv.gz",
+      "bytes": 795867
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2007.csv.gz",
+      "bytes": 1280909
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2008.csv.gz",
+      "bytes": 1939872
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2009.csv.gz",
+      "bytes": 1156313
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2010.csv.gz",
+      "bytes": 1611053
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2011.csv.gz",
+      "bytes": 3088858
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2012.csv.gz",
+      "bytes": 2474790
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2013.csv.gz",
+      "bytes": 1842744
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2014.csv.gz",
+      "bytes": 658353
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2015.csv.gz",
+      "bytes": 2398643
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2016.csv.gz",
+      "bytes": 3906795
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2017.csv.gz",
+      "bytes": 1236453
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2018.csv.gz",
+      "bytes": 892872
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2019.csv.gz",
+      "bytes": 2547463
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2020.csv.gz",
+      "bytes": 1812171
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2021.csv.gz",
+      "bytes": 1698150
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2022.csv.gz",
+      "bytes": 1936984
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2023.csv.gz",
+      "bytes": 715789
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2024.csv.gz",
+      "bytes": 2328624
+    },
+    {
+      "arquivo": "data\\interim\\sinan_ne_2025.csv.gz",
+      "bytes": 805370
+    },
+    {
+      "arquivo": "data\\metadata\\ambiente_execucao.json",
+      "bytes": 780
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2000.json",
+      "bytes": 2655
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2001.json",
+      "bytes": 2677
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2002.json",
+      "bytes": 2680
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2003.json",
+      "bytes": 2676
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2004.json",
+      "bytes": 2653
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2005.json",
+      "bytes": 2658
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2006.json",
+      "bytes": 2657
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2007.json",
+      "bytes": 1938
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2008.json",
+      "bytes": 1940
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2009.json",
+      "bytes": 1989
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2010.json",
+      "bytes": 1994
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2011.json",
+      "bytes": 1991
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2012.json",
+      "bytes": 1992
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2013.json",
+      "bytes": 1996
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2014.json",
+      "bytes": 2947
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2015.json",
+      "bytes": 2954
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2016.json",
+      "bytes": 2984
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2017.json",
+      "bytes": 2920
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2018.json",
+      "bytes": 2925
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2019.json",
+      "bytes": 2930
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2020.json",
+      "bytes": 2965
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2021.json",
+      "bytes": 2980
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2022.json",
+      "bytes": 2960
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2023.json",
+      "bytes": 2957
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2024.json",
+      "bytes": 2947
+    },
+    {
+      "arquivo": "data\\metadata\\auditoria_sinan_2025.json",
+      "bytes": 2964
+    },
+    {
+      "arquivo": "data\\metadata\\catalogo_sinan.json",
+      "bytes": 72766
+    },
+    {
+      "arquivo": "data\\metadata\\complemento_2026.json",
+      "bytes": 1242
+    },
+    {
+      "arquivo": "data\\metadata\\diagnostico_etapa2.json",
+      "bytes": 21054
+    },
+    {
+      "arquivo": "data\\metadata\\manifesto_extracao.json",
+      "bytes": 51370
+    },
+    {
+      "arquivo": "data\\metadata\\manifesto_referencias_etapa2.json",
+      "bytes": 7254
+    },
+    {
+      "arquivo": "data\\metadata\\status_coleta.json",
+      "bytes": 331
+    },
+    {
+      "arquivo": "data\\metadata\\validacao_etapa2.json",
+      "bytes": 5853
+    },
+    {
+      "arquivo": "data\\metadata\\validacao_integracao.json",
+      "bytes": 82086
+    },
+    {
+      "arquivo": "data\\processed\\classificacao_estado_ano.csv",
+      "bytes": 43337
+    },
+    {
+      "arquivo": "data\\processed\\cobertura_anual.csv",
+      "bytes": 489
+    },
+    {
+      "arquivo": "data\\processed\\dengue_estado_ano.csv",
+      "bytes": 51936
+    },
+    {
+      "arquivo": "data\\processed\\dengue_estado_mes_notificacao.csv",
+      "bytes": 52303
+    },
+    {
+      "arquivo": "data\\processed\\dengue_municipio_ano.csv",
+      "bytes": 11230901
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\atrasos_notificacao.csv",
+      "bytes": 9618
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\auditoria_limpeza.csv",
+      "bytes": 3064
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\classificacoes_harmonizadas.csv",
+      "bytes": 5357
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\cobertura_municipal.csv",
+      "bytes": 620
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\estado_ano_limpo.csv",
+      "bytes": 32231
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\estado_mes_sintomas.csv",
+      "bytes": 83717
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\estatisticas_estaduais.csv",
+      "bytes": 2478
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\municipio_ano_limpo.csv",
+      "bytes": 9189102
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\nordeste_ano.csv",
+      "bytes": 1703
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\notificacoes_por_data.csv",
+      "bytes": 3581
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\outliers_estaduais.csv",
+      "bytes": 1648
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\outliers_municipais.csv",
+      "bytes": 867250
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\ranking_municipios_2024.csv",
+      "bytes": 4721
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\sazonalidade_estados.csv",
+      "bytes": 3846
+    },
+    {
+      "arquivo": "data\\processed\\etapa2\\sazonalidade_nordeste.csv",
+      "bytes": 206
+    },
+    {
+      "arquivo": "data\\processed\\pendencias_integracao.csv",
+      "bytes": 1689907
+    },
+    {
+      "arquivo": "data\\processed\\populacao_nordeste.csv",
+      "bytes": 10714200
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\metadados_202.json",
+      "bytes": 475
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\metadados_202.json.meta.json",
+      "bytes": 399
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\metadados_4714.json",
+      "bytes": 381
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\metadados_4714.json.meta.json",
+      "bytes": 401
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\metadados_6579.json",
+      "bytes": 298
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\metadados_6579.json.meta.json",
+      "bytes": 401
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\metadados_793.json",
+      "bytes": 284
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\metadados_793.json.meta.json",
+      "bytes": 399
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\periodos_6579.json",
+      "bytes": 218
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\periodos_6579.json.meta.json",
+      "bytes": 399
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2000_N3.json",
+      "bytes": 1359
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2000_N3.json.meta.json",
+      "bytes": 588
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2000_N6.json",
+      "bytes": 222135
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2000_N6.json.meta.json",
+      "bytes": 594
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2001_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2001_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2001_N6.json",
+      "bytes": 222031
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2001_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2002_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2002_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2002_N6.json",
+      "bytes": 222029
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2002_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2003_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2003_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2003_N6.json",
+      "bytes": 222032
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2003_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2004_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2004_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2004_N6.json",
+      "bytes": 222041
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2004_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2005_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2005_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2005_N6.json",
+      "bytes": 222037
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2005_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2006_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2006_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2006_N6.json",
+      "bytes": 222042
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2006_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2007_N3.json",
+      "bytes": 1238
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2007_N3.json.meta.json",
+      "bytes": 581
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2007_N6.json",
+      "bytes": 221940
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2007_N6.json.meta.json",
+      "bytes": 587
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2008_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2008_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2008_N6.json",
+      "bytes": 222091
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2008_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2009_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2009_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2009_N6.json",
+      "bytes": 222092
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2009_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2010_N3.json",
+      "bytes": 1359
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2010_N3.json.meta.json",
+      "bytes": 588
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2010_N6.json",
+      "bytes": 222219
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2010_N6.json.meta.json",
+      "bytes": 594
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2011_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2011_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2011_N6.json",
+      "bytes": 222112
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2011_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2012_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2012_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2012_N6.json",
+      "bytes": 222109
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2012_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2013_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2013_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2013_N6.json",
+      "bytes": 222122
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2013_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2014_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2014_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2014_N6.json",
+      "bytes": 222128
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2014_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2015_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2015_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2015_N6.json",
+      "bytes": 222133
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2015_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2016_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2016_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2016_N6.json",
+      "bytes": 222132
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2016_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2017_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2017_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2017_N6.json",
+      "bytes": 222128
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2017_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2018_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2018_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2018_N6.json",
+      "bytes": 222122
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2018_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2019_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2019_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2019_N6.json",
+      "bytes": 222123
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2019_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2020_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2020_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2020_N6.json",
+      "bytes": 222123
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2020_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2021_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2021_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2021_N6.json",
+      "bytes": 222122
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2021_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2022_N3.json",
+      "bytes": 1238
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2022_N3.json.meta.json",
+      "bytes": 566
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2022_N6.json",
+      "bytes": 222088
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2022_N6.json.meta.json",
+      "bytes": 572
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2024_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2024_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2024_N6.json",
+      "bytes": 222120
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2024_N6.json.meta.json",
+      "bytes": 582
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2025_N3.json",
+      "bytes": 1249
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2025_N3.json.meta.json",
+      "bytes": 576
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2025_N6.json",
+      "bytes": 28594
+    },
+    {
+      "arquivo": "data\\raw\\ibge\\pop_2025_N6.json.meta.json",
+      "bytes": 581
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\catalogo.html",
+      "bytes": 159002
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\catalogo.html.meta.json",
+      "bytes": 428
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR00.csv.zip",
+      "bytes": 2638386
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR00.csv.zip.meta.json",
+      "bytes": 640
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR01.csv.zip",
+      "bytes": 8226171
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR01.csv.zip.meta.json",
+      "bytes": 640
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR02.csv.zip",
+      "bytes": 17289160
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR02.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR03.csv.zip",
+      "bytes": 10643661
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR03.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR04.csv.zip",
+      "bytes": 4257368
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR04.csv.zip.meta.json",
+      "bytes": 640
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR05.csv.zip",
+      "bytes": 7504578
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR05.csv.zip.meta.json",
+      "bytes": 640
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR06.csv.zip",
+      "bytes": 11977049
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR06.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR07.csv.zip",
+      "bytes": 11819209
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR07.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR08.csv.zip",
+      "bytes": 13592752
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR08.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR09.csv.zip",
+      "bytes": 9717043
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR09.csv.zip.meta.json",
+      "bytes": 642
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR10.csv.zip",
+      "bytes": 21205559
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR10.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR11.csv.zip",
+      "bytes": 38725577
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR11.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR12.csv.zip",
+      "bytes": 20120905
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR12.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR13.csv.zip",
+      "bytes": 40957173
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR13.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR14.csv.zip",
+      "bytes": 14095842
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR14.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR15.csv.zip",
+      "bytes": 43993756
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR15.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR16.csv.zip",
+      "bytes": 65535031
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR16.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR17.csv.zip",
+      "bytes": 15748185
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR17.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR18.csv.zip",
+      "bytes": 14848857
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR18.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR19.csv.zip",
+      "bytes": 75137086
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR19.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR20.csv.zip",
+      "bytes": 44632325
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR20.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR21.csv.zip",
+      "bytes": 29616632
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR21.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR22.csv.zip",
+      "bytes": 41866445
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR22.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR23.csv.zip",
+      "bytes": 39499188
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR23.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR24.csv.zip",
+      "bytes": 187264443
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR24.csv.zip.meta.json",
+      "bytes": 645
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR25.csv.zip",
+      "bytes": 41648790
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\DENGBR25.csv.zip.meta.json",
+      "bytes": 643
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\dicionario_dengue_oficial.pdf",
+      "bytes": 387274
+    },
+    {
+      "arquivo": "data\\raw\\sinan\\dicionario_dengue_oficial.pdf.meta.json",
+      "bytes": 515
+    },
+    {
+      "arquivo": "database\\backups\\dengue-eda_completo_2026-11-13.dump",
+      "bytes": 3371550780
+    },
+    {
+      "arquivo": "database\\backups\\pg_dump.log",
+      "bytes": 6578
+    },
+    {
+      "arquivo": "database\\backups\\pg_restore_verificacao.log",
+      "bytes": 0
+    },
+    {
+      "arquivo": "database\\requirements-extracao.txt",
+      "bytes": 40
+    },
+    {
+      "arquivo": "docs\\dicionario_dados.csv",
+      "bytes": 4904
+    },
+    {
+      "arquivo": "docs\\dicionario_etapa2.csv",
+      "bytes": 3170
+    },
+    {
+      "arquivo": "docs\\metodologia_etapa1.md",
+      "bytes": 4036
+    },
+    {
+      "arquivo": "docs\\metodologia_etapa2.md",
+      "bytes": 9877
+    },
+    {
+      "arquivo": "docs\\resultados_etapa2.md",
+      "bytes": 6911
+    },
+    {
+      "arquivo": "historico\\notebooks\\01_coleta_integracao_pipeline_anterior.ipynb",
+      "bytes": 21773
+    },
+    {
+      "arquivo": "historico\\notebooks\\preservacao_01.json",
+      "bytes": 252
+    },
+    {
+      "arquivo": "historico\\scripts\\preparar_documentacao.py",
+      "bytes": 13572
+    },
+    {
+      "arquivo": "historico\\scripts\\preservacao.json",
+      "bytes": 310
+    },
+    {
+      "arquivo": "historico\\scripts\\verificar_notebook.py",
+      "bytes": 1124
+    },
+    {
+      "arquivo": "notebooks\\02_limpeza_eda.ipynb",
+      "bytes": 1940389
+    },
+    {
+      "arquivo": "outputs\\etapa2\\01_evolucao_temporal.png",
+      "bytes": 169677
+    },
+    {
+      "arquivo": "outputs\\etapa2\\02_incidencia_estado_ano.png",
+      "bytes": 95335
+    },
+    {
+      "arquivo": "outputs\\etapa2\\03_comparacao_estados_2025.png",
+      "bytes": 65964
+    },
+    {
+      "arquivo": "outputs\\etapa2\\04_sazonalidade.png",
+      "bytes": 220240
+    },
+    {
+      "arquivo": "outputs\\etapa2\\05_distribuicoes_municipais.png",
+      "bytes": 92808
+    },
+    {
+      "arquivo": "outputs\\etapa2\\06_ranking_municipal.png",
+      "bytes": 102679
+    },
+    {
+      "arquivo": "outputs\\etapa2\\07_populacao_casos.png",
+      "bytes": 292896
+    },
+    {
+      "arquivo": "outputs\\etapa2\\08_mapas_estaduais.png",
+      "bytes": 231646
+    },
+    {
+      "arquivo": "outputs\\etapa2\\09_qualidade_classificacao.png",
+      "bytes": 135220
+    },
+    {
+      "arquivo": "outputs\\etapa2\\figuras.json",
+      "bytes": 296
+    },
+    {
+      "arquivo": "outputs\\etapa2\\relatorio_eda.html",
+      "bytes": 1885976
+    },
+    {
+      "arquivo": "scripts\\__pycache__\\coletar.cpython-312.pyc",
+      "bytes": 12745
+    },
+    {
+      "arquivo": "scripts\\__pycache__\\coletar.cpython-314.pyc",
+      "bytes": 13613
+    },
+    {
+      "arquivo": "scripts\\__pycache__\\integrar_postgresql.cpython-314.pyc",
+      "bytes": 18277
+    },
+    {
+      "arquivo": "scripts\\__pycache__\\integrar.cpython-312.pyc",
+      "bytes": 21987
+    },
+    {
+      "arquivo": "scripts\\__pycache__\\integrar.cpython-314.pyc",
+      "bytes": 23081
+    },
+    {
+      "arquivo": "scripts\\__pycache__\\validar.cpython-314.pyc",
+      "bytes": 6220
+    },
+    {
+      "arquivo": "scripts\\__pycache__\\verificar_notebook.cpython-314.pyc",
+      "bytes": 2197
+    },
+    {
+      "arquivo": "scripts\\coletar_complemento_2026.py",
+      "bytes": 3722
+    },
+    {
+      "arquivo": "scripts\\coletar_referencias_etapa2.py",
+      "bytes": 1772
+    },
+    {
+      "arquivo": "scripts\\coletar.py",
+      "bytes": 7514
+    },
+    {
+      "arquivo": "scripts\\diagnosticar_etapa2.py",
+      "bytes": 1588
+    },
+    {
+      "arquivo": "scripts\\documentar_etapa2.py",
+      "bytes": 21201
+    },
+    {
+      "arquivo": "scripts\\empacotar_etapa2.py",
+      "bytes": 854
+    },
+    {
+      "arquivo": "scripts\\executar_etapa2.py",
+      "bytes": 1275
+    },
+    {
+      "arquivo": "scripts\\executar_notebook_etapa2.py",
+      "bytes": 925
+    },
+    {
+      "arquivo": "scripts\\gerar_resumo.py",
+      "bytes": 4654
+    },
+    {
+      "arquivo": "scripts\\graficos_etapa2.py",
+      "bytes": 10352
+    },
+    {
+      "arquivo": "scripts\\integrar.py",
+      "bytes": 13078
+    },
+    {
+      "arquivo": "scripts\\limpar_analisar.py",
+      "bytes": 19682
+    },
+    {
+      "arquivo": "scripts\\preparar_documentacao.py",
+      "bytes": 13734
+    },
+    {
+      "arquivo": "scripts\\testar_regras_etapa2.py",
+      "bytes": 3821
+    },
+    {
+      "arquivo": "scripts\\validar_etapa2.py",
+      "bytes": 3141
+    },
+    {
+      "arquivo": "scripts\\validar.py",
+      "bytes": 2968
+    },
+    {
+      "arquivo": "scripts\\verificar_notebook.py",
+      "bytes": 294
+    },
+    {
+      "arquivo": "data\\processed\\postgresql\\relatorio_2000_2025\\20261113_221719\\integracao\\20261113_222826\\cobertura_populacao_uf_ano.csv",
+      "bytes": 3575
+    },
+    {
+      "arquivo": "data\\processed\\postgresql\\relatorio_2000_2025\\20261113_221719\\integracao\\20261113_222826\\painel_municipio_ano.csv",
+      "bytes": 4000852
+    },
+    {
+      "arquivo": "data\\processed\\postgresql\\relatorio_2000_2025\\20261113_221719\\integracao\\20261113_222826\\painel_regiao_ano.csv",
+      "bytes": 1939
+    },
+    {
+      "arquivo": "data\\processed\\postgresql\\relatorio_2000_2025\\20261113_221719\\integracao\\20261113_222826\\painel_uf_ano.csv",
+      "bytes": 15545
+    },
+    {
+      "arquivo": "data\\metadata\\postgresql\\relatorio_2000_2025\\20261113_221719\\integracoes\\20261113_222826.json",
+      "bytes": 2501
+    }
+  ],
+  "metodo": "Move-Item no mesmo volume, com verificacao de caminho e tamanho; sem exclusao definitiva",
+  "quantidade_arquivos": 304,
+  "bytes_arquivados": 4295526598,
+  "concluido_em": "2026-11-13T22:44:25.841770-03:00",
+  "verificacao_notebook": {
+    "kernel_real": true,
+    "celulas_codigo": 6,
+    "erros": 0,
+    "paineis_identicos_por_sha256": 4
+  }
+}

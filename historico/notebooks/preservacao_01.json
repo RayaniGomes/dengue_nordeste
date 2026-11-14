@@ -1,5 +1,0 @@
-{
-  "arquivo": "historico/notebooks/01_coleta_integracao_pipeline_anterior.ipynb",
-  "sha256": "e7cb5b73bacb8a6d317654a36e95bb1e64da3b9ad6358d02c1eb6e7b1c685575",
-  "motivo": "Preservar o notebook do pipeline anterior antes da versao PostgreSQL."
-}

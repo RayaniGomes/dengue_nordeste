@@ -1,5 +1,6 @@
-pandas>=2.2,<4.0
-matplotlib>=3.10,<4.0
+pandas>=2.3,<4.0
 jupyterlab>=4.2,<5.0
 ipykernel>=6.29,<8.0
 nbclient>=0.10,<1.0
+psycopg[binary]>=3.2
+python-dotenv>=1.0
