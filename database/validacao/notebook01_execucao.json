@@ -1,0 +1,31 @@
+{
+  "notebook": "notebooks/01_coleta_integracao.ipynb",
+  "sha256": "e60f1b377b6a07c8384b130e3b0ee8e46cbb396d8de9a5d596924abecf7ce477",
+  "kernel_real": true,
+  "celulas_codigo_executadas": 6,
+  "erros": 0,
+  "manifesto_integracao": "data/metadata/postgresql/relatorio_2000_2025/20261113_221719/integracoes/20261113_222826.json",
+  "comparacoes_com_relatorio": [
+    {
+      "painel": "painel_uf_ano",
+      "linhas": 234,
+      "referencia": "incidencia_estado_ano.csv",
+      "contagens_e_populacao": "iguais",
+      "taxas": "rtol 1e-12, atol 1e-10"
+    },
+    {
+      "painel": "painel_regiao_ano",
+      "linhas": 26,
+      "referencia": "incidencia_nordeste_ano.csv",
+      "contagens_e_populacao": "iguais",
+      "taxas": "rtol 1e-12, atol 1e-10"
+    }
+  ],
+  "notebook_anterior_preservado": {
+    "arquivo": "historico/notebooks/01_coleta_integracao_pipeline_anterior.ipynb",
+    "sha256": "e7cb5b73bacb8a6d317654a36e95bb1e64da3b9ad6358d02c1eb6e7b1c685575",
+    "motivo": "Preservar o notebook do pipeline anterior antes da versao PostgreSQL."
+  },
+  "modo_da_execucao": "cache extraido previamente do PostgreSQL e conferido por SHA-256; REEXTRAIR=False",
+  "html": "outputs/postgresql/01_coleta_integracao.html"
+}

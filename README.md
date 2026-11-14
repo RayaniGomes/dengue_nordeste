@@ -1,10 +1,22 @@
 # Dengue no Nordeste — coleta, limpeza e análise exploratória
 
+## Primeiro notebook: coleta e integração PostgreSQL
+
+Abra [01_coleta_integracao.ipynb](notebooks/01_coleta_integracao.ipynb), já executado com saídas, ou a [versão HTML](outputs/postgresql/01_coleta_integracao.html). Ele integra a base tratada de 2000–2025 à população e ao cadastro municipal, valida as chaves e concilia as contagens. Veja [execução, verificações e histórico](docs/notebook01_postgresql.md).
+
+```powershell
+.\.venv\Scripts\python.exe scripts/executar_notebook_coleta_postgresql.py
+```
+
+A execução padrão confere e integra a extração local mais recente; `REEXTRAIR = True` no notebook consulta novamente o banco usando configuração privada. O notebook 02 e as seções do pipeline anterior abaixo ainda correspondem à versão anterior, com escolhas metodológicas próprias.
+
 ## Banco PostgreSQL
 
 O [pacote PostgreSQL](database/README.md) contém a estrutura SQL, a proveniência da coleta e os comandos de restauração e reprodução. O backup completo fica localmente em `database/backups/`, fora do versionamento. Esse banco pertence ao pipeline revisado descrito no pacote; os arquivos anteriores desta raiz mantêm suas decisões metodológicas originais.
 
-## Etapa 2 pronta: limpeza e EDA
+A [extração da base tratada pelo PostgreSQL](docs/extracao_postgresql.md) foi executada nesta pasta: 5.474.491 notificações de 2000–2025, incluindo 4.178.450 casos prováveis, com contagens conferidas no banco e nos CSVs.
+
+## Pipeline anterior — Etapa 2: limpeza e EDA
 
 Abra [o notebook de limpeza e EDA](notebooks/02_limpeza_eda.ipynb), [os resultados](docs/resultados_etapa2.md) e [a metodologia](docs/metodologia_etapa2.md). O relatório visual completo está em `outputs/etapa2/relatorio_eda.html`; baixe e abra no navegador. Ele contém as imagens incorporadas e funciona offline.
 
@@ -38,7 +50,7 @@ Os testes das regras cobrem descarte, códigos históricos, inconclusivos, dupli
 
 ---
 
-## Etapa 1: coleta e integração
+## Pipeline anterior — Etapa 1: coleta e integração
 
 Projeto IMD1151, 2026.2. Recorte: 2000–2025; residentes em MA, PI, CE, RN, PB, PE, AL, SE e BA.
 
@@ -46,7 +58,7 @@ Esta etapa entrega dados efetivamente baixados, scripts reproduzíveis, notebook
 
 ## Comece aqui
 
-Abra `notebooks/01_coleta_integracao.ipynb`. Com os arquivos já coletados, o notebook usa o cache e apresenta a cobertura e as validações. Para repetir toda a preparação:
+O notebook original está preservado em `historico/notebooks/01_coleta_integracao_pipeline_anterior.ipynb`. Com os arquivos já coletados, o notebook usa o cache e apresenta a cobertura e as validações. Para repetir toda a preparação:
 
 ```powershell
 python -m venv .venv

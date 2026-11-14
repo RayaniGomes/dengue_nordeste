@@ -1,0 +1,322 @@
+[
+  {
+    "tabela": "estado",
+    "coluna": "uf_cod",
+    "tipo_sql": "smallint",
+    "tipo_interno": "int2",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "estado",
+    "coluna": "sigla",
+    "tipo_sql": "character",
+    "tipo_interno": "bpchar",
+    "permite_nulo": "NO",
+    "comprimento_maximo": 2
+  },
+  {
+    "tabela": "estado",
+    "coluna": "nome",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "estado",
+    "coluna": "regiao_sigla",
+    "tipo_sql": "character",
+    "tipo_interno": "bpchar",
+    "permite_nulo": "NO",
+    "comprimento_maximo": 2
+  },
+  {
+    "tabela": "estado",
+    "coluna": "regiao",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "municipio",
+    "coluna": "cod_mun7",
+    "tipo_sql": "character",
+    "tipo_interno": "bpchar",
+    "permite_nulo": "NO",
+    "comprimento_maximo": 7
+  },
+  {
+    "tabela": "municipio",
+    "coluna": "cod_mun6",
+    "tipo_sql": "character",
+    "tipo_interno": "bpchar",
+    "permite_nulo": "NO",
+    "comprimento_maximo": 6
+  },
+  {
+    "tabela": "municipio",
+    "coluna": "nome",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "municipio",
+    "coluna": "uf_cod",
+    "tipo_sql": "smallint",
+    "tipo_interno": "int2",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "municipio",
+    "coluna": "microrregiao",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "YES",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "municipio",
+    "coluna": "mesorregiao",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "YES",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "municipio",
+    "coluna": "regiao_imediata",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "municipio",
+    "coluna": "regiao_intermediaria",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "id",
+    "tipo_sql": "bigint",
+    "tipo_interno": "int8",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "cod_mun7",
+    "tipo_sql": "character",
+    "tipo_interno": "bpchar",
+    "permite_nulo": "NO",
+    "comprimento_maximo": 7
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "cod_mun7_notificacao",
+    "tipo_sql": "character",
+    "tipo_interno": "bpchar",
+    "permite_nulo": "YES",
+    "comprimento_maximo": 7
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "ano",
+    "tipo_sql": "smallint",
+    "tipo_interno": "int2",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "dt_notificacao",
+    "tipo_sql": "date",
+    "tipo_interno": "date",
+    "permite_nulo": "YES",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "dt_sintomas",
+    "tipo_sql": "date",
+    "tipo_interno": "date",
+    "permite_nulo": "YES",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "mes_sintomas",
+    "tipo_sql": "smallint",
+    "tipo_interno": "int2",
+    "permite_nulo": "YES",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "sexo",
+    "tipo_sql": "character",
+    "tipo_interno": "bpchar",
+    "permite_nulo": "YES",
+    "comprimento_maximo": 1
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "idade_anos",
+    "tipo_sql": "smallint",
+    "tipo_interno": "int2",
+    "permite_nulo": "YES",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "classificacao",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "YES",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "criterio",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "YES",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "evolucao",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "YES",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "caso_provavel",
+    "tipo_sql": "boolean",
+    "tipo_interno": "bool",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "caso_confirmado",
+    "tipo_sql": "boolean",
+    "tipo_interno": "bool",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "possivel_duplicata",
+    "tipo_sql": "boolean",
+    "tipo_interno": "bool",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "coluna": "ano_arquivo",
+    "tipo_sql": "smallint",
+    "tipo_interno": "int2",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "populacao_municipio_ano",
+    "coluna": "cod_mun7",
+    "tipo_sql": "character",
+    "tipo_interno": "bpchar",
+    "permite_nulo": "NO",
+    "comprimento_maximo": 7
+  },
+  {
+    "tabela": "populacao_municipio_ano",
+    "coluna": "ano",
+    "tipo_sql": "smallint",
+    "tipo_interno": "int2",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "populacao_municipio_ano",
+    "coluna": "populacao",
+    "tipo_sql": "integer",
+    "tipo_interno": "int4",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "populacao_municipio_ano",
+    "coluna": "fonte",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "populacao_ne",
+    "coluna": "cod_mun7",
+    "tipo_sql": "character",
+    "tipo_interno": "bpchar",
+    "permite_nulo": "NO",
+    "comprimento_maximo": 7
+  },
+  {
+    "tabela": "populacao_ne",
+    "coluna": "cod_mun6",
+    "tipo_sql": "character",
+    "tipo_interno": "bpchar",
+    "permite_nulo": "NO",
+    "comprimento_maximo": 6
+  },
+  {
+    "tabela": "populacao_ne",
+    "coluna": "uf_cod",
+    "tipo_sql": "smallint",
+    "tipo_interno": "int2",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "populacao_ne",
+    "coluna": "municipio",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "populacao_ne",
+    "coluna": "ano",
+    "tipo_sql": "smallint",
+    "tipo_interno": "int2",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "populacao_ne",
+    "coluna": "populacao",
+    "tipo_sql": "integer",
+    "tipo_interno": "int4",
+    "permite_nulo": "YES",
+    "comprimento_maximo": null
+  },
+  {
+    "tabela": "populacao_ne",
+    "coluna": "fonte",
+    "tipo_sql": "text",
+    "tipo_interno": "text",
+    "permite_nulo": "NO",
+    "comprimento_maximo": null
+  }
+]

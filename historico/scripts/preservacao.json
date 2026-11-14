@@ -1,0 +1,10 @@
+[
+  {
+    "arquivo": "historico/scripts/preparar_documentacao.py",
+    "sha256": "0517051e72e0010889d5afda33e440d4298300d4abb5f5a323bdd82b81b76cbe"
+  },
+  {
+    "arquivo": "historico/scripts/verificar_notebook.py",
+    "sha256": "b68b38890068724ed8d2a65a43002eded03024d7df106e79654171cadcd9feba"
+  }
+]

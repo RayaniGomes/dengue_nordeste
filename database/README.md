@@ -296,3 +296,7 @@ Referências internas:
 | Falta de espaço | Considere banco, WAL, backup, ZIPs e CSVs descompactados no planejamento |
 
 Backups e downloads volumosos permanecem fora do versionamento. Publique scripts, estrutura, documentação e metadados; a distribuição do `.dump` deve usar armazenamento externo.
+
+## Extrair os dados do banco em execução
+
+Consulte [extração PostgreSQL](../docs/extracao_postgresql.md) e execute `scripts/extrair_postgresql.py --env CAMINHO_DO_ENV` com o Python do ambiente do repositório. Essa rotina exporta a base tratada de 2000–2025 em modo somente de leitura, separada da coleta bruta nova.

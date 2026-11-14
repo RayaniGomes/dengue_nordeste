@@ -67,8 +67,8 @@ def criar():
     for i,c in enumerate(cells):c['id']=f'etapa1-{i:02d}'
     notebook={'cells':cells,'metadata':{'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'},
         'language_info':{'name':'python','version':'3.11'}},'nbformat':4,'nbformat_minor':5}
-    (ROOT/'notebooks').mkdir(exist_ok=True)
-    (ROOT/'notebooks/01_coleta_integracao.ipynb').write_text(json.dumps(notebook,ensure_ascii=False,indent=1),encoding='utf-8')
-    print('Notebook e dicionário criados.')
+    (ROOT/'historico/gerados').mkdir(parents=True,exist_ok=True)
+    (ROOT/'historico/gerados/01_coleta_integracao.ipynb').write_text(json.dumps(notebook,ensure_ascii=False,indent=1),encoding='utf-8')
+    print('Notebook anterior gerado em historico/gerados; dicionario do pipeline anterior atualizado.')
 
 if __name__=='__main__':criar()

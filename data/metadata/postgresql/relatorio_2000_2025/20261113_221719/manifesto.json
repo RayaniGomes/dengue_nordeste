@@ -1,0 +1,80 @@
+{
+  "status": "concluido",
+  "iniciado_em": "2026-11-13T22:17:20.375836-03:00",
+  "origem": "PostgreSQL",
+  "banco": "dengue-eda",
+  "schema": "public",
+  "periodo": [
+    2000,
+    2025
+  ],
+  "recorte": "residentes do Nordeste, conforme tabela tratada usada no relatorio",
+  "somente_leitura": true,
+  "arquivos": {
+    "notificacao_dengue_ne": {
+      "arquivo": "data/raw/postgresql/relatorio_2000_2025/20261113_221719/notificacao_dengue_ne.csv.gz",
+      "consulta_sql": "SELECT * FROM public.notificacao_dengue_ne WHERE ano BETWEEN 2000 AND 2025 ORDER BY id",
+      "registros_csv": 5474491,
+      "registros_postgresql": 5474491,
+      "bytes": 52822607,
+      "sha256": "32c0a1b161be0c97592d887f3747ae53e1f0782e70334b719aae713d00c0a59e"
+    },
+    "populacao_municipio_ano": {
+      "arquivo": "data/raw/postgresql/relatorio_2000_2025/20261113_221719/populacao_municipio_ano.csv.gz",
+      "consulta_sql": "SELECT p.* FROM public.populacao_municipio_ano p JOIN public.municipio m USING (cod_mun7) WHERE p.ano BETWEEN 2000 AND 2025 AND m.uf_cod BETWEEN 21 AND 29 ORDER BY p.cod_mun7,p.ano",
+      "registros_csv": 46627,
+      "registros_postgresql": 46627,
+      "bytes": 301675,
+      "sha256": "8d0ce6e885adf1dac3f2279812ad9b09ada212604c3517a4444085c26e48528b"
+    },
+    "populacao_ne": {
+      "arquivo": "data/raw/postgresql/relatorio_2000_2025/20261113_221719/populacao_ne.csv.gz",
+      "consulta_sql": "SELECT * FROM public.populacao_ne WHERE ano BETWEEN 2000 AND 2025 AND uf_cod BETWEEN 21 AND 29 ORDER BY cod_mun7,ano",
+      "registros_csv": 43056,
+      "registros_postgresql": 43056,
+      "bytes": 318965,
+      "sha256": "428412582d61dc25e5a11c6cd6fbe384b73ed3667ce9b5fda5e398704a940a6b"
+    },
+    "municipio_ne": {
+      "arquivo": "data/raw/postgresql/relatorio_2000_2025/20261113_221719/municipio_ne.csv.gz",
+      "consulta_sql": "SELECT * FROM public.municipio WHERE uf_cod BETWEEN 21 AND 29 ORDER BY cod_mun7",
+      "registros_csv": 1794,
+      "registros_postgresql": 1794,
+      "bytes": 30573,
+      "sha256": "e7168f1e90af5b1730ab8a2c196ff5e86d19a956d71f206cb6bc9195ac7e15e7"
+    },
+    "estado_ne": {
+      "arquivo": "data/raw/postgresql/relatorio_2000_2025/20261113_221719/estado_ne.csv.gz",
+      "consulta_sql": "SELECT * FROM public.estado WHERE uf_cod BETWEEN 21 AND 29 ORDER BY uf_cod",
+      "registros_csv": 9,
+      "registros_postgresql": 9,
+      "bytes": 182,
+      "sha256": "fc11587369c8e7dd49edafdffe4cc03e9fd83b6ea3cbb61bdcbb7dac9f203f4f"
+    }
+  },
+  "execucao": "20261113_221719",
+  "snapshot": "902:902:",
+  "transacao_iniciada_em": "2026-11-13T22:17:20.758081-03:00",
+  "postgresql": "18.4",
+  "casos_provaveis_sem_populacao": 0,
+  "consulta_resumo_anual": "SELECT ano, count(*), count(*) FILTER (WHERE caso_provavel),\n                count(*) FILTER (WHERE caso_confirmado), count(*) FILTER (WHERE possivel_duplicata),\n                count(*) FILTER (WHERE idade_anos IS NULL),\n                count(*) FILTER (WHERE NULLIF(btrim(sexo), '') IS NULL),\n                count(*) FILTER (WHERE mes_sintomas IS NULL)\n                FROM public.notificacao_dengue_ne WHERE ano BETWEEN 2000 AND 2025\n                GROUP BY ano ORDER BY ano",
+  "resumo_anual": {
+    "arquivo": "data/processed/postgresql/relatorio_2000_2025/20261113_221719/resumo_anual.csv",
+    "registros": 26,
+    "sha256": "5d17c657246532978896d2e56efe8fccd9e4b1c4fdee597782d6c78d9d59f43d"
+  },
+  "dicionario": {
+    "arquivo": "data/metadata/postgresql/relatorio_2000_2025/20261113_221719/dicionario.json",
+    "sha256": "8f1a61183f0fa81f1a34d81fa81fbed0e3e5c2f3cc81ee49880f6373dbd4ca6b"
+  },
+  "totais": {
+    "notificacoes": 5474491,
+    "casos_provaveis": 4178450,
+    "casos_confirmados": 2884120,
+    "possiveis_duplicatas": 101804,
+    "sem_idade": 10816,
+    "sem_sexo": 6682,
+    "sem_mes_sintomas": 12928
+  },
+  "concluido_em": "2026-11-13T22:18:51.708987-03:00"
+}
