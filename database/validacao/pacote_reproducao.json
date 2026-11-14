@@ -1,0 +1,107 @@
+{
+  "arquivos": [
+    {
+      "arquivo": ".claude/specs/00_projeto.md",
+      "bytes": 4633,
+      "sha256": "8571b42323a2beb643217dff93ec0eda4709931d8df0e59b7d7e9c287ffc6c3b",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": ".claude/specs/01_fontes.md",
+      "bytes": 7905,
+      "sha256": "d1b467b440db3bbfe7f907808c698357b3215dfc367239fd8ef6035026b7e591",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": ".claude/specs/02_banco.md",
+      "bytes": 9186,
+      "sha256": "bd9854417586204c49013bbb6ec7c68bb9bc547ef63051d938890de2213fb4d1",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": ".claude/specs/03_decisoes.md",
+      "bytes": 4904,
+      "sha256": "af5d37502b97d54ace83d0952b0ba8fda1c6b631686b35c857d28259d98a6736",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": ".claude/specs/99_uso_ia.md",
+      "bytes": 32228,
+      "sha256": "ab1915297b0093f4bc15579f20749189d2b76f3428700533870e9e02c0adc55a",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": ".env.example",
+      "bytes": 156,
+      "sha256": "8de52bfe33167502e0f618992da3a35b4f24e1e2c8009703a3a7661997a93b9b",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": "docs/coleta_armazenamento_2026-11-13.md",
+      "bytes": 5011,
+      "sha256": "108cff1bc24e9b5dd134796e25c64a65049d21aa8f0cbe1f0a9144ad14a68e31",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": "reports/validation/coleta_20261113_carga.json",
+      "bytes": 4552,
+      "sha256": "50c49a1385ea11480723654072c02b87b70f022a6421704f41b017fbd9dc61d4",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": "reports/validation/coleta_20261113_manifesto.json",
+      "bytes": 48729,
+      "sha256": "8d014c38d7dad3ed05bdaaab8fb62beb07f516c8ad843e69698ec70abf860102",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": "requirements.txt",
+      "bytes": 100,
+      "sha256": "3207364ab7dd0966dbd996d2bef574e5257a1ab39ec47228ac611ca7def53502",
+      "identico_a_origem": false
+    },
+    {
+      "arquivo": "scripts/executar_coleta_carga.py",
+      "bytes": 17145,
+      "sha256": "8886c925936c773917988c8b21051168ec64dcfb59f6f11f4797bda03aedc812",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": "src/carga/dengue/carga_dengue.py",
+      "bytes": 5311,
+      "sha256": "3a091dd5774810cab286b3ffd3685958e8194f09d78283e758301ebe188226b1",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": "src/carga/ibge/carga_ibge.py",
+      "bytes": 5956,
+      "sha256": "17d013bc6b9baed5d96c938cca30e0341339192dad8c6ab2804ac5068254e61b",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": "src/coleta/dengue/coleta_dengue_api.py",
+      "bytes": 5773,
+      "sha256": "110c415290f505dca06c21c175bf9a0634bc451e130102d0471e557e07821102",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": "src/coleta/dengue/coleta_dengue_csv.py",
+      "bytes": 4481,
+      "sha256": "6cd251ad37bac999054a661818e01a870b298023a12b86f8f67bc84aaa35c277",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": "src/coleta/ibge/coleta_ibge.py",
+      "bytes": 5468,
+      "sha256": "dda13c53a6a4e6d1982ec794a7e08fbee844886ca85520361f437204e790dfa8",
+      "identico_a_origem": true
+    },
+    {
+      "arquivo": "src/config.py",
+      "bytes": 1409,
+      "sha256": "27fc64dea6642d9a23ab9a5cf3987a3418e1e9e63f276507bf60058dbc2d9ebf",
+      "identico_a_origem": true
+    }
+  ],
+  "comparacao": "Arquivos copiados conferidos por SHA-256; requirements.txt especifico da coleta/carga."
+}

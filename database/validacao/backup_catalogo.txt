@@ -1,0 +1,230 @@
+;
+; Archive created at 2026-11-13 21:35:30
+;     dbname: dengue-eda
+;     TOC Entries: 219
+;     Compression: gzip
+;     Dump Version: 1.16-0
+;     Format: CUSTOM
+;     Integer: 4 bytes
+;     Offset: 8 bytes
+;     Dumped from database version: 18.4
+;     Dumped by pg_dump version: 18.4
+;
+;
+; Selected TOC Entries:
+;
+6; 2615 24576 SCHEMA - coleta_20261113 observatorio
+255; 1259 24577 TABLE coleta_20261113 _execucao_coleta observatorio
+286; 1259 24814 TABLE coleta_20261113 estado observatorio
+287; 1259 24828 TABLE coleta_20261113 municipio observatorio
+288; 1259 24848 TABLE coleta_20261113 populacao_municipio_ano observatorio
+285; 1259 24801 TABLE coleta_20261113 populacao_ne observatorio
+256; 1259 24586 TABLE coleta_20261113 sinan_dengue observatorio
+258; 1259 24604 TABLE coleta_20261113 sinan_dengue_2000 observatorio
+259; 1259 24611 TABLE coleta_20261113 sinan_dengue_2001 observatorio
+260; 1259 24618 TABLE coleta_20261113 sinan_dengue_2002 observatorio
+261; 1259 24625 TABLE coleta_20261113 sinan_dengue_2003 observatorio
+262; 1259 24633 TABLE coleta_20261113 sinan_dengue_2004 observatorio
+263; 1259 24641 TABLE coleta_20261113 sinan_dengue_2005 observatorio
+264; 1259 24649 TABLE coleta_20261113 sinan_dengue_2006 observatorio
+265; 1259 24657 TABLE coleta_20261113 sinan_dengue_2007 observatorio
+266; 1259 24665 TABLE coleta_20261113 sinan_dengue_2008 observatorio
+267; 1259 24672 TABLE coleta_20261113 sinan_dengue_2009 observatorio
+268; 1259 24679 TABLE coleta_20261113 sinan_dengue_2010 observatorio
+269; 1259 24686 TABLE coleta_20261113 sinan_dengue_2011 observatorio
+270; 1259 24693 TABLE coleta_20261113 sinan_dengue_2012 observatorio
+271; 1259 24700 TABLE coleta_20261113 sinan_dengue_2013 observatorio
+272; 1259 24707 TABLE coleta_20261113 sinan_dengue_2014 observatorio
+273; 1259 24715 TABLE coleta_20261113 sinan_dengue_2015 observatorio
+274; 1259 24723 TABLE coleta_20261113 sinan_dengue_2016 observatorio
+275; 1259 24730 TABLE coleta_20261113 sinan_dengue_2017 observatorio
+276; 1259 24737 TABLE coleta_20261113 sinan_dengue_2018 observatorio
+277; 1259 24744 TABLE coleta_20261113 sinan_dengue_2019 observatorio
+278; 1259 24751 TABLE coleta_20261113 sinan_dengue_2020 observatorio
+279; 1259 24758 TABLE coleta_20261113 sinan_dengue_2021 observatorio
+280; 1259 24765 TABLE coleta_20261113 sinan_dengue_2022 observatorio
+281; 1259 24772 TABLE coleta_20261113 sinan_dengue_2023 observatorio
+282; 1259 24779 TABLE coleta_20261113 sinan_dengue_2024 observatorio
+283; 1259 24787 TABLE coleta_20261113 sinan_dengue_2025 observatorio
+284; 1259 24794 TABLE coleta_20261113 sinan_dengue_2026 observatorio
+257; 1259 24590 TABLE coleta_20261113 sinan_dengue_carga observatorio
+224; 1259 16426 TABLE public estado observatorio
+225; 1259 16440 TABLE public municipio observatorio
+254; 1259 16679 TABLE public notificacao_dengue_ne observatorio
+253; 1259 16678 SEQUENCE public notificacao_dengue_ne_id_seq observatorio
+226; 1259 16460 TABLE public populacao_municipio_ano observatorio
+223; 1259 16413 TABLE public populacao_ne observatorio
+220; 1259 16388 TABLE public sinan_dengue observatorio
+222; 1259 16406 TABLE public sinan_dengue_2000 observatorio
+227; 1259 16476 TABLE public sinan_dengue_2001 observatorio
+228; 1259 16483 TABLE public sinan_dengue_2002 observatorio
+229; 1259 16497 TABLE public sinan_dengue_2003 observatorio
+230; 1259 16505 TABLE public sinan_dengue_2004 observatorio
+231; 1259 16513 TABLE public sinan_dengue_2005 observatorio
+232; 1259 16521 TABLE public sinan_dengue_2006 observatorio
+233; 1259 16529 TABLE public sinan_dengue_2007 observatorio
+234; 1259 16536 TABLE public sinan_dengue_2008 observatorio
+235; 1259 16543 TABLE public sinan_dengue_2009 observatorio
+236; 1259 16550 TABLE public sinan_dengue_2010 observatorio
+237; 1259 16558 TABLE public sinan_dengue_2011 observatorio
+238; 1259 16565 TABLE public sinan_dengue_2012 observatorio
+239; 1259 16572 TABLE public sinan_dengue_2013 observatorio
+240; 1259 16580 TABLE public sinan_dengue_2014 observatorio
+241; 1259 16588 TABLE public sinan_dengue_2015 observatorio
+242; 1259 16595 TABLE public sinan_dengue_2016 observatorio
+243; 1259 16602 TABLE public sinan_dengue_2017 observatorio
+244; 1259 16611 TABLE public sinan_dengue_2018 observatorio
+245; 1259 16619 TABLE public sinan_dengue_2019 observatorio
+246; 1259 16626 TABLE public sinan_dengue_2020 observatorio
+247; 1259 16634 TABLE public sinan_dengue_2021 observatorio
+248; 1259 16641 TABLE public sinan_dengue_2022 observatorio
+249; 1259 16648 TABLE public sinan_dengue_2023 observatorio
+250; 1259 16655 TABLE public sinan_dengue_2024 observatorio
+251; 1259 16663 TABLE public sinan_dengue_2025 observatorio
+252; 1259 16670 TABLE public sinan_dengue_2026 observatorio
+221; 1259 16392 TABLE public sinan_dengue_carga observatorio
+5152; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2000 observatorio
+5153; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2001 observatorio
+5154; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2002 observatorio
+5155; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2003 observatorio
+5156; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2004 observatorio
+5157; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2005 observatorio
+5158; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2006 observatorio
+5159; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2007 observatorio
+5160; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2008 observatorio
+5161; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2009 observatorio
+5162; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2010 observatorio
+5163; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2011 observatorio
+5164; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2012 observatorio
+5165; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2013 observatorio
+5166; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2014 observatorio
+5167; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2015 observatorio
+5168; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2016 observatorio
+5169; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2017 observatorio
+5170; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2018 observatorio
+5171; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2019 observatorio
+5172; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2020 observatorio
+5173; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2021 observatorio
+5174; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2022 observatorio
+5175; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2023 observatorio
+5176; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2024 observatorio
+5177; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2025 observatorio
+5178; 0 0 TABLE ATTACH coleta_20261113 sinan_dengue_2026 observatorio
+5125; 0 0 TABLE ATTACH public sinan_dengue_2000 observatorio
+5126; 0 0 TABLE ATTACH public sinan_dengue_2001 observatorio
+5127; 0 0 TABLE ATTACH public sinan_dengue_2002 observatorio
+5128; 0 0 TABLE ATTACH public sinan_dengue_2003 observatorio
+5129; 0 0 TABLE ATTACH public sinan_dengue_2004 observatorio
+5130; 0 0 TABLE ATTACH public sinan_dengue_2005 observatorio
+5131; 0 0 TABLE ATTACH public sinan_dengue_2006 observatorio
+5132; 0 0 TABLE ATTACH public sinan_dengue_2007 observatorio
+5133; 0 0 TABLE ATTACH public sinan_dengue_2008 observatorio
+5134; 0 0 TABLE ATTACH public sinan_dengue_2009 observatorio
+5135; 0 0 TABLE ATTACH public sinan_dengue_2010 observatorio
+5136; 0 0 TABLE ATTACH public sinan_dengue_2011 observatorio
+5137; 0 0 TABLE ATTACH public sinan_dengue_2012 observatorio
+5138; 0 0 TABLE ATTACH public sinan_dengue_2013 observatorio
+5139; 0 0 TABLE ATTACH public sinan_dengue_2014 observatorio
+5140; 0 0 TABLE ATTACH public sinan_dengue_2015 observatorio
+5141; 0 0 TABLE ATTACH public sinan_dengue_2016 observatorio
+5142; 0 0 TABLE ATTACH public sinan_dengue_2017 observatorio
+5143; 0 0 TABLE ATTACH public sinan_dengue_2018 observatorio
+5144; 0 0 TABLE ATTACH public sinan_dengue_2019 observatorio
+5145; 0 0 TABLE ATTACH public sinan_dengue_2020 observatorio
+5146; 0 0 TABLE ATTACH public sinan_dengue_2021 observatorio
+5147; 0 0 TABLE ATTACH public sinan_dengue_2022 observatorio
+5148; 0 0 TABLE ATTACH public sinan_dengue_2023 observatorio
+5149; 0 0 TABLE ATTACH public sinan_dengue_2024 observatorio
+5150; 0 0 TABLE ATTACH public sinan_dengue_2025 observatorio
+5151; 0 0 TABLE ATTACH public sinan_dengue_2026 observatorio
+5459; 0 24577 TABLE DATA coleta_20261113 _execucao_coleta observatorio
+5489; 0 24814 TABLE DATA coleta_20261113 estado observatorio
+5490; 0 24828 TABLE DATA coleta_20261113 municipio observatorio
+5491; 0 24848 TABLE DATA coleta_20261113 populacao_municipio_ano observatorio
+5488; 0 24801 TABLE DATA coleta_20261113 populacao_ne observatorio
+5461; 0 24604 TABLE DATA coleta_20261113 sinan_dengue_2000 observatorio
+5462; 0 24611 TABLE DATA coleta_20261113 sinan_dengue_2001 observatorio
+5463; 0 24618 TABLE DATA coleta_20261113 sinan_dengue_2002 observatorio
+5464; 0 24625 TABLE DATA coleta_20261113 sinan_dengue_2003 observatorio
+5465; 0 24633 TABLE DATA coleta_20261113 sinan_dengue_2004 observatorio
+5466; 0 24641 TABLE DATA coleta_20261113 sinan_dengue_2005 observatorio
+5467; 0 24649 TABLE DATA coleta_20261113 sinan_dengue_2006 observatorio
+5468; 0 24657 TABLE DATA coleta_20261113 sinan_dengue_2007 observatorio
+5469; 0 24665 TABLE DATA coleta_20261113 sinan_dengue_2008 observatorio
+5470; 0 24672 TABLE DATA coleta_20261113 sinan_dengue_2009 observatorio
+5471; 0 24679 TABLE DATA coleta_20261113 sinan_dengue_2010 observatorio
+5472; 0 24686 TABLE DATA coleta_20261113 sinan_dengue_2011 observatorio
+5473; 0 24693 TABLE DATA coleta_20261113 sinan_dengue_2012 observatorio
+5474; 0 24700 TABLE DATA coleta_20261113 sinan_dengue_2013 observatorio
+5475; 0 24707 TABLE DATA coleta_20261113 sinan_dengue_2014 observatorio
+5476; 0 24715 TABLE DATA coleta_20261113 sinan_dengue_2015 observatorio
+5477; 0 24723 TABLE DATA coleta_20261113 sinan_dengue_2016 observatorio
+5478; 0 24730 TABLE DATA coleta_20261113 sinan_dengue_2017 observatorio
+5479; 0 24737 TABLE DATA coleta_20261113 sinan_dengue_2018 observatorio
+5480; 0 24744 TABLE DATA coleta_20261113 sinan_dengue_2019 observatorio
+5481; 0 24751 TABLE DATA coleta_20261113 sinan_dengue_2020 observatorio
+5482; 0 24758 TABLE DATA coleta_20261113 sinan_dengue_2021 observatorio
+5483; 0 24765 TABLE DATA coleta_20261113 sinan_dengue_2022 observatorio
+5484; 0 24772 TABLE DATA coleta_20261113 sinan_dengue_2023 observatorio
+5485; 0 24779 TABLE DATA coleta_20261113 sinan_dengue_2024 observatorio
+5486; 0 24787 TABLE DATA coleta_20261113 sinan_dengue_2025 observatorio
+5487; 0 24794 TABLE DATA coleta_20261113 sinan_dengue_2026 observatorio
+5460; 0 24590 TABLE DATA coleta_20261113 sinan_dengue_carga observatorio
+5428; 0 16426 TABLE DATA public estado observatorio
+5429; 0 16440 TABLE DATA public municipio observatorio
+5458; 0 16679 TABLE DATA public notificacao_dengue_ne observatorio
+5430; 0 16460 TABLE DATA public populacao_municipio_ano observatorio
+5427; 0 16413 TABLE DATA public populacao_ne observatorio
+5426; 0 16406 TABLE DATA public sinan_dengue_2000 observatorio
+5431; 0 16476 TABLE DATA public sinan_dengue_2001 observatorio
+5432; 0 16483 TABLE DATA public sinan_dengue_2002 observatorio
+5433; 0 16497 TABLE DATA public sinan_dengue_2003 observatorio
+5434; 0 16505 TABLE DATA public sinan_dengue_2004 observatorio
+5435; 0 16513 TABLE DATA public sinan_dengue_2005 observatorio
+5436; 0 16521 TABLE DATA public sinan_dengue_2006 observatorio
+5437; 0 16529 TABLE DATA public sinan_dengue_2007 observatorio
+5438; 0 16536 TABLE DATA public sinan_dengue_2008 observatorio
+5439; 0 16543 TABLE DATA public sinan_dengue_2009 observatorio
+5440; 0 16550 TABLE DATA public sinan_dengue_2010 observatorio
+5441; 0 16558 TABLE DATA public sinan_dengue_2011 observatorio
+5442; 0 16565 TABLE DATA public sinan_dengue_2012 observatorio
+5443; 0 16572 TABLE DATA public sinan_dengue_2013 observatorio
+5444; 0 16580 TABLE DATA public sinan_dengue_2014 observatorio
+5445; 0 16588 TABLE DATA public sinan_dengue_2015 observatorio
+5446; 0 16595 TABLE DATA public sinan_dengue_2016 observatorio
+5447; 0 16602 TABLE DATA public sinan_dengue_2017 observatorio
+5448; 0 16611 TABLE DATA public sinan_dengue_2018 observatorio
+5449; 0 16619 TABLE DATA public sinan_dengue_2019 observatorio
+5450; 0 16626 TABLE DATA public sinan_dengue_2020 observatorio
+5451; 0 16634 TABLE DATA public sinan_dengue_2021 observatorio
+5452; 0 16641 TABLE DATA public sinan_dengue_2022 observatorio
+5453; 0 16648 TABLE DATA public sinan_dengue_2023 observatorio
+5454; 0 16655 TABLE DATA public sinan_dengue_2024 observatorio
+5455; 0 16663 TABLE DATA public sinan_dengue_2025 observatorio
+5456; 0 16670 TABLE DATA public sinan_dengue_2026 observatorio
+5425; 0 16392 TABLE DATA public sinan_dengue_carga observatorio
+5498; 0 0 SEQUENCE SET public notificacao_dengue_ne_id_seq observatorio
+5257; 2606 24585 CONSTRAINT coleta_20261113 _execucao_coleta _execucao_coleta_pkey observatorio
+5263; 2606 24825 CONSTRAINT coleta_20261113 estado estado_pkey observatorio
+5265; 2606 24827 CONSTRAINT coleta_20261113 estado estado_sigla_key observatorio
+5267; 2606 24842 CONSTRAINT coleta_20261113 municipio municipio_cod_mun6_key observatorio
+5269; 2606 24840 CONSTRAINT coleta_20261113 municipio municipio_pkey observatorio
+5271; 2606 24858 CONSTRAINT coleta_20261113 populacao_municipio_ano populacao_municipio_ano_pkey observatorio
+5261; 2606 24813 CONSTRAINT coleta_20261113 populacao_ne populacao_ne_pkey observatorio
+5259; 2606 24603 CONSTRAINT coleta_20261113 sinan_dengue_carga sinan_dengue_carga_pkey observatorio
+5243; 2606 16437 CONSTRAINT public estado estado_pkey observatorio
+5245; 2606 16439 CONSTRAINT public estado estado_sigla_key observatorio
+5247; 2606 16454 CONSTRAINT public municipio municipio_cod_mun6_key observatorio
+5249; 2606 16452 CONSTRAINT public municipio municipio_pkey observatorio
+5255; 2606 16692 CONSTRAINT public notificacao_dengue_ne notificacao_dengue_ne_pkey observatorio
+5251; 2606 16470 CONSTRAINT public populacao_municipio_ano populacao_municipio_ano_pkey observatorio
+5241; 2606 16425 CONSTRAINT public populacao_ne populacao_ne_pkey observatorio
+5239; 2606 16405 CONSTRAINT public sinan_dengue_carga sinan_dengue_carga_pkey observatorio
+5252; 1259 16703 INDEX public notificacao_dengue_ne_ano_idx observatorio
+5253; 1259 16704 INDEX public notificacao_dengue_ne_cod_mun7_idx observatorio
+5276; 2606 24843 FK CONSTRAINT coleta_20261113 municipio municipio_uf_cod_fkey observatorio
+5277; 2606 24859 FK CONSTRAINT coleta_20261113 populacao_municipio_ano populacao_municipio_ano_cod_mun7_fkey observatorio
+5272; 2606 16455 FK CONSTRAINT public municipio municipio_uf_cod_fkey observatorio
+5274; 2606 16693 FK CONSTRAINT public notificacao_dengue_ne notificacao_dengue_ne_cod_mun7_fkey observatorio
+5275; 2606 16698 FK CONSTRAINT public notificacao_dengue_ne notificacao_dengue_ne_cod_mun7_notificacao_fkey observatorio
+5273; 2606 16471 FK CONSTRAINT public populacao_municipio_ano populacao_municipio_ano_cod_mun7_fkey observatorio

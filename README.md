@@ -1,5 +1,9 @@
 # Dengue no Nordeste — coleta, limpeza e análise exploratória
 
+## Banco PostgreSQL
+
+O [pacote PostgreSQL](database/README.md) contém a estrutura SQL, a proveniência da coleta e os comandos de restauração e reprodução. O backup completo fica localmente em `database/backups/`, fora do versionamento. Esse banco pertence ao pipeline revisado descrito no pacote; os arquivos anteriores desta raiz mantêm suas decisões metodológicas originais.
+
 ## Etapa 2 pronta: limpeza e EDA
 
 Abra [o notebook de limpeza e EDA](notebooks/02_limpeza_eda.ipynb), [os resultados](docs/resultados_etapa2.md) e [a metodologia](docs/metodologia_etapa2.md). O relatório visual completo está em `outputs/etapa2/relatorio_eda.html`; baixe e abra no navegador. Ele contém as imagens incorporadas e funciona offline.

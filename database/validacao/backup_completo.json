@@ -1,0 +1,16 @@
+{
+  "iniciado_em": "2026-11-13T21:35:30.359923-03:00",
+  "concluido_em": "2026-11-13T21:47:49.197284-03:00",
+  "banco": "dengue-eda",
+  "esquemas": [
+    "public",
+    "coleta_20261113"
+  ],
+  "arquivo": "database/backups/dengue-eda_completo_2026-11-13.dump",
+  "bytes": 3371550780,
+  "sha256": "e4d238e064a95dc005b1b044771e7ef87ffbd79d05ab3183e8c76b54d54d3117",
+  "formato": "pg_dump custom, gzip nivel 3",
+  "validacao": "pg_restore --list e leitura/descompressao integral para dispositivo nulo; restauracao em outro banco nao executada",
+  "completo": true,
+  "versionar_backup": false
+}

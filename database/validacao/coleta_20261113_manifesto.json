@@ -1,0 +1,1030 @@
+{
+  "iniciado_em": "2026-11-13T20:25:01.109301-03:00",
+  "esquema": "coleta_20261113",
+  "arquivos": {
+    "dengue_csv/ano=2026/DENGBR26.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR26.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR26.csv.zip",
+      "coletado_em": "2026-11-13T20:25:11.327983-03:00",
+      "bytes": 15864337,
+      "sha256": "0c9ba29ff33573431b5198949c982a285b7233f26c09ef81dbb068460775e909",
+      "http_status": 200,
+      "last_modified": "Wed, 11 Nov 2026 13:32:47 GMT",
+      "etag": "\"b3af3ce84a2bc150422c87e7bfcd84e6-2\""
+    },
+    "dengue_csv/ano=2026/DENGBR26.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR26.csv.zip",
+      "coletado_em": "2026-11-13T20:25:11.327983-03:00",
+      "membro_zip": "DENGBR26.csv",
+      "zip_sha256": "0c9ba29ff33573431b5198949c982a285b7233f26c09ef81dbb068460775e909",
+      "sha256": "1e829cf1e22f96711e01cb90f9daf8425053fabef420e236782e9855903ce9e7",
+      "bytes": 137197220,
+      "linhas_csv": 489197
+    },
+    "ibge/respostas_sidra/censo_2000_2010_MA.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/200/n6/in n3 21/v/93/p/2000,2010/c1/0/c2/0",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/200/n6/in%20n3%2021/v/93/p/2000,2010/c1/0/c2/0",
+      "coletado_em": "2026-11-13T20:25:16.160949-03:00",
+      "bytes": 163859,
+      "sha256": "81ec49fbcb50761e3aab5213c3f7a4b5940137a322dfb8e895a2c618fba331c4",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "dengue_csv/ano=2000/DENGBR00.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR00.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR00.csv.zip",
+      "coletado_em": "2026-11-13T20:27:14.115382-03:00",
+      "bytes": 2638386,
+      "sha256": "56a216b1bd13b8699abb7d1c9b33fa89ebdfcfd29a1783373a011e81678b8bb5",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:46 GMT",
+      "etag": "\"2e9a36c2c8140da139593cf7845e6ece\""
+    },
+    "dengue_csv/ano=2000/DENGBR00.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR00.csv.zip",
+      "coletado_em": "2026-11-13T20:27:14.115382-03:00",
+      "membro_zip": "DENGBR00.csv",
+      "zip_sha256": "56a216b1bd13b8699abb7d1c9b33fa89ebdfcfd29a1783373a011e81678b8bb5",
+      "sha256": "9b2646ea3fcccac1b97b66ccf7c2738fea6b7c9eb67853079cda2eb22f56a62c",
+      "bytes": 38872782,
+      "linhas_csv": 172855
+    },
+    "dengue_csv/ano=2001/DENGBR01.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR01.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR01.csv.zip",
+      "coletado_em": "2026-11-13T20:27:16.549142-03:00",
+      "bytes": 8226171,
+      "sha256": "9195d655c5b81b979680dcddb40ca83b813f208c1b86722ad121c1976989bb89",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:46 GMT",
+      "etag": "\"e475458c372287de15114c8fb1b0a30c\""
+    },
+    "dengue_csv/ano=2001/DENGBR01.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR01.csv.zip",
+      "coletado_em": "2026-11-13T20:27:16.549142-03:00",
+      "membro_zip": "DENGBR01.csv",
+      "zip_sha256": "9195d655c5b81b979680dcddb40ca83b813f208c1b86722ad121c1976989bb89",
+      "sha256": "2490037e8499cc84af1a548c4e16e26c91c7c8ad4d7822a0305935f7751d9b46",
+      "bytes": 113149197,
+      "linhas_csv": 488590
+    },
+    "dengue_csv/ano=2002/DENGBR02.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR02.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR02.csv.zip",
+      "coletado_em": "2026-11-13T20:27:23.540636-03:00",
+      "bytes": 17289160,
+      "sha256": "0793632433cb2ff421fe43ac6df49d2c1da867bb29bb77c6b538d6b677c2ac2a",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:47 GMT",
+      "etag": "\"b01894d0e4e38166ca10f21bc848fc55-3\""
+    },
+    "dengue_csv/ano=2002/DENGBR02.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR02.csv.zip",
+      "coletado_em": "2026-11-13T20:27:23.540636-03:00",
+      "membro_zip": "DENGBR02.csv",
+      "zip_sha256": "0793632433cb2ff421fe43ac6df49d2c1da867bb29bb77c6b538d6b677c2ac2a",
+      "sha256": "5e1a3d91bc0b06e5ecb93b2e270b5bfabd9868a610c9575f1e32123215437bb6",
+      "bytes": 214562490,
+      "linhas_csv": 897093
+    },
+    "dengue_csv/ano=2003/DENGBR03.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR03.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR03.csv.zip",
+      "coletado_em": "2026-11-13T20:27:32.223200-03:00",
+      "bytes": 10643661,
+      "sha256": "6e6b91765d05c0026d353937daa214cff4586f97bcbbdd4073c2bffa3b5b2117",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:48 GMT",
+      "etag": "\"2371937b004597cf1feb6bef93a238b1-2\""
+    },
+    "dengue_csv/ano=2003/DENGBR03.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR03.csv.zip",
+      "coletado_em": "2026-11-13T20:27:32.223200-03:00",
+      "membro_zip": "DENGBR03.csv",
+      "zip_sha256": "6e6b91765d05c0026d353937daa214cff4586f97bcbbdd4073c2bffa3b5b2117",
+      "sha256": "4c222f5328f68cc0650f36195acecb29b16f3e71f76499815be59fd49ba60205",
+      "bytes": 110766008,
+      "linhas_csv": 416609
+    },
+    "dengue_csv/ano=2004/DENGBR04.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR04.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR04.csv.zip",
+      "coletado_em": "2026-11-13T20:27:35.695022-03:00",
+      "bytes": 4257368,
+      "sha256": "c2ce34ad50eb7fc4b73e2fd0bca3a47b36e0801e1f9c5ef09247db597d775ae5",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:49 GMT",
+      "etag": "\"afa762f133c2743b24315efb80e1b47e\""
+    },
+    "dengue_csv/ano=2004/DENGBR04.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR04.csv.zip",
+      "coletado_em": "2026-11-13T20:27:35.695022-03:00",
+      "membro_zip": "DENGBR04.csv",
+      "zip_sha256": "c2ce34ad50eb7fc4b73e2fd0bca3a47b36e0801e1f9c5ef09247db597d775ae5",
+      "sha256": "bd5e790c84200f7985ff0716ff9e7c4b227e54175302a29d968204b7629c6050",
+      "bytes": 38150763,
+      "linhas_csv": 136867
+    },
+    "dengue_csv/ano=2005/DENGBR05.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR05.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR05.csv.zip",
+      "coletado_em": "2026-11-13T20:27:39.559439-03:00",
+      "bytes": 7504578,
+      "sha256": "162aa38a9813a8748f811ef54bab4e0853c1f1683d1d471345623f9d06ed532c",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:49 GMT",
+      "etag": "\"fed8a02993cbf18a9d81768e4279a5f6\""
+    },
+    "dengue_csv/ano=2005/DENGBR05.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR05.csv.zip",
+      "coletado_em": "2026-11-13T20:27:39.559439-03:00",
+      "membro_zip": "DENGBR05.csv",
+      "zip_sha256": "162aa38a9813a8748f811ef54bab4e0853c1f1683d1d471345623f9d06ed532c",
+      "sha256": "cc241a7b56726c2cc66dd84c76f1d88c7adab7a5641156c4a872ecbc8cc3730d",
+      "bytes": 72291605,
+      "linhas_csv": 261501
+    },
+    "dengue_csv/ano=2006/DENGBR06.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR06.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR06.csv.zip",
+      "coletado_em": "2026-11-13T20:27:42.572141-03:00",
+      "bytes": 11977049,
+      "sha256": "1dcb2f6dadfbf9853f7efbd2a4b76b1865bd2ecbb8f2328f8623eb29a558b221",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:50 GMT",
+      "etag": "\"92c8bb8ffd58c349b088fefb76995084-2\""
+    },
+    "dengue_csv/ano=2006/DENGBR06.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR06.csv.zip",
+      "coletado_em": "2026-11-13T20:27:42.572141-03:00",
+      "membro_zip": "DENGBR06.csv",
+      "zip_sha256": "1dcb2f6dadfbf9853f7efbd2a4b76b1865bd2ecbb8f2328f8623eb29a558b221",
+      "sha256": "3b048d57a580b39262a177aac9c981ff2f7273f2c44352c587b642368134f99f",
+      "bytes": 114680207,
+      "linhas_csv": 411022
+    },
+    "dengue_csv/ano=2007/DENGBR07.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR07.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR07.csv.zip",
+      "coletado_em": "2026-11-13T20:27:47.278880-03:00",
+      "bytes": 11819209,
+      "sha256": "a81a23361248b1f75eabbec1be850eaf84a5c2e636594d7ab6ebda1bc08846c1",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:51 GMT",
+      "etag": "\"203abf78749eb969eea3704c3ecf802a-2\""
+    },
+    "dengue_csv/ano=2007/DENGBR07.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR07.csv.zip",
+      "coletado_em": "2026-11-13T20:27:47.278880-03:00",
+      "membro_zip": "DENGBR07.csv",
+      "zip_sha256": "a81a23361248b1f75eabbec1be850eaf84a5c2e636594d7ab6ebda1bc08846c1",
+      "sha256": "c81796965bb35ae848077ea77c160ee123f1fde9d440d198e27a61db104931ca",
+      "bytes": 134302582,
+      "linhas_csv": 717097
+    },
+    "dengue_csv/ano=2008/DENGBR08.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR08.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR08.csv.zip",
+      "coletado_em": "2026-11-13T20:27:53.297639-03:00",
+      "bytes": 13592752,
+      "sha256": "173780eef9f91e6372f0f7073403290ef5531cc74d23a500b9d68120f44b79ab",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:52 GMT",
+      "etag": "\"5409d596e5a5c492830553b356252238-2\""
+    },
+    "dengue_csv/ano=2008/DENGBR08.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR08.csv.zip",
+      "coletado_em": "2026-11-13T20:27:53.297639-03:00",
+      "membro_zip": "DENGBR08.csv",
+      "zip_sha256": "173780eef9f91e6372f0f7073403290ef5531cc74d23a500b9d68120f44b79ab",
+      "sha256": "b4c53f9ee1275343e77adbd7947934e247809aa25a7396db5b399d1398281bdc",
+      "bytes": 171516614,
+      "linhas_csv": 919324
+    },
+    "dengue_csv/ano=2009/DENGBR09.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR09.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR09.csv.zip",
+      "coletado_em": "2026-11-13T20:27:56.679624-03:00",
+      "bytes": 9717043,
+      "sha256": "5195404ec6f9237771241cb364a13931d502c07ddc60762b37d816d44c4ce8d8",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:53 GMT",
+      "etag": "\"1600097937d20682304ad9a0f31f3c1b-2\""
+    },
+    "dengue_csv/ano=2009/DENGBR09.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR09.csv.zip",
+      "coletado_em": "2026-11-13T20:27:56.679624-03:00",
+      "membro_zip": "DENGBR09.csv",
+      "zip_sha256": "5195404ec6f9237771241cb364a13931d502c07ddc60762b37d816d44c4ce8d8",
+      "sha256": "8e377f4e44ef35ab7c62f99a82038212d938786b2acc155fefbe019a7587a740",
+      "bytes": 118399781,
+      "linhas_csv": 600658
+    },
+    "dengue_csv/ano=2010/DENGBR10.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR10.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR10.csv.zip",
+      "coletado_em": "2026-11-13T20:28:01.295868-03:00",
+      "bytes": 21205559,
+      "sha256": "5a7a0e6633a7ceec1b1542a820810cad7ee2ea02f8d67103cafad5287e3a2b5c",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:54 GMT",
+      "etag": "\"a6f557ba2012e027ad5393baf21ba180-3\""
+    },
+    "dengue_csv/ano=2010/DENGBR10.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR10.csv.zip",
+      "coletado_em": "2026-11-13T20:28:01.295868-03:00",
+      "membro_zip": "DENGBR10.csv",
+      "zip_sha256": "5a7a0e6633a7ceec1b1542a820810cad7ee2ea02f8d67103cafad5287e3a2b5c",
+      "sha256": "c0ba72a649bd3d1f7775d0a7c2dea8fa3ec5972b801fec16f5c8f1f432005ff5",
+      "bytes": 273280156,
+      "linhas_csv": 1381254
+    },
+    "dengue_csv/ano=2011/DENGBR11.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR11.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR11.csv.zip",
+      "coletado_em": "2026-11-13T20:28:13.997027-03:00",
+      "bytes": 38725577,
+      "sha256": "0cfd3b1ad1ffe47eb993dc241784964205aa3cde99ca1348897972940e344bb3",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:55 GMT",
+      "etag": "\"54bcbfc83d60c4ea358403f284eb50ce-5\""
+    },
+    "dengue_csv/ano=2011/DENGBR11.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR11.csv.zip",
+      "coletado_em": "2026-11-13T20:28:13.997027-03:00",
+      "membro_zip": "DENGBR11.csv",
+      "zip_sha256": "0cfd3b1ad1ffe47eb993dc241784964205aa3cde99ca1348897972940e344bb3",
+      "sha256": "7d6503695b8d3e74b6d073461483a124bfe373130eb945b3fd9b264579fa2025",
+      "bytes": 224798942,
+      "linhas_csv": 1150011
+    },
+    "dengue_csv/ano=2012/DENGBR12.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR12.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR12.csv.zip",
+      "coletado_em": "2026-11-13T20:28:25.743751-03:00",
+      "bytes": 20120905,
+      "sha256": "5e8220ec955767ea2c447e42a230f2719995166ca9dcd23fb5db7d7e9f376d5d",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:56 GMT",
+      "etag": "\"b90fe87154ec86397066e1b5d96fca7a-3\""
+    },
+    "dengue_csv/ano=2012/DENGBR12.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR12.csv.zip",
+      "coletado_em": "2026-11-13T20:28:25.743751-03:00",
+      "membro_zip": "DENGBR12.csv",
+      "zip_sha256": "5e8220ec955767ea2c447e42a230f2719995166ca9dcd23fb5db7d7e9f376d5d",
+      "sha256": "55f77a97baddab2189c8c5b98aa038d72187022fff5d5ee1ff06343adb6d1c6e",
+      "bytes": 180877267,
+      "linhas_csv": 950180
+    },
+    "dengue_csv/ano=2013/DENGBR13.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR13.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR13.csv.zip",
+      "coletado_em": "2026-11-13T20:28:36.711366-03:00",
+      "bytes": 40957173,
+      "sha256": "7cb4473ce2382d4e114f9f13d882f4cb5ae4bbf25b0cf4e66a05aa15c3dfa5d3",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:57 GMT",
+      "etag": "\"2779eab6272b6bab985ab9e441c0e2de-5\""
+    },
+    "dengue_csv/ano=2013/DENGBR13.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR13.csv.zip",
+      "coletado_em": "2026-11-13T20:28:36.711366-03:00",
+      "membro_zip": "DENGBR13.csv",
+      "zip_sha256": "7cb4473ce2382d4e114f9f13d882f4cb5ae4bbf25b0cf4e66a05aa15c3dfa5d3",
+      "sha256": "e2a972585149a8370b5f775e6b1ca03fdff19e346876fda53b691b95df8cfd69",
+      "bytes": 394092354,
+      "linhas_csv": 2035119
+    },
+    "dengue_csv/ano=2014/DENGBR14.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR14.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR14.csv.zip",
+      "coletado_em": "2026-11-13T20:28:49.364563-03:00",
+      "bytes": 14095842,
+      "sha256": "5fc628d91f9e5352c3c4ac9f127c85dd5b3f3b75f0f6a049b66bcca89cfb7f44",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:58 GMT",
+      "etag": "\"3ec29c0078b65c6aa457aeda28eab455-2\""
+    },
+    "dengue_csv/ano=2014/DENGBR14.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR14.csv.zip",
+      "coletado_em": "2026-11-13T20:28:49.364563-03:00",
+      "membro_zip": "DENGBR14.csv",
+      "zip_sha256": "5fc628d91f9e5352c3c4ac9f127c85dd5b3f3b75f0f6a049b66bcca89cfb7f44",
+      "sha256": "75fa770918b952884f6d9682650c9fa51b078f0a56f6aeded325ddb6a8238daf",
+      "bytes": 140435765,
+      "linhas_csv": 543918
+    },
+    "dengue_csv/ano=2015/DENGBR15.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR15.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR15.csv.zip",
+      "coletado_em": "2026-11-13T20:28:58.013863-03:00",
+      "bytes": 43993756,
+      "sha256": "8f0d4eae7045d489d430ff34bb6493a3c6b1ec23ee2dacde9727f75df73110ce",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:22:59 GMT",
+      "etag": "\"6a7c50f432110e9d86043d5e983db17a-6\""
+    },
+    "dengue_csv/ano=2015/DENGBR15.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR15.csv.zip",
+      "coletado_em": "2026-11-13T20:28:58.013863-03:00",
+      "membro_zip": "DENGBR15.csv",
+      "zip_sha256": "8f0d4eae7045d489d430ff34bb6493a3c6b1ec23ee2dacde9727f75df73110ce",
+      "sha256": "ee9814d2f07ebcdaee8e7f096a14a5ee7118728cbbf83004efbccdfb419704d5",
+      "bytes": 415668748,
+      "linhas_csv": 1623172
+    },
+    "dengue_csv/ano=2016/DENGBR16.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR16.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR16.csv.zip",
+      "coletado_em": "2026-11-13T20:29:19.020111-03:00",
+      "bytes": 65535031,
+      "sha256": "635b9fbdadc59151f2899e757eac67a26939d6c5eded12a1ff6dca8fcef588a0",
+      "http_status": 200,
+      "last_modified": "Thu, 01 Oct 2026 20:23:00 GMT",
+      "etag": "\"e14296c8980753ed24d2cf3194c3ca5b-8\""
+    },
+    "dengue_csv/ano=2016/DENGBR16.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR16.csv.zip",
+      "coletado_em": "2026-11-13T20:29:19.020111-03:00",
+      "membro_zip": "DENGBR16.csv",
+      "zip_sha256": "635b9fbdadc59151f2899e757eac67a26939d6c5eded12a1ff6dca8fcef588a0",
+      "sha256": "76f9c24330b741eb2c91fef181aa8d14a549b8956d9dc6b300e713c11f6becaf",
+      "bytes": 589238480,
+      "linhas_csv": 2298020
+    },
+    "dengue_csv/ano=2017/DENGBR17.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR17.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR17.csv.zip",
+      "coletado_em": "2026-11-13T20:29:30.689993-03:00",
+      "bytes": 15748185,
+      "sha256": "53ac88a95d57fb790fbc66cd8dddfdd4da326ab219480b25a15f5a0bd797466e",
+      "http_status": 200,
+      "last_modified": "Wed, 11 Nov 2026 13:32:34 GMT",
+      "etag": "\"e8d1d40ebcca19fe7234d2952d442066-2\""
+    },
+    "dengue_csv/ano=2017/DENGBR17.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR17.csv.zip",
+      "coletado_em": "2026-11-13T20:29:30.689993-03:00",
+      "membro_zip": "DENGBR17.csv",
+      "zip_sha256": "53ac88a95d57fb790fbc66cd8dddfdd4da326ab219480b25a15f5a0bd797466e",
+      "sha256": "aabded64964d3e2d47b53ff576abba2b33055be7e2d78e6ca89c4c3b4d2c2bf9",
+      "bytes": 138887019,
+      "linhas_csv": 518483
+    },
+    "dengue_csv/ano=2018/DENGBR18.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR18.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR18.csv.zip",
+      "coletado_em": "2026-11-13T20:29:34.383979-03:00",
+      "bytes": 14848857,
+      "sha256": "8c40e901f4262b2b71d0eb0d26387d0a1624f570a0c5956a3908ca0133762429",
+      "http_status": 200,
+      "last_modified": "Wed, 11 Nov 2026 13:32:35 GMT",
+      "etag": "\"f6b123a0cbf0027c3b189ca0028f691e-2\""
+    },
+    "dengue_csv/ano=2018/DENGBR18.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR18.csv.zip",
+      "coletado_em": "2026-11-13T20:29:34.383979-03:00",
+      "membro_zip": "DENGBR18.csv",
+      "zip_sha256": "8c40e901f4262b2b71d0eb0d26387d0a1624f570a0c5956a3908ca0133762429",
+      "sha256": "41d67d94383d9ec6e405d63af81c69d5e9e5121043e703278f8e14922eeb51e0",
+      "bytes": 128885737,
+      "linhas_csv": 478880
+    },
+    "dengue_csv/ano=2019/DENGBR19.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR19.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR19.csv.zip",
+      "coletado_em": "2026-11-13T20:29:45.232982-03:00",
+      "bytes": 75137086,
+      "sha256": "204a68f2bbcd591ec2043de63c7bbbe69a7c06408ce2c13464b6abc4fbb2148c",
+      "http_status": 200,
+      "last_modified": "Wed, 11 Nov 2026 13:32:37 GMT",
+      "etag": "\"ae799197049e6c6e8db27d1e54d66a45-9\""
+    },
+    "dengue_csv/ano=2019/DENGBR19.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR19.csv.zip",
+      "coletado_em": "2026-11-13T20:29:45.232982-03:00",
+      "membro_zip": "DENGBR19.csv",
+      "zip_sha256": "204a68f2bbcd591ec2043de63c7bbbe69a7c06408ce2c13464b6abc4fbb2148c",
+      "sha256": "835a79ea62c3744ab42ce9fccc8519638923176c04158a61b616b1f309680c2f",
+      "bytes": 614097973,
+      "linhas_csv": 2261956
+    },
+    "dengue_csv/ano=2020/DENGBR20.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR20.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR20.csv.zip",
+      "coletado_em": "2026-11-13T20:30:01.137518-03:00",
+      "bytes": 44632325,
+      "sha256": "2ed5ba9fd7fe6617fb18eaf17a72f95bc67403dfb6bf50ca46c8ceb2ca356851",
+      "http_status": 200,
+      "last_modified": "Wed, 11 Nov 2026 13:32:38 GMT",
+      "etag": "\"a7cef894736eaee007939f23d142e498-6\""
+    },
+    "dengue_csv/ano=2020/DENGBR20.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR20.csv.zip",
+      "coletado_em": "2026-11-13T20:30:01.137518-03:00",
+      "membro_zip": "DENGBR20.csv",
+      "zip_sha256": "2ed5ba9fd7fe6617fb18eaf17a72f95bc67403dfb6bf50ca46c8ceb2ca356851",
+      "sha256": "df1104e9a9d98115e074301ba0e5f25b710ac021aa08d028e13e280d6d30e8b2",
+      "bytes": 399584952,
+      "linhas_csv": 1495117
+    },
+    "dengue_csv/ano=2021/DENGBR21.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR21.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR21.csv.zip",
+      "coletado_em": "2026-11-13T20:30:13.276650-03:00",
+      "bytes": 29616632,
+      "sha256": "d7c8a5b3358fd59125b9d51fa838b164aa937f2dce7600ad78dbd76629f3369c",
+      "http_status": 200,
+      "last_modified": "Wed, 11 Nov 2026 13:32:39 GMT",
+      "etag": "\"3dfded687baf4dcb9e94d32a73411cb1-4\""
+    },
+    "dengue_csv/ano=2021/DENGBR21.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR21.csv.zip",
+      "coletado_em": "2026-11-13T20:30:13.276650-03:00",
+      "membro_zip": "DENGBR21.csv",
+      "zip_sha256": "d7c8a5b3358fd59125b9d51fa838b164aa937f2dce7600ad78dbd76629f3369c",
+      "sha256": "bcdf5d792a42d098585712bb97d181ac0fec41034ebc7560ecb26fe6f167f845",
+      "bytes": 284495017,
+      "linhas_csv": 1024635
+    },
+    "dengue_csv/ano=2022/DENGBR22.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR22.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR22.csv.zip",
+      "coletado_em": "2026-11-13T20:30:23.881509-03:00",
+      "bytes": 41866445,
+      "sha256": "31966b27b5aed1e5ce724dd7b9cacbef536f9fd0e49b3a2b2cfa7305bbdb33b5",
+      "http_status": 200,
+      "last_modified": "Wed, 11 Nov 2026 13:32:41 GMT",
+      "etag": "\"7d30c0556287021a9308f83cebffe772-5\""
+    },
+    "dengue_csv/ano=2022/DENGBR22.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR22.csv.zip",
+      "coletado_em": "2026-11-13T20:30:23.881509-03:00",
+      "membro_zip": "DENGBR22.csv",
+      "zip_sha256": "31966b27b5aed1e5ce724dd7b9cacbef536f9fd0e49b3a2b2cfa7305bbdb33b5",
+      "sha256": "e7ce8dd323353431a447ddba2a424aec02689273ce5deb08b61ba1033a165b9f",
+      "bytes": 392961379,
+      "linhas_csv": 1405095
+    },
+    "dengue_csv/ano=2023/DENGBR23.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR23.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR23.csv.zip",
+      "coletado_em": "2026-11-13T20:30:37.640210-03:00",
+      "bytes": 39499188,
+      "sha256": "9a376a7be58b3c0e84bfac82474515f407fd7f135eae19660515428e6ccc0b9c",
+      "http_status": 200,
+      "last_modified": "Wed, 11 Nov 2026 13:32:42 GMT",
+      "etag": "\"c474f427b101daac9065948195624e08-5\""
+    },
+    "dengue_csv/ano=2023/DENGBR23.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR23.csv.zip",
+      "coletado_em": "2026-11-13T20:30:37.640210-03:00",
+      "membro_zip": "DENGBR23.csv",
+      "zip_sha256": "9a376a7be58b3c0e84bfac82474515f407fd7f135eae19660515428e6ccc0b9c",
+      "sha256": "ab350800e8f4109da8f2ce22ee2b334a93f3e647dec977f34c7af0c8b70cda08",
+      "bytes": 463682540,
+      "linhas_csv": 1645956
+    },
+    "dengue_csv/ano=2024/DENGBR24.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR24.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR24.csv.zip",
+      "coletado_em": "2026-11-13T20:31:17.617439-03:00",
+      "bytes": 187264443,
+      "sha256": "1b6b7bf7f6b1fdab4ed2314edc2f57919c33b8103988383f22b7d4776c4a931a",
+      "http_status": 200,
+      "last_modified": "Wed, 11 Nov 2026 13:32:43 GMT",
+      "etag": "\"8ed84214796bcb07084f738fc59e089b-23\""
+    },
+    "dengue_csv/ano=2024/DENGBR24.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR24.csv.zip",
+      "coletado_em": "2026-11-13T20:31:17.617439-03:00",
+      "membro_zip": "DENGBR24.csv",
+      "zip_sha256": "1b6b7bf7f6b1fdab4ed2314edc2f57919c33b8103988383f22b7d4776c4a931a",
+      "sha256": "5758b7c09e77ce7f00c78dde04ea383ef7a77a83c3f3bc8098314429507437ac",
+      "bytes": 1840398627,
+      "linhas_csv": 6564924
+    },
+    "dengue_csv/ano=2025/DENGBR25.csv.zip": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR25.csv.zip",
+      "url_resposta": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR25.csv.zip",
+      "coletado_em": "2026-11-13T20:33:09.488817-03:00",
+      "bytes": 41648790,
+      "sha256": "84511826e259ce0cf46f3658c630e90bf81a4ec0952077cc87697c5bad289db1",
+      "http_status": 200,
+      "last_modified": "Wed, 11 Nov 2026 13:32:45 GMT",
+      "etag": "\"77c3b66137fe1bac56da0c3066e8f3a3-5\""
+    },
+    "dengue_csv/ano=2025/DENGBR25.csv": {
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR25.csv.zip",
+      "coletado_em": "2026-11-13T20:33:09.488817-03:00",
+      "membro_zip": "DENGBR25.csv",
+      "zip_sha256": "84511826e259ce0cf46f3658c630e90bf81a4ec0952077cc87697c5bad289db1",
+      "sha256": "2b89c57121d49c0352eebf5220e0e5528ae28341d707a254803c64c60ecf3a51",
+      "bytes": 456808478,
+      "linhas_csv": 1643215
+    },
+    "ibge/respostas_sidra/censo_2000_2010_PI.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/200/n6/in n3 22/v/93/p/2000,2010/c1/0/c2/0",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/200/n6/in%20n3%2022/v/93/p/2000,2010/c1/0/c2/0",
+      "coletado_em": "2026-11-13T20:33:26.002370-03:00",
+      "bytes": 169273,
+      "sha256": "b91ba98871310f6d7b2734cc14b8655e6cf1735f62a4707aa00b03b2e0d37b4d",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2000_2010_CE.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/200/n6/in n3 23/v/93/p/2000,2010/c1/0/c2/0",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/200/n6/in%20n3%2023/v/93/p/2000,2010/c1/0/c2/0",
+      "coletado_em": "2026-11-13T20:33:26.789918-03:00",
+      "bytes": 137178,
+      "sha256": "8175a00dde93899ece90dc724769c577af92b90d384ba9c32c476ea675d78c64",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2000_2010_RN.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/200/n6/in n3 24/v/93/p/2000,2010/c1/0/c2/0",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/200/n6/in%20n3%2024/v/93/p/2000,2010/c1/0/c2/0",
+      "coletado_em": "2026-11-13T20:33:27.274886-03:00",
+      "bytes": 125334,
+      "sha256": "eaade8e4e134bf9881f44e30a427d0c32f4c74afbcd5bef52bfca0007f7cfacd",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2000_2010_PB.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/200/n6/in n3 25/v/93/p/2000,2010/c1/0/c2/0",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/200/n6/in%20n3%2025/v/93/p/2000,2010/c1/0/c2/0",
+      "coletado_em": "2026-11-13T20:33:27.837803-03:00",
+      "bytes": 166835,
+      "sha256": "438e55d2a9cd0ba8798ffb5cff0c1e33d8649703d3cb0332cd4c9e1f20962b57",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2000_2010_PE.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/200/n6/in n3 26/v/93/p/2000,2010/c1/0/c2/0",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/200/n6/in%20n3%2026/v/93/p/2000,2010/c1/0/c2/0",
+      "coletado_em": "2026-11-13T20:33:28.502155-03:00",
+      "bytes": 138386,
+      "sha256": "e27ef04f82cf61a792b27816d01a11d3dac4a988988825c1513154b35e704e33",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2000_2010_AL.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/200/n6/in n3 27/v/93/p/2000,2010/c1/0/c2/0",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/200/n6/in%20n3%2027/v/93/p/2000,2010/c1/0/c2/0",
+      "coletado_em": "2026-11-13T20:33:28.956951-03:00",
+      "bytes": 76905,
+      "sha256": "89577e8e71bea94f17b4823103e19bb2a8aba166a0cc70b631fb7ebdba0b3ef2",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2000_2010_SE.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/200/n6/in n3 28/v/93/p/2000,2010/c1/0/c2/0",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/200/n6/in%20n3%2028/v/93/p/2000,2010/c1/0/c2/0",
+      "coletado_em": "2026-11-13T20:33:29.236926-03:00",
+      "bytes": 56715,
+      "sha256": "d133952ac5d1f1fe5ae1358632b58ca539cedcdfdd5603164c39d1296d6137ff",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2000_2010_BA.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/200/n6/in n3 29/v/93/p/2000,2010/c1/0/c2/0",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/200/n6/in%20n3%2029/v/93/p/2000,2010/c1/0/c2/0",
+      "coletado_em": "2026-11-13T20:33:30.234391-03:00",
+      "bytes": 311453,
+      "sha256": "f5f085475ca682c4b59bc32cbeab40185ecd9cb865db73883e48eec11ff1b734",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2022_MA.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/4714/n6/in n3 21/v/93/p/2022",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/4714/n6/in%20n3%2021/v/93/p/2022",
+      "coletado_em": "2026-11-13T20:33:30.415557-03:00",
+      "bytes": 57272,
+      "sha256": "927ce2c5cee5d393a9451d2a4d4919ce77a8a231c258b7576cb2c5a8d0f0ca5c",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2022_PI.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/4714/n6/in n3 22/v/93/p/2022",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/4714/n6/in%20n3%2022/v/93/p/2022",
+      "coletado_em": "2026-11-13T20:33:30.567422-03:00",
+      "bytes": 59179,
+      "sha256": "7d5807a7fc5d7783f82852bc955d82b60430bfb751e1579254990641957eab42",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2022_CE.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/4714/n6/in n3 23/v/93/p/2022",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/4714/n6/in%20n3%2023/v/93/p/2022",
+      "coletado_em": "2026-11-13T20:33:30.912978-03:00",
+      "bytes": 47690,
+      "sha256": "5660144852ee85f380e7740c42af8964122eee73c5f967c1311ac5ffbe7905bb",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2022_RN.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/4714/n6/in n3 24/v/93/p/2022",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/4714/n6/in%20n3%2024/v/93/p/2022",
+      "coletado_em": "2026-11-13T20:33:31.085845-03:00",
+      "bytes": 43708,
+      "sha256": "74e0ca5db2ba29c2d85299ee3803c7ced500d83a83e7f7319cdf39bae86a3b91",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2022_PB.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/4714/n6/in n3 25/v/93/p/2022",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/4714/n6/in%20n3%2025/v/93/p/2022",
+      "coletado_em": "2026-11-13T20:33:31.232540-03:00",
+      "bytes": 58066,
+      "sha256": "2f5b2c3e9c0767fdd6ceb952649266057d9aee237f1fe0127687a267a6985875",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2022_PE.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/4714/n6/in n3 26/v/93/p/2022",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/4714/n6/in%20n3%2026/v/93/p/2022",
+      "coletado_em": "2026-11-13T20:33:31.436001-03:00",
+      "bytes": 48176,
+      "sha256": "bfce2f6037488002aedeef24014183c94bf298940e916572951035c31e04f47e",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2022_AL.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/4714/n6/in n3 27/v/93/p/2022",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/4714/n6/in%20n3%2027/v/93/p/2022",
+      "coletado_em": "2026-11-13T20:33:31.637962-03:00",
+      "bytes": 26892,
+      "sha256": "6b808ccfac684951b57d6d1774d5ab35e2314ca03823eb4fd112270f9ecd6c47",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2022_SE.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/4714/n6/in n3 28/v/93/p/2022",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/4714/n6/in%20n3%2028/v/93/p/2022",
+      "coletado_em": "2026-11-13T20:33:31.785827-03:00",
+      "bytes": 19882,
+      "sha256": "0be5d34bf80b3482bb1c0519b2b31134b61c6cbb71888d931370c8471291600d",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/censo_2022_BA.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/4714/n6/in n3 29/v/93/p/2022",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/4714/n6/in%20n3%2029/v/93/p/2022",
+      "coletado_em": "2026-11-13T20:33:32.026122-03:00",
+      "bytes": 108259,
+      "sha256": "259fcc20a857aae65914586f03de317e93dcc17b82595152dd2cc410e6070b1c",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/estimativa_6579_MA.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/in n3 21/v/9324/p/all",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2021/v/9324/p/all",
+      "coletado_em": "2026-11-13T20:33:36.270128-03:00",
+      "bytes": 1305014,
+      "sha256": "d55eb79536bbb7a3d00b89229f59ce8789481234d7ce8c4027818d718cfea538",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/estimativa_6579_PI.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/in n3 22/v/9324/p/all",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2022/v/9324/p/all",
+      "coletado_em": "2026-11-13T20:33:40.397642-03:00",
+      "bytes": 1348697,
+      "sha256": "8732d4e4d7752ea5e7690440205c663def63b78aacd28d8af573b229286cc7f3",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/estimativa_6579_CE.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/in n3 23/v/9324/p/all",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2023/v/9324/p/all",
+      "coletado_em": "2026-11-13T20:33:44.108861-03:00",
+      "bytes": 1086271,
+      "sha256": "16ee0f22a284171759309e6c7fa7f1ec733edd795b4511e45f97564635dce2cd",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/estimativa_6579_RN.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/in n3 24/v/9324/p/all",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2024/v/9324/p/all",
+      "coletado_em": "2026-11-13T20:33:47.430710-03:00",
+      "bytes": 994573,
+      "sha256": "6d088da1bf1357884307ddb8ba5689d7c962e19cf5f9c8054591348df59a6513",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/estimativa_6579_PB.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/in n3 25/v/9324/p/all",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2025/v/9324/p/all",
+      "coletado_em": "2026-11-13T20:33:51.445496-03:00",
+      "bytes": 1324080,
+      "sha256": "17e8bebcf6a33c13b16a8325f761d1786f7b9c6505f5a0d00ecef64d50a66911",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/estimativa_6579_PE.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/in n3 26/v/9324/p/all",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2026/v/9324/p/all",
+      "coletado_em": "2026-11-13T20:33:55.249793-03:00",
+      "bytes": 1097263,
+      "sha256": "81da019e3b324d0c452214ff7d7d1de8a3c516b58e6970e8fbf95ab17648ffcd",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/estimativa_6579_AL.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/in n3 27/v/9324/p/all",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2027/v/9324/p/all",
+      "coletado_em": "2026-11-13T20:33:57.201270-03:00",
+      "bytes": 608999,
+      "sha256": "f09a942380bbf06587f41fe85be18e39b08e8633d30be2b86eda2503744efeb7",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/estimativa_6579_SE.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/in n3 28/v/9324/p/all",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2028/v/9324/p/all",
+      "coletado_em": "2026-11-13T20:33:58.513728-03:00",
+      "bytes": 448143,
+      "sha256": "d165dc478889cec88fb4c5c118d826784f1083a89f38768f854429b19d84b13f",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/respostas_sidra/estimativa_6579_BA.json": {
+      "url": "https://apisidra.ibge.gov.br/values/t/6579/n6/in n3 29/v/9324/p/all",
+      "url_resposta": "https://apisidra.ibge.gov.br/values/t/6579/n6/in%20n3%2029/v/9324/p/all",
+      "coletado_em": "2026-11-13T20:34:05.512199-03:00",
+      "bytes": 2475240,
+      "sha256": "9b64e687e237abac2ffa74ddfc5fd74132112eac3e0b33d8e62ebd9443547f12",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/populacao_municipios_ne.csv": {
+      "url": "derivado_das_respostas_sidra_preservadas",
+      "coletado_em": "2026-11-13T20:55:53.840090-03:00",
+      "bytes": 2714624,
+      "sha256": "797544298d5a2b7f849f790d801d1a9cd8505b869f2ef947c198ce9ec3bf5cd1",
+      "linhas_csv": 44850
+    },
+    "ibge/estados.json": {
+      "url": "https://servicodados.ibge.gov.br/api/v1/localidades/estados",
+      "url_resposta": "https://servicodados.ibge.gov.br/api/v1/localidades/estados",
+      "coletado_em": "2026-11-13T20:34:07.297506-03:00",
+      "bytes": 2446,
+      "sha256": "7ca1368dea3af83cba1af84ae8a7e88f1173c97586831d086cc8b3c1ba9c6596",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    },
+    "ibge/municipios.json": {
+      "url": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios",
+      "url_resposta": "https://servicodados.ibge.gov.br/api/v1/localidades/municipios",
+      "coletado_em": "2026-11-13T20:34:07.495368-03:00",
+      "bytes": 2470036,
+      "sha256": "86ecdccdf97d72e7e5e46f0854cfcea8bacc28154cc1bc4ed0e6110e3a6c9c02",
+      "http_status": 200,
+      "last_modified": null,
+      "etag": null
+    }
+  },
+  "status": "concluido",
+  "public_resumo_antes": [
+    5598410,
+    4178450
+  ],
+  "atualizado_em": "2026-11-13T21:25:09.252798-03:00",
+  "eventos": [
+    {
+      "em": "2026-11-13T20:49:15.177348-03:00",
+      "evento": "ANALYZE da carga isolada cancelado apos COPY confirmado; retomada com default_statistics_target=10 nas novas conexoes. Registros preservados; estatisticas pendentes serao completadas."
+    }
+  ],
+  "resultado": {
+    "concluido_em": "2026-11-13T21:25:09.105851-03:00",
+    "banco": "dengue-eda",
+    "esquema": "coleta_20261113",
+    "postgresql": "18.4",
+    "fontes": [
+      "SINAN/OpenDataSUS (CSV anual)",
+      "IBGE/SIDRA",
+      "IBGE/Localidades"
+    ],
+    "periodo_coletado": [
+      2000,
+      2026
+    ],
+    "periodo_analitico_do_projeto": [
+      2000,
+      2025
+    ],
+    "sinan_registros": 32530748,
+    "sinan_por_ano": [
+      {
+        "ano": 2000,
+        "linhas_csv": 172855,
+        "linhas_postgresql": 172855,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2001,
+        "linhas_csv": 488590,
+        "linhas_postgresql": 488590,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2002,
+        "linhas_csv": 897093,
+        "linhas_postgresql": 897093,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2003,
+        "linhas_csv": 416609,
+        "linhas_postgresql": 416609,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2004,
+        "linhas_csv": 136867,
+        "linhas_postgresql": 136867,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2005,
+        "linhas_csv": 261501,
+        "linhas_postgresql": 261501,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2006,
+        "linhas_csv": 411022,
+        "linhas_postgresql": 411022,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2007,
+        "linhas_csv": 717097,
+        "linhas_postgresql": 717097,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2008,
+        "linhas_csv": 919324,
+        "linhas_postgresql": 919324,
+        "bytes_nulos_removidos": 1
+      },
+      {
+        "ano": 2009,
+        "linhas_csv": 600658,
+        "linhas_postgresql": 600658,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2010,
+        "linhas_csv": 1381254,
+        "linhas_postgresql": 1381254,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2011,
+        "linhas_csv": 1150011,
+        "linhas_postgresql": 1150011,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2012,
+        "linhas_csv": 950180,
+        "linhas_postgresql": 950180,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2013,
+        "linhas_csv": 2035119,
+        "linhas_postgresql": 2035119,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2014,
+        "linhas_csv": 543918,
+        "linhas_postgresql": 543918,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2015,
+        "linhas_csv": 1623172,
+        "linhas_postgresql": 1623172,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2016,
+        "linhas_csv": 2298020,
+        "linhas_postgresql": 2298020,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2017,
+        "linhas_csv": 518483,
+        "linhas_postgresql": 518483,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2018,
+        "linhas_csv": 478880,
+        "linhas_postgresql": 478880,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2019,
+        "linhas_csv": 2261956,
+        "linhas_postgresql": 2261956,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2020,
+        "linhas_csv": 1495117,
+        "linhas_postgresql": 1495117,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2021,
+        "linhas_csv": 1024635,
+        "linhas_postgresql": 1024635,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2022,
+        "linhas_csv": 1405095,
+        "linhas_postgresql": 1405095,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2023,
+        "linhas_csv": 1645956,
+        "linhas_postgresql": 1645956,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2024,
+        "linhas_csv": 6564924,
+        "linhas_postgresql": 6564924,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2025,
+        "linhas_csv": 1643215,
+        "linhas_postgresql": 1643215,
+        "bytes_nulos_removidos": 0
+      },
+      {
+        "ano": 2026,
+        "linhas_csv": 489197,
+        "linhas_postgresql": 489197,
+        "bytes_nulos_removidos": 0
+      }
+    ],
+    "ibge": {
+      "populacao_ne": 44850,
+      "estado": 27,
+      "municipio": 5571,
+      "populacao_municipio_ano": 48421,
+      "sem_correspondencia_municipal": 0
+    },
+    "public_resumo_antes": [
+      5598410,
+      4178450
+    ],
+    "public_resumo_depois": [
+      5598410,
+      4178450
+    ],
+    "public_preservado": true,
+    "validacao": "CSV contado com parser independente e conciliado com PostgreSQL e tabela de controle",
+    "manifesto_bruto": "data/raw/coleta_20261113/manifesto.json"
+  }
+}

@@ -5,3 +5,11 @@ data/raw/
 data/interim/
 *.part
 tmp/
+
+# PostgreSQL: backups locais e configuracao privada
+/database/backups/
+/database/reproducao/data/
+.env
+.env.*
+!.env.example
+*.pyc

@@ -1,0 +1,202 @@
+{
+  "concluido_em": "2026-11-13T21:25:09.105851-03:00",
+  "banco": "dengue-eda",
+  "esquema": "coleta_20261113",
+  "postgresql": "18.4",
+  "fontes": [
+    "SINAN/OpenDataSUS (CSV anual)",
+    "IBGE/SIDRA",
+    "IBGE/Localidades"
+  ],
+  "periodo_coletado": [
+    2000,
+    2026
+  ],
+  "periodo_analitico_do_projeto": [
+    2000,
+    2025
+  ],
+  "sinan_registros": 32530748,
+  "sinan_por_ano": [
+    {
+      "ano": 2000,
+      "linhas_csv": 172855,
+      "linhas_postgresql": 172855,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2001,
+      "linhas_csv": 488590,
+      "linhas_postgresql": 488590,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2002,
+      "linhas_csv": 897093,
+      "linhas_postgresql": 897093,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2003,
+      "linhas_csv": 416609,
+      "linhas_postgresql": 416609,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2004,
+      "linhas_csv": 136867,
+      "linhas_postgresql": 136867,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2005,
+      "linhas_csv": 261501,
+      "linhas_postgresql": 261501,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2006,
+      "linhas_csv": 411022,
+      "linhas_postgresql": 411022,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2007,
+      "linhas_csv": 717097,
+      "linhas_postgresql": 717097,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2008,
+      "linhas_csv": 919324,
+      "linhas_postgresql": 919324,
+      "bytes_nulos_removidos": 1
+    },
+    {
+      "ano": 2009,
+      "linhas_csv": 600658,
+      "linhas_postgresql": 600658,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2010,
+      "linhas_csv": 1381254,
+      "linhas_postgresql": 1381254,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2011,
+      "linhas_csv": 1150011,
+      "linhas_postgresql": 1150011,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2012,
+      "linhas_csv": 950180,
+      "linhas_postgresql": 950180,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2013,
+      "linhas_csv": 2035119,
+      "linhas_postgresql": 2035119,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2014,
+      "linhas_csv": 543918,
+      "linhas_postgresql": 543918,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2015,
+      "linhas_csv": 1623172,
+      "linhas_postgresql": 1623172,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2016,
+      "linhas_csv": 2298020,
+      "linhas_postgresql": 2298020,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2017,
+      "linhas_csv": 518483,
+      "linhas_postgresql": 518483,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2018,
+      "linhas_csv": 478880,
+      "linhas_postgresql": 478880,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2019,
+      "linhas_csv": 2261956,
+      "linhas_postgresql": 2261956,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2020,
+      "linhas_csv": 1495117,
+      "linhas_postgresql": 1495117,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2021,
+      "linhas_csv": 1024635,
+      "linhas_postgresql": 1024635,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2022,
+      "linhas_csv": 1405095,
+      "linhas_postgresql": 1405095,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2023,
+      "linhas_csv": 1645956,
+      "linhas_postgresql": 1645956,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2024,
+      "linhas_csv": 6564924,
+      "linhas_postgresql": 6564924,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2025,
+      "linhas_csv": 1643215,
+      "linhas_postgresql": 1643215,
+      "bytes_nulos_removidos": 0
+    },
+    {
+      "ano": 2026,
+      "linhas_csv": 489197,
+      "linhas_postgresql": 489197,
+      "bytes_nulos_removidos": 0
+    }
+  ],
+  "ibge": {
+    "populacao_ne": 44850,
+    "estado": 27,
+    "municipio": 5571,
+    "populacao_municipio_ano": 48421,
+    "sem_correspondencia_municipal": 0
+  },
+  "public_resumo_antes": [
+    5598410,
+    4178450
+  ],
+  "public_resumo_depois": [
+    5598410,
+    4178450
+  ],
+  "public_preservado": true,
+  "validacao": "CSV contado com parser independente e conciliado com PostgreSQL e tabela de controle",
+  "manifesto_bruto": "data/raw/coleta_20261113/manifesto.json"
+}
