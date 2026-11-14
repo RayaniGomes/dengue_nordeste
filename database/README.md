@@ -6,7 +6,7 @@ Banco de origem: `dengue-eda`, PostgreSQL 18.4. O esquema `public` contém a ver
 
 - `estrutura.sql`: estrutura dos dois esquemas, sem registros.
 - `validacao/`: comprovantes da coleta, do backup, do notebook e da organização dos arquivos.
-- `reproducao/`: kit independente com código de coleta/carga, fontes, decisões e dependências para reconstruir o banco quando necessário.
+- `reproducao/`: kit independente de coleta/carga bruta, com fontes, decisões e dependências; a camada tratada é restaurada pelo backup completo.
 
 As dependências do fluxo ativo estão em `../requirements.txt`; o kit independente conserva seu próprio arquivo de dependências.
 
@@ -36,3 +36,7 @@ Não aplique `estrutura.sql` antes de restaurar o backup completo. Para uma inst
 ## Fluxo atual
 
 A [extração PostgreSQL](../docs/extracao_postgresql.md) usa `scripts/extrair_postgresql.py` em modo somente de leitura. O [primeiro notebook](../notebooks/01_coleta_integracao.ipynb) integra os arquivos extraídos e exporta apenas agregados versionáveis. As decisões metodológicas estão em `reproducao/.claude/specs/03_decisoes.md`.
+
+## Reprodução da CP1 sem o backup
+
+O notebook 01 pode usar os agregados SINAN e as tabelas IBGE versionados em `data/processed/insumos_portateis/`, sem PostgreSQL. Consulte [reprodução da CP1](../docs/reproducao_portatil.md). Esse modo é suficiente para a integração e os painéis anuais; análises individuais posteriores ainda requerem a base individual.

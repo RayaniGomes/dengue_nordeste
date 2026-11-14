@@ -1,0 +1,490 @@
+[
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "id",
+    "tipo": "inteiro",
+    "significado": "Chave local de uma notificação no banco",
+    "origem": "PostgreSQL",
+    "regras_ou_unidade": "Identidade gerada; não é um identificador público original do SINAN."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "cod_mun7",
+    "tipo": "texto, 7 dígitos",
+    "significado": "Município de residência",
+    "origem": "SINAN ID_MN_RESI + IBGE",
+    "regras_ou_unidade": "Chave de integração; primeiros seis dígitos ligados ao cadastro IBGE."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "cod_mun7_notificacao",
+    "tipo": "texto, 7 dígitos",
+    "significado": "Município da unidade notificadora",
+    "origem": "SINAN ID_MUNICIP + IBGE",
+    "regras_ou_unidade": "Pode ser nulo; não define a residência."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "ano",
+    "tipo": "inteiro",
+    "significado": "Ano de notificação",
+    "origem": "SINAN NU_ANO; alternativa ano_arquivo",
+    "regras_ou_unidade": "Análise limitada a 2000–2025; ano inválido usa ano do arquivo."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "dt_notificacao",
+    "tipo": "data",
+    "significado": "Data da notificação",
+    "origem": "SINAN DT_NOTIFIC",
+    "regras_ou_unidade": "Data inválida vira nulo no tratamento de origem."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "dt_sintomas",
+    "tipo": "data",
+    "significado": "Data de início dos sintomas",
+    "origem": "SINAN DT_SIN_PRI",
+    "regras_ou_unidade": "Se a notificação existe, aceita intervalo de até 365 dias antes dela; inconsistências viram nulo."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "mes_sintomas",
+    "tipo": "inteiro",
+    "significado": "Mês de início dos sintomas",
+    "origem": "Derivada de dt_sintomas",
+    "regras_ou_unidade": "1 a 12; nulo quando a data tratada é ausente."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "sexo",
+    "tipo": "texto",
+    "significado": "Sexo registrado",
+    "origem": "SINAN CS_SEXO",
+    "regras_ou_unidade": "M e F mantidos; I, O e vazio viram nulo. Não representa identidade de gênero."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "idade_anos",
+    "tipo": "inteiro",
+    "significado": "Idade em anos completos",
+    "origem": "SINAN NU_IDADE ou NU_IDADE_N",
+    "regras_ou_unidade": "Anos até 110 mantidos; unidades menores que ano viram 0; inválidos e ignorados viram nulo."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "classificacao",
+    "tipo": "texto",
+    "significado": "Código de classificação final harmonizado entre fichas",
+    "origem": "SINAN CON_CLASSI ou CLASSI_FIN",
+    "regras_ou_unidade": "Código original preservado como texto; confirmação das legendas no dicionário oficial continua pendente."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "criterio",
+    "tipo": "texto",
+    "significado": "Código do critério de classificação",
+    "origem": "SINAN CON_CRITER ou CRITERIO",
+    "regras_ou_unidade": "Código harmonizado entre fichas; legenda oficial ainda requer confirmação."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "evolucao",
+    "tipo": "texto",
+    "significado": "Código de evolução do registro",
+    "origem": "SINAN CON_EVOLUC ou EVOLUCAO",
+    "regras_ou_unidade": "Código harmonizado entre fichas; legenda oficial ainda requer confirmação."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "caso_provavel",
+    "tipo": "booleano",
+    "significado": "Flag do numerador principal do projeto",
+    "origem": "Regra operacional aplicada no banco",
+    "regras_ou_unidade": "Classificação distinta de 5, incluindo nulos e código 0; não equivale a caso confirmado."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "caso_confirmado",
+    "tipo": "booleano",
+    "significado": "Flag do cenário de comparação de confirmados",
+    "origem": "Regra operacional aplicada no banco",
+    "regras_ou_unidade": "Classificação em 1–4 ou 10–12, conforme decisão documentada."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "possivel_duplicata",
+    "tipo": "booleano",
+    "significado": "Sinalização de possível repetição de uma notificação",
+    "origem": "Comparação de campos no banco",
+    "regras_ou_unidade": "Da segunda linha em diante em grupos de ano do arquivo, unidade/município notificador, datas, sexo, idade e residência; não excluída automaticamente."
+  },
+  {
+    "tabela": "notificacao_dengue_ne",
+    "variavel": "ano_arquivo",
+    "tipo": "inteiro",
+    "significado": "Ano do CSV anual de origem",
+    "origem": "SINAN/OpenDataSUS",
+    "regras_ou_unidade": "Pode diferir do ano de notificação; 2026 fica fora da análise."
+  },
+  {
+    "tabela": "notificacoes_municipio_ano",
+    "variavel": "cod_mun7",
+    "tipo": "texto",
+    "significado": "Município de residência",
+    "origem": "SINAN agregado da base tratada",
+    "regras_ou_unidade": "Chave IBGE de sete dígitos; texto."
+  },
+  {
+    "tabela": "notificacoes_municipio_ano",
+    "variavel": "ano",
+    "tipo": "inteiro",
+    "significado": "Ano de notificação",
+    "origem": "SINAN agregado da base tratada",
+    "regras_ou_unidade": "2000–2025."
+  },
+  {
+    "tabela": "notificacoes_municipio_ano",
+    "variavel": "notificacoes",
+    "tipo": "inteiro",
+    "significado": "Quantidade de notificações tratadas",
+    "origem": "Agregação da tabela tratada do SINAN",
+    "regras_ou_unidade": "Inclui prováveis e não prováveis; unidade: registros."
+  },
+  {
+    "tabela": "notificacoes_municipio_ano",
+    "variavel": "casos_provaveis",
+    "tipo": "inteiro",
+    "significado": "Quantidade com flag caso_provavel verdadeira",
+    "origem": "Agregação da tabela tratada do SINAN",
+    "regras_ou_unidade": "Numerador principal; inclui possíveis duplicatas sinalizadas."
+  },
+  {
+    "tabela": "notificacoes_municipio_ano",
+    "variavel": "casos_confirmados",
+    "tipo": "inteiro",
+    "significado": "Quantidade com flag caso_confirmado verdadeira",
+    "origem": "Agregação da tabela tratada do SINAN",
+    "regras_ou_unidade": "Cenário de comparação; não substitui o numerador principal."
+  },
+  {
+    "tabela": "notificacoes_municipio_ano",
+    "variavel": "possiveis_duplicatas",
+    "tipo": "inteiro",
+    "significado": "Quantidade com flag possivel_duplicata verdadeira",
+    "origem": "Agregação da tabela tratada do SINAN",
+    "regras_ou_unidade": "Contagem entre todas as notificações, não apenas casos prováveis."
+  },
+  {
+    "tabela": "notificacoes_municipio_ano",
+    "variavel": "sem_idade",
+    "tipo": "inteiro",
+    "significado": "Notificações sem idade tratada",
+    "origem": "Agregação da tabela tratada do SINAN",
+    "regras_ou_unidade": "Contagem entre todas as notificações; idade 0 é válida."
+  },
+  {
+    "tabela": "notificacoes_municipio_ano",
+    "variavel": "sem_sexo",
+    "tipo": "inteiro",
+    "significado": "Notificações sem sexo tratado",
+    "origem": "Agregação da tabela tratada do SINAN",
+    "regras_ou_unidade": "Nulo ou vazio; contagem entre todas as notificações."
+  },
+  {
+    "tabela": "notificacoes_municipio_ano",
+    "variavel": "sem_mes_sintomas",
+    "tipo": "inteiro",
+    "significado": "Notificações sem mês de sintomas tratado",
+    "origem": "Agregação da tabela tratada do SINAN",
+    "regras_ou_unidade": "Contagem entre todas as notificações."
+  },
+  {
+    "tabela": "populacao_municipio_ano",
+    "variavel": "cod_mun7",
+    "tipo": "texto, 7 dígitos",
+    "significado": "Município do denominador",
+    "origem": "IBGE/SIDRA e tratamento documentado",
+    "regras_ou_unidade": "Chave de integração, não converter em número."
+  },
+  {
+    "tabela": "populacao_municipio_ano",
+    "variavel": "ano",
+    "tipo": "inteiro",
+    "significado": "Ano de referência da população",
+    "origem": "IBGE/SIDRA e tratamento documentado",
+    "regras_ou_unidade": "Combinar com o mesmo município e ano do numerador."
+  },
+  {
+    "tabela": "populacao_municipio_ano",
+    "variavel": "populacao",
+    "tipo": "inteiro, habitantes",
+    "significado": "População municipal",
+    "origem": "IBGE/SIDRA e tratamento documentado",
+    "regras_ou_unidade": "Na tabela consolidada pode ser nula; na tratada é positiva."
+  },
+  {
+    "tabela": "populacao_municipio_ano",
+    "variavel": "fonte",
+    "tipo": "texto",
+    "significado": "Origem do valor populacional",
+    "origem": "IBGE/SIDRA e tratamento documentado",
+    "regras_ou_unidade": "Censos têm prioridade sobre estimativas; na tratada, interpolada identifica a média dos vizinhos em 2007 e 2023."
+  },
+  {
+    "tabela": "populacao_ne",
+    "variavel": "cod_mun7",
+    "tipo": "texto, 7 dígitos",
+    "significado": "Município do denominador",
+    "origem": "IBGE/SIDRA e tratamento documentado",
+    "regras_ou_unidade": "Chave de integração, não converter em número."
+  },
+  {
+    "tabela": "populacao_ne",
+    "variavel": "ano",
+    "tipo": "inteiro",
+    "significado": "Ano de referência da população",
+    "origem": "IBGE/SIDRA e tratamento documentado",
+    "regras_ou_unidade": "Combinar com o mesmo município e ano do numerador."
+  },
+  {
+    "tabela": "populacao_ne",
+    "variavel": "populacao",
+    "tipo": "inteiro, habitantes",
+    "significado": "População municipal",
+    "origem": "IBGE/SIDRA e tratamento documentado",
+    "regras_ou_unidade": "Na tabela consolidada pode ser nula; na tratada é positiva."
+  },
+  {
+    "tabela": "populacao_ne",
+    "variavel": "fonte",
+    "tipo": "texto",
+    "significado": "Origem do valor populacional",
+    "origem": "IBGE/SIDRA e tratamento documentado",
+    "regras_ou_unidade": "Censos têm prioridade sobre estimativas; na tratada, interpolada identifica a média dos vizinhos em 2007 e 2023."
+  },
+  {
+    "tabela": "populacao_ne",
+    "variavel": "cod_mun6",
+    "tipo": "texto, 6 dígitos",
+    "significado": "Código municipal sem dígito verificador",
+    "origem": "IBGE/SIDRA",
+    "regras_ou_unidade": "Usado na ligação com o SINAN."
+  },
+  {
+    "tabela": "populacao_ne",
+    "variavel": "uf_cod",
+    "tipo": "inteiro",
+    "significado": "Código IBGE da UF",
+    "origem": "IBGE/SIDRA",
+    "regras_ou_unidade": "21–29 no recorte Nordeste."
+  },
+  {
+    "tabela": "populacao_ne",
+    "variavel": "municipio",
+    "tipo": "texto",
+    "significado": "Nome do município na fonte consolidada",
+    "origem": "IBGE/SIDRA",
+    "regras_ou_unidade": "Não é uma chave de integração."
+  },
+  {
+    "tabela": "municipio_ne",
+    "variavel": "cod_mun7",
+    "tipo": "texto, 7 dígitos",
+    "significado": "Código IBGE do município",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Chave primária."
+  },
+  {
+    "tabela": "municipio_ne",
+    "variavel": "cod_mun6",
+    "tipo": "texto, 6 dígitos",
+    "significado": "Código municipal sem dígito verificador",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Ligação entre SINAN e IBGE; único no cadastro."
+  },
+  {
+    "tabela": "municipio_ne",
+    "variavel": "nome",
+    "tipo": "texto",
+    "significado": "Nome do município",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Informação descritiva, não chave."
+  },
+  {
+    "tabela": "municipio_ne",
+    "variavel": "uf_cod",
+    "tipo": "inteiro",
+    "significado": "Código IBGE da UF",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Ligação ao cadastro de UFs; 21–29 no recorte."
+  },
+  {
+    "tabela": "municipio_ne",
+    "variavel": "microrregiao",
+    "tipo": "texto",
+    "significado": "Microrregião da divisão anterior",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Pode ser nula para municípios criados após essa divisão."
+  },
+  {
+    "tabela": "municipio_ne",
+    "variavel": "mesorregiao",
+    "tipo": "texto",
+    "significado": "Mesorregião da divisão anterior",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Pode ser nula."
+  },
+  {
+    "tabela": "municipio_ne",
+    "variavel": "regiao_imediata",
+    "tipo": "texto",
+    "significado": "Região geográfica imediata",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Divisão regional atual do cadastro."
+  },
+  {
+    "tabela": "municipio_ne",
+    "variavel": "regiao_intermediaria",
+    "tipo": "texto",
+    "significado": "Região geográfica intermediária",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Divisão regional atual do cadastro."
+  },
+  {
+    "tabela": "estado_ne",
+    "variavel": "uf_cod",
+    "tipo": "inteiro",
+    "significado": "Código IBGE da UF",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Chave primária."
+  },
+  {
+    "tabela": "estado_ne",
+    "variavel": "sigla",
+    "tipo": "texto",
+    "significado": "Sigla da UF",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "MA, PI, CE, RN, PB, PE, AL, SE, BA."
+  },
+  {
+    "tabela": "estado_ne",
+    "variavel": "nome",
+    "tipo": "texto",
+    "significado": "Nome da UF",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Descrição da unidade federativa."
+  },
+  {
+    "tabela": "estado_ne",
+    "variavel": "regiao_sigla",
+    "tipo": "texto",
+    "significado": "Sigla da grande região",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "NE no recorte."
+  },
+  {
+    "tabela": "estado_ne",
+    "variavel": "regiao",
+    "tipo": "texto",
+    "significado": "Nome da grande região",
+    "origem": "IBGE/Localidades",
+    "regras_ou_unidade": "Nordeste no recorte."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "notificacoes",
+    "tipo": "inteiro",
+    "significado": "Quantidade de notificações tratadas",
+    "origem": "Soma dos agregados municipais",
+    "regras_ou_unidade": "Inclui prováveis e não prováveis; unidade: registros."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "casos_provaveis",
+    "tipo": "inteiro",
+    "significado": "Quantidade com flag caso_provavel verdadeira",
+    "origem": "Soma dos agregados municipais",
+    "regras_ou_unidade": "Numerador principal; inclui possíveis duplicatas sinalizadas."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "casos_confirmados",
+    "tipo": "inteiro",
+    "significado": "Quantidade com flag caso_confirmado verdadeira",
+    "origem": "Soma dos agregados municipais",
+    "regras_ou_unidade": "Cenário de comparação; não substitui o numerador principal."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "possiveis_duplicatas",
+    "tipo": "inteiro",
+    "significado": "Quantidade com flag possivel_duplicata verdadeira",
+    "origem": "Soma dos agregados municipais",
+    "regras_ou_unidade": "Contagem entre todas as notificações, não apenas casos prováveis."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "sem_idade",
+    "tipo": "inteiro",
+    "significado": "Notificações sem idade tratada",
+    "origem": "Soma dos agregados municipais",
+    "regras_ou_unidade": "Contagem entre todas as notificações; idade 0 é válida."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "sem_sexo",
+    "tipo": "inteiro",
+    "significado": "Notificações sem sexo tratado",
+    "origem": "Soma dos agregados municipais",
+    "regras_ou_unidade": "Nulo ou vazio; contagem entre todas as notificações."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "sem_mes_sintomas",
+    "tipo": "inteiro",
+    "significado": "Notificações sem mês de sintomas tratado",
+    "origem": "Soma dos agregados municipais",
+    "regras_ou_unidade": "Contagem entre todas as notificações."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "populacao",
+    "tipo": "inteiro, habitantes",
+    "significado": "Denominador do município, UF ou região no ano",
+    "origem": "Integração SINAN + IBGE",
+    "regras_ou_unidade": "Somar denominadores antes de calcular a taxa; não representa pessoas distintas ao somar anos."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "incidencia_provaveis_100mil",
+    "tipo": "número real",
+    "significado": "Incidência operacional anual por 100 mil habitantes",
+    "origem": "Integração SINAN + IBGE",
+    "regras_ou_unidade": "casos_provaveis / populacao × 100.000, com população positiva; não é média das taxas municipais."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "fonte_populacao",
+    "tipo": "texto",
+    "significado": "Origem do denominador municipal",
+    "origem": "Integração SINAN + IBGE",
+    "regras_ou_unidade": "Preserva a informação de interpolação do banco."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "municipios_com_populacao",
+    "tipo": "inteiro",
+    "significado": "Municípios com população disponível na UF e no ano",
+    "origem": "Integração SINAN + IBGE",
+    "regras_ou_unidade": "Pode variar por criação de municípios; não presumir cobertura de 26 anos para todos."
+  },
+  {
+    "tabela": "paineis_integrados",
+    "variavel": "municipios_interpolados",
+    "tipo": "inteiro",
+    "significado": "Municípios com população interpolada na UF e no ano",
+    "origem": "Integração SINAN + IBGE",
+    "regras_ou_unidade": "Contagem de fonte = interpolada."
+  }
+]

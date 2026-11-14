@@ -1,0 +1,61 @@
+{
+  "status": "concluido",
+  "concluido_em": "2026-11-13T23:20:33.036164-03:00",
+  "manifesto_entrada": "data/processed/insumos_portateis/manifesto.json",
+  "sha256_manifesto_entrada": "249ba41f8b4e003d839ecb1f62efc718a59abf1fb7a58f133863c38d67e1a63e",
+  "periodo": [
+    2000,
+    2025
+  ],
+  "origem": "public.notificacao_dengue_ne e tabelas IBGE do mesmo snapshot",
+  "perfil_entrada": "portatil_agregado",
+  "totais": {
+    "notificacoes": 5474491,
+    "casos_provaveis": 4178450,
+    "casos_confirmados": 2884120,
+    "possiveis_duplicatas": 101804,
+    "sem_idade": 10816,
+    "sem_sexo": 6682,
+    "sem_mes_sintomas": 12928
+  },
+  "notificacoes_sem_populacao": 0,
+  "casos_provaveis_sem_populacao": 0,
+  "soma_populacao_municipio_ano": 1403368190,
+  "arquivos": {
+    "painel_municipio_ano": {
+      "arquivo": "data/processed/postgresql/relatorio_2000_2025/portatil_20261113/integracao/20261113_232032/painel_municipio_ano.csv",
+      "linhas": 46627,
+      "sha256": "23101d31e040bff0df1a68eec6b542f74e648153e5ec536f8650790a0000858d"
+    },
+    "painel_uf_ano": {
+      "arquivo": "data/processed/postgresql/relatorio_2000_2025/portatil_20261113/integracao/20261113_232032/painel_uf_ano.csv",
+      "linhas": 234,
+      "sha256": "f5a99ef3fd55cbff9a8f0bda440a02621e8bfd38bb4ee6b4e63d82f5508bf555"
+    },
+    "painel_regiao_ano": {
+      "arquivo": "data/processed/postgresql/relatorio_2000_2025/portatil_20261113/integracao/20261113_232032/painel_regiao_ano.csv",
+      "linhas": 26,
+      "sha256": "b2d8d741c6ba54c587747016d571f7d3e9900e507820d95182a217ac04c0aee1"
+    },
+    "cobertura_populacao_uf_ano": {
+      "arquivo": "data/processed/postgresql/relatorio_2000_2025/portatil_20261113/integracao/20261113_232032/cobertura_populacao_uf_ano.csv",
+      "linhas": 234,
+      "sha256": "c2ea5731e12bc95b90afcec4b9bf24ca83d336ed51ee54fabf4066e73887abf4"
+    }
+  },
+  "verificacoes": [
+    "SHA-256 das entradas",
+    "chaves unicas",
+    "juncoes validadas",
+    "recorte temporal e geografico",
+    "sete metricas por ano conciliadas com PostgreSQL",
+    "populacao conservada na juncao",
+    "26 anos e 234 UF-anos",
+    "casos provaveis sem denominador igual a zero"
+  ],
+  "limites": [
+    "Notificacoes ja tratadas no banco; nao e SINAN bruto nacional.",
+    "Flags e populacao interpolada mantidas como no banco; nenhuma decisao pendente encerrada.",
+    "Somente agregados sao exibidos no notebook; arquivos individuais permanecem locais."
+  ]
+}

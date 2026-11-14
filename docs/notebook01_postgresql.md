@@ -4,9 +4,9 @@ Abra [01_coleta_integracao.ipynb](../notebooks/01_coleta_integracao.ipynb). A ve
 
 ## Origem e modo da execução
 
-A base é a tabela tratada `public.notificacao_dengue_ne` e as tabelas de população, municípios e UFs do banco `dengue-eda`, para residentes do Nordeste e anos de notificação 2000–2025. Nesta execução, o notebook reaproveitou os CSVs extraídos previamente do PostgreSQL, conferindo os hashes de todas as entradas. Não fez uma nova consulta ao banco nessa execução em cache.
+A base é a tabela tratada `public.notificacao_dengue_ne` e as tabelas de população, municípios e UFs do banco `dengue-eda`, para residentes do Nordeste e anos de notificação 2000–2025. Na execução principal atual, o notebook utilizou o pacote portátil da CP1, derivado do mesmo snapshot PostgreSQL e conferido por SHA-256. Não foi necessária conexão ao banco. A leitura individual em blocos continua disponível quando os CSVs locais existem; consulte [reprodução da CP1](reproducao_portatil.md).
 
-Para extrair novamente, configure `DENGUE_ENV` no ambiente apontando para um `.env` privado, ou configure `.env` na raiz, e altere `REEXTRAIR = True` na célula de configuração. Se não existir extração concluída, o notebook tenta executá-la usando essa configuração. O script de extração usa conexão somente de leitura e snapshot REPEATABLE READ. A coleta bruta `coleta_20261113` é outra versão, fora desta etapa.
+Para extrair novamente, configure `DENGUE_ENV` no ambiente apontando para um `.env` privado, ou configure `.env` na raiz, e altere `REEXTRAIR = True` na célula de configuração. Sem uma extração individual disponível, o modo automático utiliza o pacote CP1 versionado. Uma nova extração é realizada somente quando `REEXTRAIR = True`. O script de extração usa conexão somente de leitura e snapshot REPEATABLE READ. A coleta bruta `coleta_20261113` é outra versão, fora desta etapa.
 
 ## Executar nesta pasta
 
@@ -28,7 +28,7 @@ As notificações são lidas em blocos de 200 mil registros. A integração mant
 | Região-ano | 26 |
 | Cobertura populacional por UF-ano | 234 |
 
-Os caminhos e hashes estão no [comprovante da integração](../data/metadata/postgresql/relatorio_2000_2025/20261113_221719/integracoes/20261113_224149.json). Cada execução cria uma subpasta própria em `data/processed/postgresql/relatorio_2000_2025/`, preservando as anteriores. Os registros individuais continuam em `data/raw/postgresql/`, ignorado pelo Git. O notebook e o HTML mostram somente tabelas agregadas e metadados.
+Os caminhos e hashes estão no [comprovante da integração](../data/metadata/postgresql/relatorio_2000_2025/portatil_20261113/integracoes/20261113_233631.json). Cada execução cria uma subpasta própria em `data/processed/postgresql/relatorio_2000_2025/`, preservando as anteriores. Os registros individuais continuam em `data/raw/postgresql/`, ignorado pelo Git. O notebook e o HTML mostram somente tabelas agregadas e metadados.
 
 ## Verificações realizadas
 
@@ -50,3 +50,9 @@ O notebook e os scripts anteriores, a antiga etapa 02, seus resultados e o backu
 Nenhum commit ou push foi realizado.
 
 Após a limpeza, o notebook foi reexecutado em kernel real; os quatro CSVs integrados permaneceram idênticos por SHA-256 aos resultados previamente conferidos.
+
+## Dicionário e modo portátil da CP1
+
+O dicionário semântico completo aparece no notebook e em [dicionario_dados.md](dicionario_dados.md). Os insumos agregados distribuíveis ficam em `data/processed/insumos_portateis/`. Consulte [reproducao_portatil.md](reproducao_portatil.md) para executar sem PostgreSQL e para o teste em ambiente novo.
+
+A reprodução sem banco também foi testada em cópia isolada, com instalação de `requirements.txt` em ambiente virtual novo: seis células sem erros e quatro painéis idênticos por SHA-256. O comprovante está em `database/validacao/reproducao_sem_banco.json`.

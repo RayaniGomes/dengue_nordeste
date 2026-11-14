@@ -1,0 +1,62 @@
+{
+  "status": "aprovado",
+  "verificado_em": "2026-11-13T23:37:32.218085-03:00",
+  "modo": "auto, com selecao do pacote portatil",
+  "kernel_real": true,
+  "celulas_executadas": 6,
+  "erros": 0,
+  "arquivos_individuais_presentes": false,
+  "env_privado_presente": false,
+  "configuracao_postgresql_no_ambiente": false,
+  "manifestos_antigos_sem_raw": "presentes para verificar fallback real de um clone",
+  "totais": {
+    "notificacoes": 5474491,
+    "casos_provaveis": 4178450,
+    "casos_confirmados": 2884120,
+    "possiveis_duplicatas": 101804,
+    "sem_idade": 10816,
+    "sem_sexo": 6682,
+    "sem_mes_sintomas": 12928
+  },
+  "paineis_identicos_por_sha256": {
+    "painel_municipio_ano": true,
+    "painel_uf_ano": true,
+    "painel_regiao_ano": true,
+    "cobertura_populacao_uf_ano": true
+  },
+  "referencia": "data/metadata/postgresql/relatorio_2000_2025/portatil_20261113/integracoes/20261113_232032.json",
+  "ambiente_python_novo": false,
+  "requirements_instalado_do_zero": false,
+  "limite": "Ambiente Python reutilizado; instalacao de dependencias do zero nao realizada nesta verificacao.",
+  "verificacao_anterior_em_ambiente_novo": {
+    "status": "aprovado",
+    "verificado_em": "2026-11-13T23:22:16.437718-03:00",
+    "modo": "auto, com selecao do pacote portatil",
+    "kernel_real": true,
+    "celulas_executadas": 6,
+    "erros": 0,
+    "arquivos_individuais_presentes": false,
+    "env_privado_presente": false,
+    "configuracao_postgresql_no_ambiente": false,
+    "manifestos_antigos_sem_raw": "presentes para verificar fallback real de um clone",
+    "totais": {
+      "notificacoes": 5474491,
+      "casos_provaveis": 4178450,
+      "casos_confirmados": 2884120,
+      "possiveis_duplicatas": 101804,
+      "sem_idade": 10816,
+      "sem_sexo": 6682,
+      "sem_mes_sintomas": 12928
+    },
+    "paineis_identicos_por_sha256": {
+      "painel_municipio_ano": true,
+      "painel_uf_ano": true,
+      "painel_regiao_ano": true,
+      "cobertura_populacao_uf_ano": true
+    },
+    "referencia": "data/metadata/postgresql/relatorio_2000_2025/20261113_221719/integracoes/20261113_224149.json",
+    "ambiente_python_novo": true,
+    "requirements_instalado_do_zero": true,
+    "limite": "Python base ja instalado; dependencias instaladas em venv novo a partir de requirements.txt."
+  }
+}

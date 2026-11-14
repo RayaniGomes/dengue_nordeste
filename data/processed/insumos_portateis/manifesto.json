@@ -1,0 +1,105 @@
+{
+  "status": "concluido",
+  "perfil": "portatil_agregado",
+  "execucao": "portatil_20261113",
+  "iniciado_em": "2026-11-13T22:17:20.375836-03:00",
+  "concluido_em": "2026-11-13T23:07:39.402694-03:00",
+  "origem": "Pacote agregado versionado, derivado da extracao PostgreSQL validada",
+  "banco": "dengue-eda",
+  "schema": "public",
+  "periodo": [
+    2000,
+    2025
+  ],
+  "somente_leitura": true,
+  "snapshot": "902:902:",
+  "transacao_iniciada_em": "2026-11-13T22:17:20.758081-03:00",
+  "extracao_entrada": "data/metadata/postgresql/relatorio_2000_2025/20261113_221719/manifesto.json",
+  "sha256_extracao_entrada": "66035e00b401a29a672853a25ba9adc5b27c700a874825547026af659bfbeb99",
+  "integracao_entrada": "data/metadata/postgresql/relatorio_2000_2025/20261113_221719/integracoes/20261113_224149.json",
+  "sha256_integracao_entrada": "337fbceecd54b615c37f74cc7c7b64feb93fa652ed7102430d98bd0bae290a7e",
+  "arquivos": {
+    "notificacoes_municipio_ano": {
+      "arquivo": "data/processed/insumos_portateis/insumos/notificacoes_municipio_ano.csv",
+      "bytes": 1207134,
+      "sha256": "5c3a9e2f3b48b21981d7cebd4f391de07107b3422ec0a0df95ac155090de40c1",
+      "registros_csv": 40125,
+      "origem_e_transformacao": "SINAN: agregacao por residencia e ano da tabela public.notificacao_dengue_ne; contagens conciliadas com o snapshot PostgreSQL, nao sao registros individuais.",
+      "registros_origem": 40125
+    },
+    "populacao_municipio_ano": {
+      "arquivo": "data/processed/insumos_portateis/insumos/populacao_municipio_ano.csv.gz",
+      "bytes": 301675,
+      "sha256": "8d0ce6e885adf1dac3f2279812ad9b09ada212604c3517a4444085c26e48528b",
+      "registros_csv": 46627,
+      "origem_e_transformacao": "IBGE/SIDRA ou Localidades: copia da tabela exportada do mesmo snapshot PostgreSQL; valores municipais publicos, sem registros individuais de pessoas.",
+      "registros_origem": 46627
+    },
+    "populacao_ne": {
+      "arquivo": "data/processed/insumos_portateis/insumos/populacao_ne.csv.gz",
+      "bytes": 318965,
+      "sha256": "428412582d61dc25e5a11c6cd6fbe384b73ed3667ce9b5fda5e398704a940a6b",
+      "registros_csv": 43056,
+      "origem_e_transformacao": "IBGE/SIDRA ou Localidades: copia da tabela exportada do mesmo snapshot PostgreSQL; valores municipais publicos, sem registros individuais de pessoas.",
+      "registros_origem": 43056
+    },
+    "municipio_ne": {
+      "arquivo": "data/processed/insumos_portateis/insumos/municipio_ne.csv.gz",
+      "bytes": 30573,
+      "sha256": "e7168f1e90af5b1730ab8a2c196ff5e86d19a956d71f206cb6bc9195ac7e15e7",
+      "registros_csv": 1794,
+      "origem_e_transformacao": "IBGE/SIDRA ou Localidades: copia da tabela exportada do mesmo snapshot PostgreSQL; valores municipais publicos, sem registros individuais de pessoas.",
+      "registros_origem": 1794
+    },
+    "estado_ne": {
+      "arquivo": "data/processed/insumos_portateis/insumos/estado_ne.csv.gz",
+      "bytes": 182,
+      "sha256": "fc11587369c8e7dd49edafdffe4cc03e9fd83b6ea3cbb61bdcbb7dac9f203f4f",
+      "registros_csv": 9,
+      "origem_e_transformacao": "IBGE/SIDRA ou Localidades: copia da tabela exportada do mesmo snapshot PostgreSQL; valores municipais publicos, sem registros individuais de pessoas.",
+      "registros_origem": 9
+    }
+  },
+  "totais": {
+    "notificacoes": 5474491,
+    "casos_provaveis": 4178450,
+    "casos_confirmados": 2884120,
+    "possiveis_duplicatas": 101804,
+    "sem_idade": 10816,
+    "sem_sexo": 6682,
+    "sem_mes_sintomas": 12928
+  },
+  "casos_provaveis_sem_populacao": 0,
+  "resumo_anual": {
+    "arquivo": "data/processed/insumos_portateis/resumo_anual.csv",
+    "registros": 26,
+    "sha256": "5d17c657246532978896d2e56efe8fccd9e4b1c4fdee597782d6c78d9d59f43d"
+  },
+  "dicionario": {
+    "arquivo": "docs/dicionario_dados.json",
+    "sha256": "0ec759ed1e86eb1fa82f53d2292a52d8eb9967ad9fa43669c673798c7c8aee8b"
+  },
+  "dicionario_csv": {
+    "arquivo": "docs/dicionario_dados.csv",
+    "sha256": "f61c8416ce606cb30f0b159ad2f91789049b79e1f6a11a653aa31121eade291f"
+  },
+  "fontes": [
+    {
+      "nome": "SINAN/OpenDataSUS",
+      "url": "https://s3.sa-east-1.amazonaws.com/ckan.saude.gov.br/SINAN/Dengue/csv/DENGBR{aa}.csv.zip",
+      "papel": "Notificacoes; tabela tratada agregada por municipio de residencia e ano."
+    },
+    {
+      "nome": "IBGE/SIDRA e Localidades",
+      "url": "https://apisidra.ibge.gov.br/values",
+      "cadastro": "https://servicodados.ibge.gov.br/api/v1/localidades",
+      "papel": "Populacao municipal e cadastro geografico; censos 2000/2010/2022 e estimativas 6579."
+    }
+  ],
+  "registros_individuais": false,
+  "limites": [
+    "Pacote destinado a coleta/integracao CP1 e incidencia anual; nao substitui os dados individuais para idade, sexo ou sazonalidade.",
+    "Os arquivos congelam um snapshot; nova coleta nas fontes oficiais pode conter revisoes.",
+    "Nenhuma regra epidemiologica ou decisao pendente foi alterada."
+  ]
+}

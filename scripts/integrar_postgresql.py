@@ -28,23 +28,53 @@ def localizar_manifesto(root):
     return max(candidatos,key=lambda x:x[0])[1]
 
 
+def selecionar_entrada(root, modo='auto'):
+    """Usa a extracao individual disponivel ou o pacote CP1 versionado, sem exigir banco."""
+    root=Path(root)
+    if modo not in ('auto','postgresql','portatil'):
+        raise ValueError('Modo deve ser auto, postgresql ou portatil.')
+    if modo!='portatil':
+        try:
+            p=localizar_manifesto(root)
+            m=json.loads(p.read_text(encoding='utf-8'))
+            if all((root/a['arquivo']).is_file() for a in m['arquivos'].values()):
+                return p,'extracao individual PostgreSQL em cache; hashes serao conferidos'
+        except FileNotFoundError:
+            pass
+        if modo=='postgresql':
+            raise FileNotFoundError('Extraia a base individual com scripts/extrair_postgresql.py --env CAMINHO_DO_ENV.')
+    p=root/'data/processed/insumos_portateis/manifesto.json'
+    if not p.is_file():
+        raise FileNotFoundError('Pacote CP1 ausente. Obtenha data/processed/insumos_portateis e docs/dicionario_dados.* junto com o repositorio.')
+    return p,'pacote CP1 portatil: SINAN agregado + IBGE versionados, sem conexao ao banco'
+
+
 def conferir_arquivos(root, caminho):
-    """Confere proveniencia, periodo e integridade dos cinco arquivos de entrada."""
+    """Confere proveniencia, periodo e integridade dos arquivos individuais ou agregados."""
     root=Path(root).resolve(); caminho=Path(caminho)
     m=json.loads(caminho.read_text(encoding='utf-8'))
+    perfil=m.get('perfil','individual')
+    if perfil not in ('individual','portatil_agregado'):
+        raise ValueError('Perfil de entrada desconhecido.')
     if m['status']!='concluido' or m['schema']!='public' or m['periodo']!=[2000,2025] or not m['somente_leitura']:
         raise ValueError('Manifesto nao corresponde a base tratada escolhida.')
-    esperados={'notificacao_dengue_ne','populacao_municipio_ano','populacao_ne','municipio_ne','estado_ne'}
+    nome_sinan='notificacoes_municipio_ano' if perfil=='portatil_agregado' else 'notificacao_dengue_ne'
+    esperados={nome_sinan,'populacao_municipio_ano','populacao_ne','municipio_ne','estado_ne'}
     if set(m['arquivos'])!=esperados: raise ValueError('Conjunto de tabelas inesperado.')
+    limite=caminho.resolve().parent if perfil=='portatil_agregado' else root/'data/raw/postgresql'
+    if perfil=='portatil_agregado' and not limite.is_relative_to(root/'data/processed'):
+        raise ValueError('Pacote portatil fora de data/processed.')
     linhas=[]
     for nome, meta in m['arquivos'].items():
         p=(root/meta['arquivo']).resolve()
-        if not p.is_relative_to(root/'data/raw/postgresql'): raise ValueError('Caminho fora da pasta de extracao.')
+        if not p.is_relative_to(limite): raise ValueError('Caminho fora da pasta de dados permitida.')
         if p.stat().st_size!=meta['bytes'] or hash_arquivo(p)!=meta['sha256']: raise ValueError('Arquivo divergente: '+nome)
-        if meta['registros_csv']!=meta['registros_postgresql']: raise ValueError('Contagem divergente no manifesto.')
+        chave='registros_origem' if perfil=='portatil_agregado' else 'registros_postgresql'
+        if meta['registros_csv']!=meta[chave]: raise ValueError('Contagem divergente no manifesto.')
         linhas.append({'tabela':nome,'registros':meta['registros_csv'],'sha256_conferido':True})
-    for chave in ['resumo_anual','dicionario']:
-        if hash_arquivo(root/m[chave]['arquivo'])!=m[chave]['sha256']: raise ValueError('Metadado divergente: '+chave)
+    for chave in ['resumo_anual','dicionario']+(['dicionario_csv'] if 'dicionario_csv' in m else []):
+        p=(root/m[chave]['arquivo']).resolve()
+        if not p.is_relative_to(root) or hash_arquivo(p)!=m[chave]['sha256']: raise ValueError('Metadado divergente: '+chave)
     return m,pd.DataFrame(linhas)
 
 
@@ -64,25 +94,41 @@ def integrar(root, caminho):
     if not pop_bruta.ano.between(2000,2025).all(): raise ValueError('Ano fora do periodo na populacao consolidada.')
     if not pop.cod_mun7.isin(mun.cod_mun7).all() or not pop_bruta.cod_mun7.isin(mun.cod_mun7).all(): raise ValueError('Populacao sem cadastro municipal.')
     cadastro=mun[['cod_mun7','nome','uf_cod']].merge(uf[['uf_cod','sigla']],on='uf_cod',validate='many_to_one').rename(columns={'sigla':'uf','nome':'municipio'})
-    partes=[]; anuais=[]
-    colunas=['cod_mun7','ano','caso_provavel','caso_confirmado','possivel_duplicata','idade_anos','sexo','mes_sintomas']
-    tipos={'cod_mun7':'string','ano':'int16','idade_anos':'Int16','mes_sintomas':'Int8',
-           'sexo':'string','caso_provavel':'boolean','caso_confirmado':'boolean','possivel_duplicata':'boolean'}
-    arquivo=root/m['arquivos']['notificacao_dengue_ne']['arquivo']
-    for i,bloco in enumerate(pd.read_csv(arquivo,usecols=colunas,dtype=tipos,true_values=['t'],false_values=['f'],chunksize=200_000),1):
-        if not bloco.ano.between(2000,2025).all() or not bloco.cod_mun7.isin(mun.cod_mun7).all(): raise ValueError('Notificacao fora do periodo ou sem municipio.')
-        cont=pd.DataFrame({'cod_mun7':bloco.cod_mun7,'ano':bloco.ano,'notificacoes':1,
-            'casos_provaveis':bloco.caso_provavel.fillna(False).astype('int64'),
-            'casos_confirmados':bloco.caso_confirmado.fillna(False).astype('int64'),
-            'possiveis_duplicatas':bloco.possivel_duplicata.fillna(False).astype('int64'),
-            'sem_idade':bloco.idade_anos.isna().astype('int64'),
-            'sem_sexo':bloco.sexo.fillna('').str.strip().eq('').astype('int64'),
-            'sem_mes_sintomas':bloco.mes_sintomas.isna().astype('int64')})
-        partes.append(cont.groupby(['cod_mun7','ano'],observed=True,as_index=False)[METRICAS].sum())
-        anuais.append(cont.groupby('ano',as_index=False)[METRICAS].sum())
-        if i%5==0: print(f'Blocos processados: {i} ({i*200_000:,} registros)',flush=True)
-    observado=pd.concat(partes,ignore_index=True).groupby(['cod_mun7','ano'],as_index=False,observed=True)[METRICAS].sum()
-    anual=pd.concat(anuais,ignore_index=True).groupby('ano',as_index=False)[METRICAS].sum().sort_values('ano').reset_index(drop=True)
+    if m.get('perfil','individual')=='portatil_agregado':
+        arquivo=root/m['arquivos']['notificacoes_municipio_ano']['arquivo']
+        observado=pd.read_csv(arquivo,dtype={'cod_mun7':'string','ano':'int64',**{c:'int64' for c in METRICAS}})
+        if len(observado)!=m['arquivos']['notificacoes_municipio_ano']['registros_csv']:
+            raise ValueError('Contagem do agregado municipal divergente.')
+        if set(observado.columns)!=set(['cod_mun7','ano',*METRICAS]) or observado.duplicated(['cod_mun7','ano']).any():
+            raise ValueError('Estrutura ou chave duplicada no agregado municipal.')
+        if not observado.ano.between(2000,2025).all() or not observado.cod_mun7.isin(mun.cod_mun7).all():
+            raise ValueError('Agregado fora do periodo ou sem municipio.')
+        if observado[METRICAS].isna().any().any() or observado[METRICAS].lt(0).any().any():
+            raise ValueError('Contagem agregada invalida.')
+        if observado[METRICAS[1:]].gt(observado.notificacoes,axis=0).any().any():
+            raise ValueError('Subcontagem maior que o total de notificacoes.')
+        anual=observado.groupby('ano',as_index=False)[METRICAS].sum().sort_values('ano').reset_index(drop=True)
+        print(f'Modo portatil: {len(observado):,} linhas municipais, representando {int(observado.notificacoes.sum()):,} notificacoes.',flush=True)
+    else:
+        partes=[]; anuais=[]
+        colunas=['cod_mun7','ano','caso_provavel','caso_confirmado','possivel_duplicata','idade_anos','sexo','mes_sintomas']
+        tipos={'cod_mun7':'string','ano':'int16','idade_anos':'Int16','mes_sintomas':'Int8',
+               'sexo':'string','caso_provavel':'boolean','caso_confirmado':'boolean','possivel_duplicata':'boolean'}
+        arquivo=root/m['arquivos']['notificacao_dengue_ne']['arquivo']
+        for i,bloco in enumerate(pd.read_csv(arquivo,usecols=colunas,dtype=tipos,true_values=['t'],false_values=['f'],chunksize=200_000),1):
+            if not bloco.ano.between(2000,2025).all() or not bloco.cod_mun7.isin(mun.cod_mun7).all(): raise ValueError('Notificacao fora do periodo ou sem municipio.')
+            cont=pd.DataFrame({'cod_mun7':bloco.cod_mun7,'ano':bloco.ano,'notificacoes':1,
+                'casos_provaveis':bloco.caso_provavel.fillna(False).astype('int64'),
+                'casos_confirmados':bloco.caso_confirmado.fillna(False).astype('int64'),
+                'possiveis_duplicatas':bloco.possivel_duplicata.fillna(False).astype('int64'),
+                'sem_idade':bloco.idade_anos.isna().astype('int64'),
+                'sem_sexo':bloco.sexo.fillna('').str.strip().eq('').astype('int64'),
+                'sem_mes_sintomas':bloco.mes_sintomas.isna().astype('int64')})
+            partes.append(cont.groupby(['cod_mun7','ano'],observed=True,as_index=False)[METRICAS].sum())
+            anuais.append(cont.groupby('ano',as_index=False)[METRICAS].sum())
+            if i%5==0: print(f'Blocos processados: {i} ({i*200_000:,} registros)',flush=True)
+        observado=pd.concat(partes,ignore_index=True).groupby(['cod_mun7','ano'],as_index=False,observed=True)[METRICAS].sum()
+        anual=pd.concat(anuais,ignore_index=True).groupby('ano',as_index=False)[METRICAS].sum().sort_values('ano').reset_index(drop=True)
     esperado=pd.read_csv(root/m['resumo_anual']['arquivo']).sort_values('ano').reset_index(drop=True)
     pd.testing.assert_frame_equal(anual,esperado,check_dtype=False)
     if set(anual.ano)!=set(range(2000,2026)): raise ValueError('Cobertura anual incompleta.')
@@ -117,6 +163,7 @@ def integrar(root, caminho):
     validacao={'status':'concluido','concluido_em':datetime.now(ZoneInfo('America/Fortaleza')).isoformat(),
         'manifesto_entrada':caminho.relative_to(root).as_posix(),'sha256_manifesto_entrada':hash_arquivo(caminho),
         'periodo':[2000,2025],'origem':'public.notificacao_dengue_ne e tabelas IBGE do mesmo snapshot',
+        'perfil_entrada':m.get('perfil','individual'),
         'totais':{c:int(regiao[c].sum()) for c in METRICAS},'notificacoes_sem_populacao':int(sem_pop.notificacoes.sum()),
         'casos_provaveis_sem_populacao':int(sem_pop.casos_provaveis.sum()),
         'soma_populacao_municipio_ano':int(pop.populacao.sum()),'arquivos':arquivos,
